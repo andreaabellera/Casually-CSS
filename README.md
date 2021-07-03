@@ -1,5 +1,10 @@
 # Casually CSS
-A collection of CSS artworks, casually created, and curated with care. Individual artworks are placed inside folders. The folder _blank is a template for starting new artworks
+A collection of CSS artworks, casually created, and curated with care
+
+## Folders
+- _blank contains a template for starting new artworks
+- docs contains code for the Gallery Showcase site
+- Casually CSS artworks are located inside other folders
 
 ## Art Requests
 You may request artwork of any object, animal, character, or symbol. Finished requests will also be included to the Casually CSS gallery
