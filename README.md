@@ -21,4 +21,4 @@ All Casually CSS artworks are distributed under the Apache License Version 2.0. 
 Gallery website showcase will be coming soon as more pieces get added. The website is hosted live on [Github Pages](https://andreaabellera.github.io/Casually-CSS/)
 
 ## Contribute to Casually CSS
-Contact (Andrea)[https://github.com/andreaabellera] or send a pull request if you want any of your own art pieces to be featured. You will be credited in the gallery showcase. Art pieces must be created by you and must be free to distribute
+Contact [Andrea](https://github.com/andreaabellera) or send a pull request if you want any of your own art pieces to be featured. You will be credited in the gallery showcase. Art pieces must be created by you and must be free to distribute
