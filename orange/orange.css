@@ -36,7 +36,7 @@ html, body{
 
 .leaf:hover{
   cursor: pointer;
-  animation: jiggle 2s linear;
+  animation: jiggle 1.5s linear;
   animation-iteration-count: infinite;
 }
 
@@ -162,18 +162,18 @@ html, body{
 
 @keyframes jiggle {
   0% {
-    transform: rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
   }
   20% {
-    transform: rotateY(20deg);
+    transform: rotateX(20deg) rotateY(20deg);
   }
   40% {
-    transform: rotateY(10deg);
+    transform: rotateX(10deg) rotateY(10deg);
   }
-  60% {
-    transform: rotateY(40deg);
+  55% {
+    transform: rotateX(20deg) rotateY(30deg);
   }
   100% {
-    transform: rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
   }
 }
