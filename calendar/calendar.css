@@ -43,6 +43,10 @@ html, body{
   display: grid;
   grid-template-rows: auto 0.5em auto auto 0.5em 1fr;
   font-family: 'Fredoka One', cursive;
+}
+
+.calendar:hover{
+  cursor: pointer;
   animation: flap 3s linear;
   animation-iteration-count: infinite;
 }
