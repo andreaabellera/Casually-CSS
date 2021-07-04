@@ -7,7 +7,7 @@ A collection of CSS artworks, casually created, and curated with care
 - Casually CSS artworks are located inside other folders
 
 ## Art Requests
-You may request artwork of any object, animal, character, or symbol. Finished requests will also be included to the Casually CSS gallery
+[You may request artwork](https://github.com/andreaabellera/Casually-CSS/issues/1) of any object, animal, character, or symbol. Finished requests will also be included to the Casually CSS gallery
 
 ## License
 All Casually CSS artworks are distributed under the Apache License Version 2.0. Feel free to incorporate any artwork to your code
