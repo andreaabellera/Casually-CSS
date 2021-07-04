@@ -101,7 +101,7 @@ html, body{
 }
 
 .body .straw-body, .body .straw-end{
-  background-color: rgba(250, 128, 114, 0.5);
+  opacity: 0.4;
 }
 
 .pearl{
@@ -179,6 +179,16 @@ html, body{
   width: 60%;
   border-bottom-left-radius: 80%;
   border-bottom-right-radius: 80%;
+}
+
+.base-drink{
+  position: absolute;
+  background-color: var(--drink);
+  height: 100%;
+  width: 60%;
+  border-bottom-left-radius: 80%;
+  border-bottom-right-radius: 80%;
+  transform: translateY(-0.5em);
 }
 
 @keyframes slurp {
