@@ -15,7 +15,7 @@ html, body{
 
 :root{
   --skin: lightpink;
-  --emboss: linear-gradient(pink, pink, rgb(250, 208, 216), rgb(250, 208, 216),pink); 
+  --emboss: linear-gradient(pink, rgb(250, 208, 216)); 
   --spot: linear-gradient(whitesmoke, lightgrey);
   --eye: radial-gradient(white, gainsboro);
   --eyeball: radial-gradient(#5e5e5e, #1e1e1e); 
