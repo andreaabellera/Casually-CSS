@@ -40,9 +40,9 @@ html, body{
   position: absolute;
   z-index: 2;
   background-color: var(--body);
-  height: 15em;
+  height: 14.5em;
   width: 22em;
-  border-top-left-radius: 13em;
+  border-top-left-radius: 15em;
   border-top-right-radius: 100%;
   border-bottom-left-radius: 80%;
   border-bottom-right-radius: 80%;
@@ -65,8 +65,8 @@ html, body{
   display: grid;
   grid-template-rows: 3.5em 3.5em 2em;
   grid-template-columns: 50% 50%;
-  left: -1.7em;
-  top: 3.6em;
+  left: -1.5em;
+  top: 3.8em;
 }
 
 .hippo-tail .se-sharp{
@@ -130,11 +130,12 @@ html, body{
   z-index: 3;
   top: 13em;
   left: 13em;
+  overflow: hidden;
 }
 
 .front-far{
   z-index: 1;
-  top: 12.5em;
+  top: 12em;
   left: 15em;
   filter: brightness(40%);
 }
@@ -143,11 +144,12 @@ html, body{
   z-index: 3;
   top: 13em;
   left: 5em;
+  overflow: hidden;
 }
 
 .back-far{
   z-index: 1;
-  top: 12.5em;
+  top: 12em;
   left: 7em;
   filter: brightness(40%);
 }
