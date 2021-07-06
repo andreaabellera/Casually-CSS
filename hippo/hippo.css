@@ -210,9 +210,9 @@ html, body{
 
 .ear{
   position: absolute;
-  left: 0.2em;
+  left: 0.4em;
   height: 1.8em;
-  width: 3em;
+  width: 2.2em;
   background-color: var(--body);
   border-top-left-radius: 100%;
   border-top-right-radius: 100%;
@@ -229,7 +229,7 @@ html, body{
 
 .ear-in{
   height: 60%;
-  width: 90%;
+  width: 70%;
   border-radius: 100%;
   background-color: var(--ear);
 }
