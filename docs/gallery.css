@@ -1,20 +1,233 @@
-:root{
-  --swatch: lightgrey; 
-}
-
 html, body{
   margin: 0;
   padding: 0;
   height: 100vh;
   width: 100vw;
-  background-color: gainsboro;
+  background-image: linear-gradient(to right, #99999D, #AAAAAB, #AAABAA, #9D9999);
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.texturize{
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  background-image: url("texture.jpg");
+  opacity: 0.05;
+  background-size: cover;
+}
+
+.main-area{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15vh;
+}
+
+.overlays{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#casually-css{
+  position: absolute;
+  left: 10vw;
+  top: -3em;
+  font-size: 3em;
+  font-family: "Fredoka One", cursive;
+  color: whitesmoke;
+  text-shadow: -0.05em 0.05em 0 rgba(175, 215, 230, 0.6);
+}
+
+.shadow{
+  height: 5vh;
+  width: 50%;
+  background-image: radial-gradient(rgba(60,60,60,0.6), rgba(60,60,60,0), rgba(60,60,60,0));
+  margin-bottom: 10vh;
+}
+
+#comment{
+  position: absolute;
+  z-index: 4;
+  right: 4vw;
+  top: 30vh;
+  width: 20vw;
+  transform: rotate(-10deg);
+  font-size: 1.7em;
+  color: lightblue;
+  font-family: 'Waiting for the Sunrise', cursive;
+  text-shadow: -0.03em 0.03em 0 rgba(245, 245, 220, 0.6);
+}
+
+#toggler{
+  position: absolute;
+  z-index: 4;
+  height: 15vh;
+  width: 4em;
+  margin-left: 0.4em;
+  border-radius: 1em;
+  border-top-left-radius: 0;
+  border-color: #3E3E3E;
+  border-style: double;
+  border-width: 0.5em;
+  opacity: 0.2;
+}
+
+#toggler:hover{
+  transition: 0.4s;
+  opacity: 1;
+}
+
+.close{
+  display: grid;
+  grid-template-rows: 25% 25% 25% 25%;
+}
+
+span{
+  margin-left: 30%;
+  height: 50%;
+  width: 30%;
+  background-color: #DFDDDD;
+}
+
+.open{
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+}
+
+.open span:nth-child(1){
+  transform: rotate(-45deg);
+  align-self: flex-end;
+}
+.open span:nth-child(2){
+  transform: rotate(45deg);
+  align-self: flex-end;
+}
+.open span:nth-child(3){
+  transform: rotate(45deg);
+  align-self: flex-start;
+}
+.open span:nth-child(4){
+  transform: rotate(-45deg);
+  align-self: flex-start;
+}
+
+#artboard{
+  position: absolute;
+  height: 32em;
+  width: 38em;
+  display: grid;
+  justify-items: center;
+  overflow: hidden;
+}
+
+#artboard iframe{
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+#sidebar{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 13.5vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.frame{
+  height: 16.66vh;
+  width: 96%;
+  color: #1E1E1E;
+  border-color:#DFDDDD;
+  border-width: 0.2em;
+  border-left-style: groove;
+  border-right-style: groove;
+  border-bottom-style: groove;
+  overflow: visible;
+  font-family: 'Work Sans', sans-serif;
   display: grid;
   justify-items: center;
   align-items: center;
 }
 
-.artboard{
-  background-color: whitesmoke;
-  height: 80%;
-  width: 60%;
+.frame iframe{
+  height: inherit;
+  width: inherit;
+  border: none;
+}
+
+.frame:hover, #toggler:hover{
+  cursor: pointer;
+}
+
+.selected{
+  box-shadow: inset 0.2em 0.2em 2em 0em rgba(225, 220, 245, 0.5);
+}
+
+#sidebar::-webkit-scrollbar-track {
+  border-radius: 0.8vw;
+  background-color: rgba(245, 242, 242, 0.2);
+}
+
+#sidebar::-webkit-scrollbar {
+  width: 0.15em;
+  border-radius: 1vw;
+}
+
+#sidebar::-webkit-scrollbar-thumb {
+  border-radius: 0.8vw;
+  background-color: #3E3E3E;
+}
+
+@media screen and (max-aspect-ratio: 3/2) {
+  #comment{
+    top: 40vh;
+  }
+}
+
+@media screen and (max-aspect-ratio: 2/3) {
+  #casually-css{
+    font-size: 5em;
+  }
+
+  #comment{
+    top: 35vh;
+    right: 11vw;
+    transform: rotate(0deg);
+    width: 60vw;
+    font-size: 3.5em;
+  }
+
+  .close{
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+  }
+  
+  span{
+    margin-left: 10%;
+    height: 40%;
+    width: 50%;
+    background-color: #DFDDDD;
+  }
+  
+  .open{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+  }
+
+  .open span{
+    height: 30%;
+    width: 30%;
+  }
+
+  .frame{
+    font-size: 1.4em;
+  }
 }
