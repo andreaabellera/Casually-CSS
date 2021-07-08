@@ -3,7 +3,7 @@ html, body{
   padding: 0;
   height: 100vh;
   width: 100vw;
-  background-color: rgb(146, 206, 203);
+  /*background-color: rgb(146, 206, 203);*/
   display: grid;
   justify-items: center;
   align-items: center;
@@ -26,6 +26,7 @@ html, body{
 .artboard{
   height: auto;
   width: auto;
+  transform: scale(50%);
 }
 
 .calendar-shape{

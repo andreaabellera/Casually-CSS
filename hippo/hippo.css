@@ -3,7 +3,7 @@ html, body{
   padding: 0;
   height: 100vh;
   width: 100vw;
-  background-color: #55776E;
+  /*background-color: #55776E;*/
   display: grid;
   justify-items: center;
   align-items: center;
@@ -184,7 +184,7 @@ html, body{
 }
 
 .hippo-head:hover{
-  animation: snap 1.5s ease-in-out;
+  animation: snap 1s ease-in-out;
   animation-iteration-count: infinite;
 }
 
@@ -227,6 +227,8 @@ html, body{
   justify-items: flex-end;
   align-items: flex-end;
   transform: rotate(50deg);
+  animation: wiggle 5s ease-in;
+  animation-iteration-count: infinite;
 }
 
 .ear-in{
@@ -479,17 +481,32 @@ html, body{
   0%{
     transform: rotate(0deg);
   }
-  35%{
+  25%{
     transform: rotate(0deg);
   }
   50%{
     transform: rotate(-30deg) translateY(-1em);
   }
-  65%{
+  75%{
     transform: rotate(0deg);
   }
   100%{
     transform: rotate(0deg);
+  }
+}
+
+@keyframes wiggle{
+  78%{
+    transform: rotate(50deg);
+    top: 0;
+  }
+  80%{
+    transform: rotate(0deg);
+    top: 0.6em;
+  }
+  82%{
+    transform: rotate(50deg);
+    top: 0;
   }
 }
 

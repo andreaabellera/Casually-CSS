@@ -3,7 +3,7 @@ html, body{
   padding: 0;
   height: 100vh;
   width: 100vw;
-  background-color: rgb(202, 233, 243);
+  /*background-color: rgb(202, 233, 243);*/
   display: grid;
   justify-items: center;
   align-items: center;
@@ -25,6 +25,7 @@ html, body{
   display: grid;
   justify-items: center;
   align-items: center;
+  transform: scale(45%);
 }
 
 .octopus{
@@ -203,12 +204,12 @@ html, body{
 }
 
 .arm7{
-  transform: translate(17em, 20em) rotateZ(-70deg);
+  transform: translate(13em, 15em) rotateZ(-70deg);
   height: 16em;
 }
 
 .arm8{
-  transform: translate(19em, 15em) rotateZ(-95deg);
+  transform: translate(10em, 9em) rotateZ(-95deg);
   height: 16em;
 }
 
