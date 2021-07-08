@@ -12,7 +12,7 @@ html, body{
   position: absolute;
   height: inherit;
   width: inherit;
-  background-image: url("texture.jpg");
+  background-image: url("_siteres/texture.jpg");
   opacity: 0.05;
   background-size: cover;
 }

@@ -17,37 +17,37 @@
 
 const hippo = {
     id: "hippo",
-    link: "../hippo/hippo.html",
+    link: "hippo/hippo.html",
     comment: "Happy hippo wants to play"
 };
 
 const orange = {
     id: "orange",
-    link: "../orange/orange.html",
+    link: "orange/orange.html",
     comment: "Would you want half a citrus slice?"
 };
 
 const calendar = {
     id: "calendar",
-    link: "../calendar/calendar.html",
+    link: "calendar/calendar.html",
     comment: "I wonder what happens if I touch the page.. oh"
 };
 
 const boba = {
     id: "boba",
-    link: "../boba/boba.html",
+    link: "boba/boba.html",
     comment: "Yummy, delicious boba! Hover over to drink"
 };
 
 const octopus = {
     id: "octopus",
-    link: "../octopus/octopus.html",
+    link: "octopus/octopus.html",
     comment: "What is pink and with stretchy arms? An octopus!"
 };
 
 const bike = {
     id: "bike",
-    link: "../bike/bike.html",
+    link: "bike/bike.html",
     comment: "The wheels of the bike go round and round"
 };
 
