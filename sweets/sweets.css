@@ -1,0 +1,239 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: gainsboro;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+/*=================
+//  ARTWORK CSS
+=================*/
+
+:root{
+  --lolli: linear-gradient(rgb(255, 182, 225), rgb(250, 208, 237), rgb(255, 192, 247), rgb(250, 208, 237), rgb(255, 182, 225)); 
+  --cookie: tan; 
+  /* --outline: #8e5e4e; */
+  --outline: rgb(218, 125, 179);
+}
+
+.artboard{
+  height: 22em;
+  width: 22em;
+}
+
+.lolli{
+  background-image: var(--lolli);
+}
+
+.cookie{
+  background-color: var(--cookie);
+}
+
+.sweets-container{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.cookie-bite{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: lightcyan;
+  height: 8em;
+  width: 5em;
+  display: grid;
+  grid-template-columns: 30% 40% 1fr;
+}
+
+.lollipop-container{
+  position: absolute;
+  height: 100%;
+  width: 40%;
+  display: grid;
+  grid-template-rows: 40% 55%;
+  justify-items: center;
+}
+
+.lollipop-container:hover{
+  cursor: pointer;
+}
+
+.lolli-head{
+  height: 100%;
+  width: 100%;
+}
+
+.stick{
+  background-color: whitesmoke;
+  height: 100%;
+  width: 5%;
+  border-width: 0.2em;
+  border-color: var(--outline);
+  border-style: double;
+}
+
+.cookie-container{
+  position: absolute;
+  right: 0;
+  height: 50%;
+  width: 50%;
+}
+
+.cookie-container:hover{
+  cursor: pointer;
+}
+
+.quadrants{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+
+.q2{
+  bottom: 0;
+  right: 0;
+  border-top-left-radius: 20em;
+  border-width: 0.2em;
+  border-color: var(--outline);
+  border-left-style: double;
+  border-top-style: double;
+}
+
+.q1{
+  bottom: 0;
+  left: 0;
+  border-top-right-radius: 20em;
+  border-width: 0.2em;
+  border-color: var(--outline);
+  border-right-style: double;
+  border-top-style: double;
+}
+
+.cookie-container .q1:hover{
+  animation: eat 1s linear;
+  animation-iteration-count: infinite;
+}
+
+.q3{
+  top: 0;
+  right: 0;
+  border-bottom-left-radius: 20em;
+  border-width: 0.2em;
+  border-color: var(--outline);
+  border-left-style: double;
+  border-bottom-style: double;
+}
+
+.q3-sharp{
+  top: 0;
+  right: 0;
+  border-bottom-left-radius: 80%;
+  border-width: 0.2em;
+  border-color: var(--outline);
+  border-left-style: double;
+  border-bottom-style: double;
+}
+
+.q3-sharper{
+  top: 0;
+  right: 0;
+  border-bottom-left-radius: 70%;
+  border-width: 0.2em;
+  border-color: var(--outline);
+  border-left-style: double;
+  border-bottom-style: double;
+}
+
+.end{
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  height: 25%;
+  width: 19.5%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 60%;
+  border-top-right-radius: 75%;
+  border-width: 0.2em;
+  border-color: var(--outline);
+  border-left-style: double;
+  border-right-style: double;
+  border-bottom-style: double;
+}
+
+.q4{
+  top: 0;
+  left: 0;
+  border-bottom-right-radius: 20em;
+  border-width: 0.2em;
+  border-color: var(--outline);
+  border-right-style: double;
+  border-bottom-style: double;
+}
+
+.q4-sharp{
+  border-bottom-right-radius: 100%;
+  border-width: 0.2em;
+  border-color: var(--outline);
+  border-right-style: double;
+  border-bottom-style: double;
+}
+
+.twist1{
+  position: absolute;
+  height: 100%;
+  width: 75%;
+}
+
+.twist2{
+  position: absolute;
+  height: 75%;
+  width: 50%;
+}
+
+.twist3{
+  position: absolute;
+  height: 50%;
+  width: 25%;
+}
+
+.full{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.three-fourth{
+  position: absolute;
+  height: 75%;
+  width: 75%;
+}
+
+.half{
+  position: absolute;
+  height: 50%;
+  width: 50%;
+}
+
+.one-fourth{
+  position: absolute;
+  height: 25%;
+  width: 25%;
+}
+
+@keyframes eat{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+  }
+}
