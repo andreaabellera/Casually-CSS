@@ -67,6 +67,8 @@ html, body{
   grid-template-columns: 50% 50%;
   left: -1.5em;
   top: 3.8em;
+  animation: whip 10s ease-out;
+  animation-iteration-count: infinite;
 }
 
 .hippo-tail .se-sharp{
@@ -84,7 +86,7 @@ html, body{
   border-width: 0.4em;
   border-color: var(--outline);
   border-left-style: solid;
-  border-right: 0;
+  clip-path: polygon(0% 0%, 69% 0%, 29% 100%, 0% 100%);
 }
 
 .tail-line{
@@ -507,6 +509,24 @@ html, body{
   82%{
     transform: rotate(50deg);
     top: 0;
+  }
+}
+
+@keyframes whip{
+  0%{
+    transform: rotate(0deg);
+    top: 3.8em;
+    left: -1.5em;
+  }
+  2%{
+    transform: rotate(30deg);
+    top: 1.8em;
+    left: -2.5em;
+  }
+  10%{
+    transform: rotate(0deg);
+    top: 3.8em;
+    left: -1.5em;
   }
 }
 
