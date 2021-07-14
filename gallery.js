@@ -21,6 +21,12 @@ const hippo = {
     comment: "Happy hippo wants to play"
 };
 
+const sweets = {
+    id: "sweets",
+    link: "sweets/sweets.html",
+    comment: "For Emily and Ann who are my very sweet friends"
+};
+
 const orange = {
     id: "orange",
     link: "orange/orange.html",
@@ -62,7 +68,8 @@ const bike = {
 //      Modify the order of the list below to change the sequence of artworks that appear in frames
 
 const artworks = [
-    hippo, 
+    hippo,
+    sweets, 
     orange, 
     calendar, 
     boba, 

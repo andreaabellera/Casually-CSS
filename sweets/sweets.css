@@ -3,7 +3,7 @@ html, body{
   padding: 0;
   height: 100vh;
   width: 100vw;
-  background-color: gainsboro;
+  /* background-color: gainsboro; */
   display: grid;
   justify-items: center;
   align-items: center;
@@ -14,10 +14,11 @@ html, body{
 =================*/
 
 :root{
-  --lolli: linear-gradient(rgb(255, 182, 225), rgb(250, 208, 237), rgb(255, 192, 247), rgb(250, 208, 237), rgb(255, 182, 225)); 
+  --lolli: linear-gradient(rgb(255, 182, 225) 10%, rgb(250, 208, 237) 30%, rgb(255, 192, 247), rgb(250, 208, 237), rgb(255, 182, 225) 90%); 
   --cookie: tan; 
-  /* --outline: #8e5e4e; */
   --outline: rgb(218, 125, 179);
+  --lollicol: white;
+  --chip: #8e5e4e;
 }
 
 .artboard{
@@ -44,13 +45,24 @@ html, body{
 
 .cookie-bite{
   position: absolute;
-  top: 0;
-  right: 0;
-  background-color: lightcyan;
-  height: 8em;
-  width: 5em;
+  top: 5.2em;
+  right: -0.2em;
+  background-color: rgba(0,0,0,0);
+  height: auto;
+  width: 5.5em;
   display: grid;
-  grid-template-columns: 30% 40% 1fr;
+  grid-template-columns: 25% 50% 1fr;
+}
+
+.lolli-bite{
+  position: absolute;
+  top: -3.9em;
+  left: 4.6em;
+  background-color: rgba(0,0,0,0);
+  height: auto;
+  width: 4.4em;
+  display: grid;
+  grid-template-columns: 1fr 25% 30% 10%;
 }
 
 .lollipop-container{
@@ -78,6 +90,8 @@ html, body{
   border-width: 0.2em;
   border-color: var(--outline);
   border-style: double;
+  border-bottom-left-radius: 3em;
+  border-bottom-right-radius: 3em;
 }
 
 .cookie-container{
@@ -117,7 +131,17 @@ html, body{
   border-top-style: double;
 }
 
-.cookie-container .q1:hover{
+.q1-sharp{
+  bottom: 0;
+  left: 0;
+  border-top-right-radius: 100%;
+  border-width: 0.2em;
+  border-color: var(--outline);
+  border-right-style: double;
+  border-top-style: double;
+}
+
+.q1:hover{
   animation: eat 1s linear;
   animation-iteration-count: infinite;
 }
@@ -158,7 +182,7 @@ html, body{
   top: 0;
   right: 0;
   height: 25%;
-  width: 19.5%;
+  width: 20%;
   border-bottom-left-radius: 100%;
   border-bottom-right-radius: 60%;
   border-top-right-radius: 75%;
@@ -227,6 +251,92 @@ html, body{
   position: absolute;
   height: 25%;
   width: 25%;
+}
+
+.bite{
+  background-color: rgba(0,0,0,0);
+  border-bottom-left-radius: 20em;
+  height: 100%;
+  width: 100%;
+}
+
+.bite11{
+  height: 6.8em;
+  box-shadow: 0em 5.8em 0em 0em var(--cookie);
+}
+
+.bite12{
+  height: 9.2em;
+  box-shadow: 0em 5em 0em 0em var(--cookie);
+}
+
+.bite13{
+  height: 2em;
+  align-self: flex-end;
+  transform: translateY(2.2em);
+}
+
+.bite21{
+  height: 5.3em;
+  box-shadow: 0em 4.3em 0em 0em var(--lollicol);
+}
+
+.bite22{
+  height: 6.5em;
+  box-shadow: 0em 5em 0em 0em var(--lollicol);
+}
+
+.bite23{
+  height: 8em;
+  box-shadow: 0em 2em 0em 0em var(--lollicol);
+}
+
+.chip{
+  position: absolute;
+  z-index: 3;
+  background-color: var(--chip);
+  height: 1em;
+  width: 1em;
+  border-top-left-radius: 60%;
+  border-top-right-radius: 0.3em;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 40%;
+  transform: rotate(-45deg);
+}
+
+.chip:nth-child(1){
+  bottom: 4.5em;
+  right: 1em;
+}
+
+.chip:nth-child(2){
+  bottom: 2.2em;
+  right: 1.9em;
+}
+
+.chip:nth-child(3){
+  bottom: 7em;
+  right: 3em;
+}
+
+.chip:nth-child(4){
+  bottom: 5em;
+  right: 5.5em;
+}
+
+.chip:nth-child(5){
+  bottom: 1.5em;
+  right: 6.1em;
+}
+
+.chip:nth-child(6){
+  bottom: 7.6em;
+  right: 7.7em;
+}
+
+.chip:nth-child(7){
+  bottom: 4.2em;
+  right: 9em;
 }
 
 @keyframes eat{
