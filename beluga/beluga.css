@@ -3,7 +3,7 @@ html, body{
   padding: 0;
   height: 100vh;
   width: 100vw;
-  /* background-color: gainsboro; */
+  background-color: gainsboro;
   display: grid;
   justify-items: center;
   align-items: center;
@@ -16,6 +16,7 @@ html, body{
 :root{
   --skin: whitesmoke; 
   --shade: #D4D0E6; 
+  --tongue: pink;
   --eye: #4E5E4E; 
 }
 
@@ -54,7 +55,7 @@ html, body{
   border-bottom-style: solid;
   border-width: 0.3em;
   transform: rotateY(50deg) rotateZ(0deg);
-  animation: flip1 3s ease-in-out;
+  animation: flipFin 3s ease-in-out;
   animation-iteration-count: infinite;
 }
 
@@ -65,8 +66,6 @@ html, body{
 
 .beluga:hover{
   cursor: pointer;
-  /* animation: stretch 0.5s ease-in-out;
-  animation-iteration-count: infinite; */
 }
 
 .bel1{
@@ -105,9 +104,16 @@ html, body{
   border-color: var(--shade);
 }
 
+.bel13:hover{
+  transition: 0.2s;
+  transform: translateX(0.6em) translateY(-0.2em) rotate(-50deg);
+  background-color: var(--tongue);
+  border-top-left-radius: 2em;
+}
+
 .eyeball{
   position: absolute;
-  top: 3.2em;
+  top: 3.5em;
   right: -1em;
   height: 0.8em;
   width: 0.8em;
@@ -120,7 +126,7 @@ html, body{
 
 .eyedot{
   position: absolute;
-  top: 3.3em;
+  top: 3.6em;
   right: -0.9em;
   height: 0.2em;
   width: 0.2em;
@@ -134,6 +140,10 @@ html, body{
   grid-template-rows: 8em 1em 1fr;
   animation: hStretch2 3s ease-in-out;
   animation-iteration-count: infinite;
+}
+
+.bel21{
+  border-bottom-left-radius: 10%;
 }
 
 .skin-junction1{
@@ -166,6 +176,8 @@ html, body{
   width: 3em;
   display: grid;
   grid-template-rows: 40% 60%;
+  animation: flipTail 3s ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 .tail-bot{
@@ -263,7 +275,7 @@ html, body{
   }
 }
 
-@keyframes flip1{
+@keyframes flipFin{
   45%{
     bottom: 0em;
     left: 5.8em;
@@ -277,6 +289,15 @@ html, body{
     height: 4em;
     width: 8em;
     transform: rotateY(50deg) rotateZ(0deg);
+  }
+}
+
+@keyframes flipTail{
+  45%{
+    height: 2.5em;
+  }
+  100%{
+    height: 4em;
   }
 }
 
