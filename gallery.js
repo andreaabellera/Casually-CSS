@@ -90,6 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function setupSidebar(){
     var sidebar = document.getElementById("sidebar");
+    var sidebarContent = document.getElementById("sidebar-content");
     var toggler = document.getElementById("toggler");
 
     // Toggle and collapse functionality
@@ -106,11 +107,12 @@ function setupSidebar(){
 
     // Add frames
     for (art of artworks){
-        let frame = document.createElement("div");
+        let frame = document.createElement("a");
         frame.id = art.id;
+        frame.href = "#" + art.id;
         frame.classList.add("frame");
         frame.innerText = art.id;
-        sidebar.appendChild(frame);
+        sidebarContent.appendChild(frame);
     }
 
     for (art of artworks)

@@ -31,14 +31,28 @@ html, body{
   position: relative;
 }
 
-#casually-css{
+.title-bar{
   position: absolute;
-  left: 10vw;
-  top: -3em;
+  top: -15vh;
+  display: flex;
+}
+
+#casually-css{
   font-size: 3em;
+  padding: 0.2em 0.2em 0.2em 1em;
+  margin: 0;
   font-family: "Fredoka One", cursive;
   color: whitesmoke;
-  text-shadow: -0.05em 0.05em 0 rgba(175, 215, 230, 0.6);
+  text-shadow: -0.06em 0.06em 0 rgba(75, 207, 255, 0.6);
+}
+
+.extend{
+  width: 5em;
+  clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+}
+
+.title-fill{
+  background-color: #2A2A2A;
 }
 
 .shadow{
@@ -132,11 +146,18 @@ span{
 
 #sidebar{
   position: relative;
-  display: flex;
-  flex-direction: column;
   width: 13.5vw;
   overflow-y: scroll;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+#sidebar-content{
+  display: flex;
+  flex-direction: column;
+  border-color: #2A2A2A;
+  border-left-style: solid;
+  border-width: 0.5em;
 }
 
 .frame{
@@ -150,9 +171,14 @@ span{
   border-bottom-style: groove;
   overflow: visible;
   font-family: 'Work Sans', sans-serif;
+  text-decoration: none;
   display: grid;
   justify-items: center;
   align-items: center;
+}
+
+.frame:first-of-type{
+  border-top-style: groove;
 }
 
 .frame iframe{
@@ -166,21 +192,19 @@ span{
 }
 
 .selected{
-  box-shadow: inset 0.2em 0.2em 2em 0em rgba(225, 220, 245, 0.5);
+  box-shadow: inset 0.2em 0.2em 2em 0em rgba(225, 220, 245, 0.4);
 }
 
 #sidebar::-webkit-scrollbar-track {
-  border-radius: 0.8vw;
   background-color: rgba(245, 242, 242, 0.2);
 }
 
 #sidebar::-webkit-scrollbar {
-  width: 0.15em;
-  border-radius: 1vw;
+  width: 0.8em;
+  background-color: #ADCDBD;
 }
 
 #sidebar::-webkit-scrollbar-thumb {
-  border-radius: 0.8vw;
   background-color: #3E3E3E;
 }
 
