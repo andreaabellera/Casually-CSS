@@ -60,7 +60,7 @@ const bike = {
 const beluga = {
     id: "beluga",
     link: "beluga/beluga.html",
-    comment: "Marshmallow beluga"
+    comment: "A Marshmallow beluga is only one of its kind"
 };
 
 // [I1] Insert your new artwork above by creating a Javascript object for it
