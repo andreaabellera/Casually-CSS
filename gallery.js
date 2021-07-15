@@ -57,6 +57,12 @@ const bike = {
     comment: "The wheels of the bike go round and round"
 };
 
+const beluga = {
+    id: "beluga",
+    link: "beluga/beluga.html",
+    comment: "Marshmallow beluga"
+};
+
 // [I1] Insert your new artwork above by creating a Javascript object for it
 //      Copy format of other artwork objects for reference
 //      When finished, head to [I2] to add your artwork to the gallery list
@@ -74,7 +80,8 @@ const artworks = [
     calendar, 
     boba, 
     octopus, 
-    bike
+    bike,
+    beluga
 ];
 
 

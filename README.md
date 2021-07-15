@@ -2,8 +2,8 @@
 A collection of CSS artworks, casually created, and curated with care
 
 ## Folders
+- .siteres contains miscellaneous resources for the Gallery Showcase site
 - _blank contains a template for starting new artworks
-- _siteres contains miscellaneous resources for the Gallery Showcase site
 - Casually CSS artworks are located inside other folders
 
 ## Art Requests
