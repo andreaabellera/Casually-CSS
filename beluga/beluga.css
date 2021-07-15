@@ -1,0 +1,308 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  /* background-color: gainsboro; */
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+/*=================
+//  ARTWORK CSS
+=================*/
+
+:root{
+  --skin: whitesmoke; 
+  --shade: #D4D0E6; 
+  --eye: #4E5E4E; 
+}
+
+.artboard{
+  height: 20em;
+  width: 24em;
+  display: grid;
+  align-items: center;
+}
+
+.skin{
+  background-color: var(--skin);
+}
+
+.belcontain{
+  position: relative;
+  height: 60%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  animation: swim 3s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.fin1{
+  position: absolute;
+  bottom: 1.5em;
+  left: 2.5em;
+  z-index: 0;
+  height: 4em;
+  width: 8em;
+  border-top-left-radius: 100%;
+  border-bottom-right-radius: 40%;
+  border-color: var(--shade);
+  border-left-style: solid;
+  border-bottom-style: solid;
+  border-width: 0.3em;
+  transform: rotateY(50deg) rotateZ(0deg);
+  animation: flip1 3s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.beluga{
+  display: grid;
+  grid-template-columns: 20% auto 1fr auto;
+}
+
+.beluga:hover{
+  cursor: pointer;
+  /* animation: stretch 0.5s ease-in-out;
+  animation-iteration-count: infinite; */
+}
+
+.bel1{
+  display: grid;
+  grid-template-rows: 4em 2em 2em 1fr;
+}
+
+.bel11{
+  position: relative;
+  z-index: 2;
+  border-top-left-radius: 100%;
+  width: 3.5em;
+  justify-self: flex-end;
+  border-left-style: solid;
+  border-width: 0.2em;
+  border-color: var(--shade);
+}
+
+.bel12{
+  position: relative;
+  z-index: 2;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 50%;
+  border-left-style: solid;
+  border-bottom-style: solid;
+  border-width: 0.2em;
+  border-color: var(--shade);
+  transform: scaleY(125%);
+}
+
+.bel13{
+  transform: translateX(0.6em) rotate(6deg);
+  border-left-style: solid;
+  border-bottom-right-radius: 30%;
+  border-width: 0.2em;
+  border-color: var(--shade);
+}
+
+.eyeball{
+  position: absolute;
+  top: 3.2em;
+  right: -1em;
+  height: 0.8em;
+  width: 0.8em;
+  border-radius: 1em;
+  background-color: var(--eye);
+  border-bottom-style: solid;
+  border-color: var(--shade);
+  border-width: 0.2em;
+}
+
+.eyedot{
+  position: absolute;
+  top: 3.3em;
+  right: -0.9em;
+  height: 0.2em;
+  width: 0.2em;
+  border-radius: 1em;
+  background-color: white;
+}
+
+.bel2{
+  display: grid;
+  width: 4.5em;
+  grid-template-rows: 8em 1em 1fr;
+  animation: hStretch2 3s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.skin-junction1{
+  grid-row: 2/4;
+  transform: rotate(40deg);
+}
+
+.bel3{
+  display: grid;
+  grid-template-rows: 7em 2em 1fr auto;
+}
+
+.bel4{
+  display: grid;
+  display: flex;
+  align-items: flex-end;
+  width: 4.5em;
+  animation: hStretch 3s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.bottom{
+  height: 1em;
+  animation: vStretch 3s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.tail{
+  height: 4em;
+  width: 3em;
+  display: grid;
+  grid-template-rows: 40% 60%;
+}
+
+.tail-bot{
+  border-bottom-left-radius: 3em;
+  border-top-right-radius: 2em;
+  border-color: var(--shade);
+  border-bottom-style: solid;
+  border-width: 0.3em;
+}
+
+.tail-top{
+  border-bottom-right-radius: 3em;
+  border-top-left-radius: 2em;
+}
+
+/*===================
+// CURVE SHAPES 
+===================*/
+
+.inverted{
+  background-color: rgba(0,0,0,0);
+  box-shadow: 0em -1.5em 0em 0em var(--skin);
+}
+
+.inverted-n{
+  background-color: rgba(0,0,0,0);
+  box-shadow: 0em 0.5em 0em 0em var(--skin);
+}
+
+.half-height{
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+
+.half-width{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.se{
+  border-top-left-radius: 20em;
+  height: 100%;
+  width: 100%;
+}
+
+.se-sharp{
+  border-top-left-radius: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.ne{
+  border-bottom-left-radius: 20em;
+  height: 100%;
+  width: 100%;
+}
+
+.ne-sharp{
+  border-bottom-left-radius: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.nw{
+  border-bottom-right-radius: 20em;
+  height: 100%;
+  width: 100%;
+}
+
+.nw-sharp{
+  border-bottom-right-radius: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.sw{
+  border-top-right-radius: 20em;
+  height: 100%;
+  width: 100%;
+}
+
+.sw-sharp{
+  border-top-right-radius: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+
+@keyframes swim{
+  45%{
+    transform: rotate(20deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes flip1{
+  45%{
+    bottom: 0em;
+    left: 5.8em;
+    height: 5em;
+    width: 4em;
+    transform: rotateY(30deg) rotateZ(-90deg);
+  }
+  100%{
+    bottom: 1.5em;
+    left: 2.5em;
+    height: 4em;
+    width: 8em;
+    transform: rotateY(50deg) rotateZ(0deg);
+  }
+}
+
+@keyframes hStretch{
+  45%{
+    width: 6em;
+  }
+  100%{
+    width: 4.5em;
+  }
+}
+
+@keyframes hStretch2{
+  45%{
+    width: 4em;
+  }
+  100%{
+    width: 4.5em;
+  }
+}
+
+@keyframes vStretch{
+  45%{
+    height: 2em;
+  }
+  100%{
+    height: 1em;
+  }
+}
