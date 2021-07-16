@@ -39,6 +39,12 @@ const calendar = {
     comment: "I wonder what happens if I touch the page.. oh"
 };
 
+const dugong = {
+    id: "dugong",
+    link: "dugong/dugong.html",
+    comment: "Mooo, I am a seacow. Not a manatee"
+};
+
 const boba = {
     id: "boba",
     link: "boba/boba.html",
@@ -77,7 +83,8 @@ const artworks = [
     hippo,
     sweets, 
     orange, 
-    calendar, 
+    calendar,
+    dugong, 
     boba, 
     octopus, 
     bike,
