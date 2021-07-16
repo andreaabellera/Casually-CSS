@@ -99,8 +99,22 @@ const artworks = [
 
 document.addEventListener("DOMContentLoaded", () => {
     setupSidebar();
-    document.getElementById(artworks[0].id).click();
+    loadArtwork();
 });
+
+function loadArtwork(){
+    let current = window.location.href.split('#');
+    // Scroll to linked artwork
+    if(current.length > 1){
+        let art = document.getElementById(current[1])
+        if(art)
+            art.click();
+        else // Invalid link, default to first artwork
+            document.getElementById(artworks[0].id).click(); 
+    }
+    else // No link provided, default to first artwork
+        document.getElementById(artworks[0].id).click();
+}
 
 function setupSidebar(){
     var sidebar = document.getElementById("sidebar");
