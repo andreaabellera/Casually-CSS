@@ -3,7 +3,7 @@ html, body{
   padding: 0;
   height: 100vh;
   width: 100vw;
-  background-color: gainsboro;
+  /* background-color: gainsboro; */
   display: grid;
   justify-items: center;
   align-items: center;
@@ -15,10 +15,224 @@ html, body{
 
 :root{
   --swatch: lightgrey; 
+  --skin: #6487C0;
+  --skinLight: #7497D0;
+  --mouth: lightpink;
+  --stroke: #2E2E2E;
 }
 
 .artboard{
-  background-color: whitesmoke;
-  height: 80%;
-  width: 60%;
+  height: 25em;
+  width: 15em;
+}
+
+.dugong{
+  position: relative;
+}
+
+.dugong:hover{
+  cursor: pointer;
+}
+
+.skin{
+  background-color: var(--skin);
+}
+
+.skinLight{
+  background-color: var(--skinLight);
+}
+
+.mouth{
+  background-color: var(--mouth);
+}
+
+.mouth1{
+  justify-self: flex-end;
+  border-bottom-left-radius: 100%;
+  width: 50%;
+}
+
+.mouth2{
+  border-bottom-right-radius: 100%;
+  width: 50%;
+}
+
+.pt{
+  position: absolute;
+  z-index: 6;
+  height: 1em;
+  width: 0.7em;
+  border-radius: 2em;
+  background-color: var(--stroke);
+}
+
+.eye1{
+  bottom: 0;
+  right: 0;
+}
+
+.eye2{
+  top: 0.5em;
+  right: -0.2em;
+}
+
+.nose1{
+  right: 0.5em;
+  top: 1em;
+  transform: scale(50%) rotate(30deg);
+}
+
+.nose2{
+  left: 0.5em;
+  top: 1em;
+  transform: scale(50%) rotate(-30deg);
+}
+
+.dugong-head{
+  position: absolute;
+  z-index: 3;
+  left: 2em;
+  display: grid;
+  height: 10em;
+  width: 9em;
+  grid-template-rows: 35% 50% 15%;
+  grid-template-columns: 30% 70%;
+}
+
+.head-junction1{
+  grid-column: 1/2;
+  grid-row: 1/3;
+  display: grid;
+  grid-template-rows: 60% 20% 20%;
+}
+
+.head-part1, .head-part2{
+  position: relative;
+}
+
+.dugong-snout{
+  position: absolute;
+  z-index: 5;
+  top: 5em;
+  right: 3em;
+  height: 5em;
+  width: 8em;
+  display: grid;
+  grid-template-rows: 70% 30%;
+}
+
+.dugong-snout:hover{
+  animation: talk 0.7s ease-in;
+  animation-iteration-count: infinite;
+}
+
+.snout-grid{
+  display: grid;
+  grid-template-columns: 1fr 15% 15% 1fr;
+}
+
+.snout-part{
+  position: relative;
+}
+
+.dugong-body{
+  position: absolute;
+  z-index: 3;
+  display: grid;
+  height: 10em;
+  width: 8em;
+  grid-template-rows: 30% 15% 1fr;
+  grid-template-columns: 15% 1fr 15%;
+  /* background-color: var(--skin); */
+}
+
+.dugong-tail{
+
+}
+
+/*===================
+// CURVE SHAPES 
+===================*/
+
+.inverted{
+  background-color: rgba(0,0,0,0);
+  box-shadow: 0em -1.5em 0em 0em var(--skin);
+}
+
+.inverted-n{
+  background-color: rgba(0,0,0,0);
+  box-shadow: 0em 0.5em 0em 0em var(--skin);
+}
+
+.half-height{
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+
+.half-width{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.se{
+  border-top-left-radius: 20em;
+  height: 100%;
+  width: 100%;
+}
+
+.se-sharp{
+  border-top-left-radius: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.ne{
+  border-bottom-left-radius: 20em;
+  height: 100%;
+  width: 100%;
+}
+
+.ne-sharp{
+  border-bottom-left-radius: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.nw{
+  border-bottom-right-radius: 20em;
+  height: 100%;
+  width: 100%;
+}
+
+.nw-sharp{
+  border-bottom-right-radius: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.sw{
+  border-top-right-radius: 20em;
+  height: 100%;
+  width: 100%;
+}
+
+.sw-sharp{
+  border-top-right-radius: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes talk{
+  15%{
+    transform: translateY(-0.25em) rotate(10deg);
+  }
+  30%{
+    transform: translateY(-0.5em) rotate(-10deg);
+  }
+  45%{
+    transform: translateY(-0.25em) rotate(5deg);
+  }
+  60%{
+    transform: translateY(0em) rotate(0deg);
+  }
 }
