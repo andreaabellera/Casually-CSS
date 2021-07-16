@@ -486,7 +486,7 @@ html, body{
 
 @keyframes flip2{
   45%{
-    right: 2.2em;
+    right: 3em;
     transform: rotate(-20deg) rotateY(-30deg);
   }
   100%{
