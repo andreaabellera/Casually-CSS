@@ -69,6 +69,12 @@ const beluga = {
     comment: "A Marshmallow beluga is only one of its kind"
 };
 
+const button = {
+    id: "button",
+    link: "button/button.html",
+    comment: "This button is made for Scientific purposes"
+};
+
 // [I1] Insert your new artwork above by creating a Javascript object for it
 //      Copy format of other artwork objects for reference
 //      When finished, head to [I2] to add your artwork to the gallery list
@@ -88,7 +94,8 @@ const artworks = [
     boba, 
     octopus, 
     bike,
-    beluga
+    beluga,
+    button
 ];
 
 
