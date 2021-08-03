@@ -18,61 +18,71 @@
 const hippo = {
     id: "hippo",
     link: "hippo/hippo.html",
-    comment: "Happy hippo wants to play"
+    comment: "Happy hippo wants to play",
+    name: "Hichi the Hippo"
 };
 
 const sweets = {
     id: "sweets",
     link: "sweets/sweets.html",
-    comment: "For Emily and Ann who are my very sweet friends"
+    comment: "For Emily and Ann who are my very sweet friends",
+    name: "Emily & Ann"
 };
 
 const orange = {
     id: "orange",
     link: "orange/orange.html",
-    comment: "Would you want half a citrus slice?"
+    comment: "Would you want half a citrus slice?",
+    name: "Odo the Orange"
 };
 
 const calendar = {
     id: "calendar",
     link: "calendar/calendar.html",
-    comment: "I wonder what happens if I touch the page.. oh"
+    comment: "I wonder what happens if I touch the page.. oh",
+    name: "Cai~"
 };
 
 const dugong = {
     id: "dugong",
     link: "dugong/dugong.html",
-    comment: "Mooo, I am a seacow. Not a manatee"
+    comment: "Mooo, I am a seacow. Not a manatee",
+    name: "Sasha"
 };
 
 const boba = {
     id: "boba",
     link: "boba/boba.html",
-    comment: "Yummy, delicious boba! Hover over to drink"
+    comment: "Yummy, delicious boba! Hover over to drink",
+    name: "(/◕ヮ◕)/"
 };
 
 const octopus = {
     id: "octopus",
     link: "octopus/octopus.html",
-    comment: "What is pink and with stretchy arms? An octopus!"
+    comment: "What is pink and with stretchy arms? An octopus!",
+    name: "Octo Ouuu"
 };
 
 const bike = {
     id: "bike",
     link: "bike/bike.html",
-    comment: "The wheels of the bike go round and round"
+    comment: "The wheels of the bike go round and round",
+    name: "Vic the vroom vroom"
 };
 
 const beluga = {
     id: "beluga",
     link: "beluga/beluga.html",
-    comment: "A Marshmallow beluga is only one of its kind"
+    comment: "A Marshmallow beluga is only one of its kind",
+    name: "Beaan"
 };
 
 const button = {
     id: "button",
     link: "button/button.html",
-    comment: "This button is made for Scientific purposes"
+    comment: "This button is made for Scientific purposes",
+    name: ""
 };
 
 // [I1] Insert your new artwork above by creating a Javascript object for it
@@ -166,6 +176,7 @@ function addFrameListener(art) {
 function loadArtboard(art) {
     document.getElementById("artboard").innerHTML = "<iframe src =" + art.link + "></iframe>";
     document.getElementById("comment").innerText = art.comment;
+    document.getElementById("name").innerText = art.name;
 }
 
 function clearSelected(){
