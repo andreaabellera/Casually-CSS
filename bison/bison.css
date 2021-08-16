@@ -1,0 +1,24 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: gainsboro;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+/*=================
+//  ARTWORK CSS
+=================*/
+
+:root{
+  --swatch: lightgrey; 
+}
+
+.artboard{
+  background-color: whitesmoke;
+  height: 80%;
+  width: 60%;
+}
