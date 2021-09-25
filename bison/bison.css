@@ -14,11 +14,160 @@ html, body{
 =================*/
 
 :root{
-  --swatch: lightgrey; 
+  --outline: #3e3e3e;
+  --hair: brown;
+  --fur: tan;
 }
 
 .artboard{
   background-color: whitesmoke;
-  height: 80%;
-  width: 60%;
+  height: 28em;
+  width: 35em;
+}
+
+.bison{
+  position: relative;
+  /*animation: swim 4s ease-in-out;
+  animation-iteration-count: infinite;*/
+}
+
+.bison:hover{
+  cursor: pointer;
+}
+
+.hair{
+  background-color: var(--hair);
+}
+
+.fur{
+  background-color: var(--fur);
+}
+
+.hairDark{
+  background-color: var(--hairDark);
+}
+
+.furDark{
+  background-color: var(--furDark);
+}
+
+.bison-body{
+  position: absolute;
+  z-index: 2;
+  left: 2em;
+  top: 2em;
+  height: 18em;
+  width: 26em;
+  background-color: var(--fur);
+  border-width: 0.3em;
+  border-color: var(--outline);
+  border-style: solid;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 60%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 30%;
+}
+
+/*===================
+// CURVE SHAPES 
+===================*/
+
+.inverted{
+  background-color: rgba(0,0,0,0);
+  box-shadow: 0em -1.5em 0em 0em var(--hair);
+}
+
+.inverted-n{
+  background-color: rgba(0,0,0,0);
+  box-shadow: 0em 0.5em 0em 0em var(--hair);
+}
+
+.half-height{
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+
+.half-width{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.se{
+  height: 100%;
+  width: 100%;
+  border-width: 0.3em;
+  border-color: var(--outline);
+  border-top-style: solid;
+  border-left-style: solid;
+  border-top-left-radius: 16em;
+}
+
+.se-sharp{
+  border-top-left-radius: 100%;
+  height: 100%;
+  width: 100%;
+  border-width: 0.3em;
+  border-color: var(--outline);
+  border-top-style: solid;
+  border-left-style: solid;
+}
+
+.ne{
+  height: 100%;
+  width: 100%;
+  border-width: 0.3em;
+  border-color: var(--outline);
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-bottom-left-radius: 16em;
+}
+
+.ne-sharp{
+  border-bottom-left-radius: 100%;
+  height: 100%;
+  width: 100%;
+  border-width: 0.3em;
+  border-color: var(--outline);
+  border-bottom-style: solid;
+  border-left-style: solid;
+}
+
+.nw{
+  height: 100%;
+  width: 100%;
+  border-width: 0.3em;
+  border-color: var(--outline);
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-bottom-right-radius: 16em;
+}
+
+.nw-sharp{
+  border-bottom-right-radius: 100%;
+  height: 100%;
+  width: 100%;
+  border-width: 0.3em;
+  border-color: var(--outline);
+  border-bottom-style: solid;
+  border-right-style: solid;
+}
+
+.sw{
+  height: 100%;
+  width: 100%;
+  border-width: 0.3em;
+  border-color: var(--outline);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-top-right-radius: 16em;
+}
+
+.sw-sharp{
+  border-top-right-radius: 100%;
+  height: 100%;
+  width: 100%;
+  border-width: 0.3em;
+  border-color: var(--outline);
+  border-top-style: solid;
+  border-right-style: solid;
 }
