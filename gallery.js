@@ -29,6 +29,13 @@ const sweets = {
     name: "Emily & Ann"
 };
 
+const bison = {
+    id: "bison",
+    link: "bison/bison.html",
+    comment: "From the plains of Manitoba",
+    name: ""
+};
+
 const orange = {
     id: "orange",
     link: "orange/orange.html",
@@ -40,7 +47,7 @@ const calendar = {
     id: "calendar",
     link: "calendar/calendar.html",
     comment: "I wonder what happens if I touch the page.. oh",
-    name: "Cai~"
+    name: "Cai"
 };
 
 const dugong = {
@@ -97,7 +104,8 @@ const button = {
 
 const artworks = [
     hippo,
-    sweets, 
+    sweets,
+    bison, 
     orange, 
     calendar,
     dugong, 
