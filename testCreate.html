@@ -1,0 +1,47 @@
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <title> Test Create </title>
+    <link rel="shortcut icon" type="image/x-icon" href=".siteres/favicon.ico">
+    <script src="create.js"> </script>
+  </head>
+
+  <body>
+    <div id="meta-container"></div>
+    <div id="another-container"></div>
+  </body>
+</html>
+
+<style>
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: gainsboro;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+#meta-container{
+  border-width: 0.2em;
+  border-style: dashed;
+  height: 80%;
+  width: 60%;
+}
+#another-container{
+  border-width: 0.2em;
+  border-style: dashed;
+  height: 7em;
+  width: 7em;
+}
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    create(document.getElementById("meta-container"),"orange");
+    create(document.getElementById("another-container"),"orange");
+  });
+</script>
