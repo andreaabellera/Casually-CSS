@@ -1,16 +1,28 @@
 # Casually CSS
 A collection of CSS artworks, casually created, and curated with care
 
+## Install the Library
+Install the Casually CSS node package into your Node.js app with    
+```npm install casually-css```
+
+## Import an Artwork
+After installing the package, you can start importing artworks with the JS function 'create'! Add this line into your script or JS file  
+``const create = require('casually-css')```
+
+The 'create' functions takes two parameters: __an HTML element__ and the __artwork name__. The HTML element container will resize to match the artwork aspect ratio  
+```create(yourDiv, 'orange')```
+
+So far, only the [orange](https://andreaabellera.github.io/Casually-CSS/#orange) artwork is available under the library. Exportable versions of other artworks and color prop passing are under development
+
 ## Folders
-- .siteres contains miscellaneous resources for the Gallery Showcase site
 - _blank contains a template for starting new artworks
 - Casually CSS artworks are located inside other folders
 
 ## Art Requests
-[You may request artwork](https://github.com/andreaabellera/Casually-CSS/issues/1) of any object, animal, character, or symbol. Finished requests will also be included to the Casually CSS gallery
+You may request an artwork by [opening an issue](https://github.com/andreaabellera/Casually-CSS/issues/) and adding the tag 'art'. Requested artworks can be any object, animal, character, or symbol. Finished requests will also be included to the Casually CSS gallery
 
 ## License
-All Casually CSS artworks are distributed under the Apache License Version 2.0. Feel free to incorporate any artwork to your code
+All Casually CSS artworks are distributed under the MIT License. Feel free to incorporate any artwork to your code
 
 ## Adding an Artwork to an HTML Div 
 1. Add the class "artboard" to the div that will contain the artwork
