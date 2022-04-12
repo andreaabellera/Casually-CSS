@@ -1,4 +1,5 @@
-// Packaging artworks for communal use <3 Trial attempt at an npm library
+// Packaging artworks for communal use <3 
+// Trial attempt at an npm library
 
 // Takes an artwork name and the div container to place it in
 function create(container,name){
@@ -215,4 +216,4 @@ const artLib = {
     "orange": orange
 };
 
-//module.exports = create
+module.exports = create

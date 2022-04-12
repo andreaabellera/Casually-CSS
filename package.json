@@ -1,0 +1,28 @@
+{
+  "name": "casually-css",
+  "version": "0.0.1",
+  "description": "Import an artwork from Casually CSS!",
+  "main": "create.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreaabellera/Casually-CSS.git"
+  },
+  "engines": {
+    "node": ">= 8.0.0"
+  },
+  "keywords": [
+    "casuallycss",
+    "casually",
+    "cssart",
+    "instantart"
+  ],
+  "author": "Andrea Abellera <andrea.abellera@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andreaabellera/Casually-CSS/issues"
+  },
+  "homepage": "https://github.com/andreaabellera/Casually-CSS#readme"
+}
