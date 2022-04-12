@@ -7,7 +7,7 @@ Install the Casually CSS node package into your Node.js app with
 
 ## Import an Artwork
 After installing the package, you can start importing artworks with the JS function 'create'! Add this line into your script or JS file  
-``const create = require('casually-css')```
+```const create = require('casually-css')```
 
 The 'create' functions takes two parameters: __an HTML element__ and the __artwork name__. The HTML element container will resize to match the artwork aspect ratio  
 ```create(yourDiv, 'orange')```
