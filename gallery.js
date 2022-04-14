@@ -31,7 +31,7 @@ const sweets = {
 
 const orange = {
     id: "orange",
-    link: "orange/orange.html",
+    link: "orange/orange.txt",
     comment: "Would you want half a citrus slice?",
     name: "Odo the Orange"
 };
