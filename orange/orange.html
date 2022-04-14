@@ -3,35 +3,73 @@
   <head>
     <meta charset="utf-8">
     <title> Casually CSS | Orange </title>
-    <link type="text/css" rel="stylesheet" href="orange.css">
   </head>
 
   <body>
-
-    <div class="artboard">
-
-      <!-- Start of artwork. Code sourced from https://andreaabellera.github.io/Casually-CSS/ -->
-      <div class="leaf">
-        <div class="leaf-1">   </div>
-        <div class="leaf-2">   </div>
-        <div class="leaf-3">   </div>
-        <div class="leaf-4">   
-          <span class="deco">  </span>
-          <span class="bord">  </span>
+    <div id="meta-container">
+      <div class="artboard">
+        <div class="leaf">
+            <div class="leaf-1">   </div>
+            <div class="leaf-2">   </div>
+            <div class="leaf-3">   </div>
+            <div class="leaf-4">   
+              <span class="deco">  </span>
+              <span class="bord">  </span>
+            </div>
+          </div>
+          <div class="orange">
+            <div class="inner">
+              <div class="line">                  </div>
+              <div class="line fourfive">         </div>
+              <div class="line ninety">           </div>
+              <div class="line onethreefive">     </div>
+              <div class="center">                </div>
+            </div>
         </div>
       </div>
-      <div class="orange">
-        <div class="inner">
-          <div class="line">                  </div>
-          <div class="line fourfive">         </div>
-          <div class="line ninety">           </div>
-          <div class="line onethreefive">     </div>
-          <div class="center">                </div>
-        </div>
-      </div>
-      <!-- End of artwork -->
-    
     </div>
-    
   </body>
 </html>
+
+
+<script>
+    const req = new XMLHttpRequest();
+    req.onreadystatechange=function(){
+      if (req.readyState==4 && req.status==200){
+          let container = document.getElementById("meta-container")
+          let dimensions = [container.clientHeight,container.clientWidth]
+          if(dimensions[0] < dimensions[1]){ // landscape
+              container.style.height = dimensions[0] + "px"
+              container.style.width = dimensions[0] + "px"
+          }
+          else if(dimensions[0] > dimensions[1]){ // portrait
+              container.style.height = dimensions[1] + "px"
+              container.style.width = dimensions[1] + "px"
+          }
+          container.innerHTML += `<style> ${this.responseText} </style>`
+      }
+    }
+    req.open("GET", "orange.css", true);
+    req.send();
+</script>
+
+
+<style>
+  html, body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: gainsboro;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  #meta-container{
+    border-width: 0.2em;
+    border-style: dashed;
+    height: 40%;
+    width: 30%;
+  }
+</style>
