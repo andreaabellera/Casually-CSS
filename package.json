@@ -1,6 +1,6 @@
 {
   "name": "casually-css",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Import an artwork from Casually CSS!",
   "main": "create.js",
   "scripts": {
@@ -24,5 +24,6 @@
   "bugs": {
     "url": "https://github.com/andreaabellera/Casually-CSS/issues"
   },
-  "homepage": "https://github.com/andreaabellera/Casually-CSS#readme"
+  "homepage": "https://github.com/andreaabellera/Casually-CSS#readme",
+  "files": ["umd"]
 }
