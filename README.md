@@ -1,5 +1,6 @@
 # Casually CSS
-A collection of CSS artworks, casually created, and curated with care
+A collection of CSS artworks, casually created, and curated with care  
+![Casually CSS Banner](/casually-banner.png)
 
 ## Showcase
 Gallery website showcase is live on [Github Pages](https://andreaabellera.github.io/Casually-CSS/). Individual Casually CSS artworks are located inside their corresponding folders
