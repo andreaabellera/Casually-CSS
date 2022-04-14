@@ -1,17 +1,3 @@
-html, body{
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  width: 100vw;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-}
-
-/*=================
-//  ARTWORK CSS
-=================*/
-
 :root{
   --skin: #84A7C0;
   --skinLight: #94B7D0;
@@ -21,8 +7,8 @@ html, body{
 }
 
 .artboard{
-  height: 26em;
-  width: 16em;
+  height: inherit;
+  width: inherit;
 }
 
 .dugong{

@@ -1,0 +1,150 @@
+<div class="artboard">
+    <div class="octopus">
+        <div class="head">
+          <div class="head-junction1">
+            <div class="skin se-sharp">
+              <div class="spot spot1"></div>
+              <div class="spot spot2"></div>
+            </div>
+          </div>
+          <div class="head-junction2 skin">   </div>
+          <div class="head-junction3">
+            <div class="skin sw-sharp">
+              <div class="spot spot3"></div>
+            </div>
+          </div>
+          <div class="head-junction4 skin">     </div>
+          <div class="head-junction5">   <div class="skin ne-sharp"></div>   </div>
+          <div></div>
+          <div class="skin">   <div class="emboss se"></div>   </div>
+          <div class="emboss half-height">   <div class="skin ne-sharp"></div>   </div>
+          <div class="emboss half-height">   <div class="skin nw"></div>         </div>
+          <div class="half-width">   <div class="emboss sw"></div>   </div>
+          <div></div>
+          <div></div>
+          <div class="eye ne">  <div class="eyeball nw"></div>    </div>
+          <div class="emboss half-height"><div></div>   <div class="skin se-sharp"></div>   </div>
+          <div class="emboss half-height"><div></div>   <div class="skin sw"></div>         </div>
+          <div class="half-width">
+            <div class="eye nw three-fourth-height">  
+              <div class="eyeball nw-sharp"></div>
+            </div>
+          </div>
+          <div></div>
+          <div></div>
+          <div class="head-junction4 skin se">   </div>
+          <div class="half-width">    <div class="skin sw"></div>   </div>
+        </div>
+        <div class="arms">
+          <div class="arms-junction1"></div>
+          <div class="arms-junction2 emboss">   <div class="skin cap"></div>    </div>
+        </div>
+        <div class="arm arm1">
+          <div></div>
+          <div class="arm-junction1 nw inverted-n"></div>
+          <div class="skin"></div>
+          <div></div>
+          <div class="skin"></div>
+          <div class="arm-junction2 skin se-sharp"></div>
+          <div class="skin"></div>
+          <div class="skin nw-sharp"></div>
+          <div class="arm-junction3 se inverted"></div>
+          <div class="arm-junction4 skin ne-sharp"></div>
+          <div class="arm-junction3 ne inverted-n"></div>
+          <div class="arm-junction5 skin nw-sharp"></div>
+        </div>
+        <div class="arm arm2">
+          <div></div>
+          <div class="arm-junction1 nw inverted-n"></div>
+          <div class="skin"></div>
+          <div></div>
+          <div class="skin"></div>
+          <div class="arm-junction2 skin se-sharp"></div>
+          <div class="skin"></div>
+          <div class="skin nw-sharp"></div>
+          <div class="arm-junction3 se inverted"></div>
+          <div class="arm-junction4 skin ne-sharp"></div>
+        </div>
+        <div class="arm arm3">
+          <div></div>
+          <div class="arm-junction1 nw inverted-n"></div>
+          <div class="skin"></div>
+          <div></div>
+          <div class="skin"></div>
+          <div class="arm-junction2 skin se-sharp"></div>
+          <div class="skin"></div>
+          <div class="skin nw-sharp"></div>
+          <div class="arm-junction3 se inverted"></div>
+          <div class="arm-junction4 skin ne-sharp"></div>
+          <div class="arm-junction3 ne inverted-n"></div>
+          <div class="arm-junction5 skin nw-sharp"></div>
+        </div>
+        <div class="arm arm4">
+          <div></div>
+          <div class="arm-junction1 nw inverted-n"></div>
+          <div class="skin"></div>
+          <div></div>
+          <div class="skin"></div>
+          <div class="arm-junction2 skin se-sharp"></div>
+          <div class="skin"></div>
+          <div class="skin nw-sharp"></div>
+          <div class="arm-junction3 se inverted"></div>
+          <div class="arm-junction4 skin ne-sharp"></div>
+          <div class="arm-junction3 ne inverted-n"></div>
+          <div class="arm-junction5 skin nw-sharp"></div>
+        </div>
+        <div class="arm arm5">
+          <div></div>
+          <div class="arm-junction1 nw inverted-n"></div>
+          <div class="skin"></div>
+          <div></div>
+          <div class="skin"></div>
+          <div class="arm-junction2 skin se-sharp"></div>
+          <div class="skin"></div>
+          <div class="skin nw-sharp"></div>
+          <div class="arm-junction3 se inverted"></div>
+          <div class="arm-junction4 skin ne-sharp"></div>
+        </div>
+        <div class="arm arm6">
+          <div></div>
+          <div class="arm-junction1 nw inverted-n"></div>
+          <div class="skin"></div>
+          <div></div>
+          <div class="skin"></div>
+          <div class="arm-junction2 skin se-sharp"></div>
+          <div class="skin"></div>
+          <div class="skin nw-sharp"></div>
+          <div class="arm-junction3 se inverted"></div>
+          <div class="arm-junction4 skin ne-sharp"></div>
+          <div class="arm-junction3 ne inverted-n"></div>
+          <div class="arm-junction5 skin nw-sharp"></div>
+        </div>
+      </div>
+        <div class="arm arm7">
+          <div></div>
+          <div class="arm-junction1 nw inverted-n"></div>
+          <div class="skin"></div>
+          <div></div>
+          <div class="skin"></div>
+          <div class="arm-junction2 skin se-sharp"></div>
+          <div class="skin"></div>
+          <div class="skin nw-sharp"></div>
+          <div class="arm-junction3 se inverted"></div>
+          <div class="arm-junction4 skin ne-sharp"></div>
+        </div>
+        <div class="arm arm8">
+          <div></div>
+          <div class="arm-junction1 nw inverted-n"></div>
+          <div class="skin"></div>
+          <div></div>
+          <div class="skin"></div>
+          <div class="arm-junction2 skin se-sharp"></div>
+          <div class="skin"></div>
+          <div class="skin nw-sharp"></div>
+          <div class="arm-junction3 se inverted"></div>
+          <div class="arm-junction4 skin ne-sharp"></div>
+          <div class="arm-junction3 ne inverted-n"></div>
+          <div class="arm-junction5 skin nw-sharp"></div>
+        </div>
+    </div>
+</div>

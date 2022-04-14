@@ -8,55 +8,48 @@
 
   <body>
 
-    <div class="artboard">
-      
-      <!-- Start of artwork. Code sourced from https://andreaabellera.github.io/Casually-CSS/ -->
-      <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-
-      <div class="bike">
-        <span class="wheel-box">
-          <div class="wheel">
-            <span class="spoke"></span>
-            <span class="spoke thirty"></span>
-            <span class="spoke sixty"></span>
-            <span class="spoke ninety"></span>
-            <span class="spoke onetwenty"></span>
-            <span class="spoke onefifty"></span>
-            <span class="axle"></span>
-          </div>
-          <div class="wheel">
-            <span class="spoke"></span>
-            <span class="spoke thirty"></span>
-            <span class="spoke sixty"></span>
-            <span class="spoke ninety"></span>
-            <span class="spoke onetwenty"></span>
-            <span class="spoke onefifty"></span>
-            <span class="axle"></span>
-          </div>
-        </span>
-        <span class="handle-box">
-          <div class="bar"></div>
-          <div class="handle"></div>
-        </span>
-        <span class="seat-box">
-          <div class="bar"></div>
-          <div class="seat"></div>
-        </span>
-        <span class="lower-support"> <p> CASUALLY CSS </p> </span>
-        <span class="pedal-box">
-          <div class="bar"></div>
-          <div class="pedal-axle"></div>
-          <div class="pedal"></div>
-        </span>
-        <span class="pedal-support">
-          <div class="bar"></div>
-          <div class="curve"></div>
-        </span>
-        <span class="upper-support"></span>
-      </div>
-      <!-- End of artwork -->
-
-    </div>
+    <div id="meta-container"></div>
 
   </body>
 </html>
+
+<script>
+  let container = document.getElementById("meta-container")
+  const req1 = new XMLHttpRequest();
+  req1.onreadystatechange=function(){
+    if (req1.readyState==4 && req1.status==200){
+      html = this.responseText
+      container.innerHTML = html;
+    }
+  }
+  req1.open("GET", "bike.txt", true);
+  req1.send();
+
+  const req2 = new XMLHttpRequest();
+  req2.onreadystatechange=function(){
+  if (req2.readyState==4 && req2.status==200){
+      css = this.responseText
+      let container = document.getElementById("meta-container")
+      container.innerHTML += `<style> ${css} </style>`
+    }
+  }
+  req2.open("GET","bike.css",true)
+  req2.send()
+</script>
+
+<style>
+  html, body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  #meta-container{
+    height: 18em;
+    width: 30em;
+  }
+</style>

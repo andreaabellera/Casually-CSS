@@ -8,75 +8,48 @@
 
   <body>
 
-    <div class="artboard">
-      
-      <!-- Start of artwork. Code sourced from https://andreaabellera.github.io/Casually-CSS/ -->
-      <div class="hippo">
-        <span class="hippo-bod">
-          <span class="hippo-tail">
-            <div></div>
-            <div class="tail1 se-sharp"></div>
-            <div></div>
-            <div class="tail2">   <div class="tail-line"></div>   </div>
-            <div class="tail3"></div>
-          </span>
-        </span>
-        <span class="hippo-leg front-near">
-          <div class="nails">   <div class="nail se"></div>   </div>
-          <div class="nails">   <div class="nail sw"></div>   </div>
-          <div class="nails">   <div class="nail se"></div>   </div>
-          <div class="nails">   <div class="nail sw"></div>   </div>
-          <div class="nails">   <div class="nail se"></div>   </div>
-        </span>
-        <span class="hippo-leg front-far"></span>
-        <span class="hippo-leg back-near">
-          <div class="nails">   <div class="nail se"></div>   </div>
-          <div class="nails">   <div class="nail sw"></div>   </div>
-          <div class="nails">   <div class="nail se"></div>   </div>
-          <div class="nails">   <div class="nail sw"></div>   </div>
-          <div class="nails">   <div class="nail se"></div>   </div>
-        </span>
-        <span class="hippo-leg back-far"></span>
-        <span class="hippo-head">
-          <div class="head-junction1 se-sharp skin">
-            <span class="ear">
-              <div class="ear-in"></div>
-            </span>
-          </div>
-          <div class="skin sw-sharp"></div>
-          <div class="head-junction2 skin"></div>
-          <div class="skin"></div>
-          <div class="head-junction3 skin">
-            <span class="eye1"></span>
-            <span class="eye2"></span>
-          </div>
-          <div class="skin sw-sharp"></div>
-          <div></div>
-          <div class="head-junction4 ne skin"></div>
-          <div class="skin nw-sharp"></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div class="south-cap">
-            <div class="skin ne-sharp"></div>
-            <div class="skin nw-sharp"></div>
-          </div>
-        </span>
-        <span class="hippo-jaw">
-          <div class="ne skin mouth-area">
-            <div class="ne mouth"></div>
-          </div>
-          <div class="nw skin end mouth-area">
-            <div class="nw mouth">
-              <span class="tooth"></span>
-              <span class="tooth"></span>
-            </div>
-          </div>
-        </span>
-      </div>
-      <!-- End of artwork -->
-
-    </div>
+    <div id="meta-container"></div>
 
   </body>
 </html>
+
+<script>
+  let container = document.getElementById("meta-container")
+  const req1 = new XMLHttpRequest();
+  req1.onreadystatechange=function(){
+    if (req1.readyState==4 && req1.status==200){
+      html = this.responseText
+      container.innerHTML = html;
+    }
+  }
+  req1.open("GET", "hippo.txt", true);
+  req1.send();
+
+  const req2 = new XMLHttpRequest();
+  req2.onreadystatechange=function(){
+  if (req2.readyState==4 && req2.status==200){
+      css = this.responseText
+      let container = document.getElementById("meta-container")
+      container.innerHTML += `<style> ${css} </style>`
+    }
+  }
+  req2.open("GET","hippo.css",true)
+  req2.send()
+</script>
+
+<style>
+  html, body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  #meta-container{
+    height: 18em;
+    width: 30em;
+  }
+</style>
