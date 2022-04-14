@@ -31,7 +31,7 @@ const sweets = {
 
 const orange = {
     id: "orange",
-    link: "orange/orange.txt",
+    link: "orange/orange.html",
     comment: "Would you want half a citrus slice?",
     name: "Odo the Orange"
 };
@@ -202,7 +202,7 @@ function addFrameListener(art) {
 }
 
 function loadArtboard(art) {
-    document.getElementById("artboard").innerHTML = "<iframe src =" + art.link + "></iframe>";
+    document.getElementById("container").innerHTML = "<iframe src =" + art.link + "></iframe>";
     document.getElementById("comment").innerText = art.comment;
     document.getElementById("name").innerText = art.name;
 }

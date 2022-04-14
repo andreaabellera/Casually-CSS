@@ -141,7 +141,7 @@ span{
   align-self: flex-start;
 }
 
-#artboard{
+#container{
   position: absolute;
   height: 32em;
   width: 38em;
@@ -150,7 +150,7 @@ span{
   overflow: hidden;
 }
 
-#artboard iframe{
+#container iframe{
   height: 100%;
   width: 100%;
   border: none;
@@ -238,6 +238,11 @@ span{
     transform: rotate(0deg);
     width: 60vw;
     font-size: 3.5em;
+  }
+
+  #container{
+    height: 36em;
+    width: 42em;
   }
 
   .close{
