@@ -6,6 +6,7 @@ html, body{
   background-image: linear-gradient(to right, #547570, #567B77, #55776F, #4C6E69);
   display: grid;
   grid-template-columns: auto 1fr;
+  position: relative;
 }
 
 .texturize{
@@ -77,10 +78,10 @@ html, body{
 
 #name{
   position: absolute;
-  right: 30vw;
-  bottom: -5vh;
-  width: 20vw;
-  font-size: 2em;
+  text-align: center;
+  bottom: -10vh;
+  width: 100%;
+  font-size: 4em;
   color: rgb(253, 253, 253);
   font-family: "Fredoka One",'Segoe UI', Geneva;
   text-shadow: -0.1em 0.0em 0 rgba(255, 90, 206, 0.733);
@@ -221,7 +222,8 @@ span{
 
 @media screen and (max-aspect-ratio: 3/2) {
   #comment{
-    top: 40vh;
+    top: 30vh;
+    font-size: 3em;
   }
 }
 
@@ -236,13 +238,6 @@ span{
     transform: rotate(0deg);
     width: 60vw;
     font-size: 3.5em;
-  }
-
-  #name{
-    top: 45vh;
-    right: 11vw;
-    width: 60vw;
-    font-size: 4em;
   }
 
   .close{
