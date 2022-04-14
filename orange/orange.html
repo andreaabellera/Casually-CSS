@@ -6,14 +6,13 @@
   </head>
 
   <body>
-    <div id="meta-container">
-    </div>
+    <div id="meta-container"></div>
   </body>
 </html>
 
 
 <script>
-  let container = document.getElementById("meta-container");
+  let container = document.getElementById("meta-container")
   const req1 = new XMLHttpRequest();
   req1.onreadystatechange=function(){
     if (req1.readyState==4 && req1.status==200){
@@ -58,7 +57,7 @@
   }
   
   #meta-container{
-    height: 60%;
-    width: 50%;
+    height: 18em;
+    width: 18em;
   }
 </style>

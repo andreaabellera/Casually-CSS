@@ -8,70 +8,48 @@
 
   <body>
 
-    <div class="artboard">
-      
-      <!-- Start of artwork. Code sourced from https://andreaabellera.github.io/Casually-CSS/ -->
-      <div class="dugong">
-        <div class="dugong-snout">
-          <div class="half-width snout-top">
-            <span class="skinLight se snout-part">
-              <span class="pt nose1"></span>
-            </span>
-            <span class="skinLight sw snout-part">
-              <span class="pt nose2"></span>
-            </span>
-          </div>
-          <div class="snout-grid">
-            <span class="skinLight ne"></span>
-            <span class="skinLight nw-sharp"></span>
-            <span class="skinLight ne-sharp"></span>
-            <span class="skinLight nw"></span>
-          </div>
-        </div> 
-        <div class="dugong-head">
-          <span class="head-junction1">
-            <span class="skin se-sharp head-part0">   <span class="pt eye1"></span>   </span>
-            <span class="skin stroke-left"></span>
-            <span class="skin stroke-left"><div class="ne"></div></span>
-          </span>
-          <span class="head-part1">
-            <span class="skin stroke-top"></span>
-            <span class="skin head-part3"></span>
-          </span>
-          <span class="skin head-part2 stroke-right">    <span class="pt eye2"></span>   </span>
-          <span></span>
-          <span class="half-width">
-            <span class="skin ne-sharp half-height">
-              <span class="mouth mouth1"></span>
-            </span>
-            <span class="skin nw-sharp half-height">
-              <span class="mouth mouth2"></span>
-            </span>
-          </span>
-        </div>
-        <div class="dugong-body">
-          <span class="skin stroke-left"></span>
-          <span class="skin sw"></span>
-          <span></span>
-          <span class="skin stroke-left"></span>
-          <span class="skin tummy-top">
-            <div class="skinDark arc">
-              <div class="skin arc"></div>
-            </div>
-          </span>
-          <span class="skin sw-sharp"></span>
-          <span class="skinDark body-junction1">    <div class="tummy"></div>   </span>
-        </div>
-        <div class="dugong-tail">
-          <span class="tail-left"></span>
-          <span class="tail-right"></span>
-        </div>
-        <div class="dugong-fin1"></div>
-        <div class="dugong-fin2"></div>
-      </div>
-      <!-- End of artwork -->
-
-    </div>
+    <div id="meta-container"></div>
 
   </body>
 </html>
+
+<script>
+  let container = document.getElementById("meta-container")
+  const req1 = new XMLHttpRequest();
+  req1.onreadystatechange=function(){
+    if (req1.readyState==4 && req1.status==200){
+      html = this.responseText
+      container.innerHTML = html;
+    }
+  }
+  req1.open("GET", "dugong.txt", true);
+  req1.send();
+
+  const req2 = new XMLHttpRequest();
+  req2.onreadystatechange=function(){
+  if (req2.readyState==4 && req2.status==200){
+      css = this.responseText
+      let container = document.getElementById("meta-container")
+      container.innerHTML += `<style> ${css} </style>`
+    }
+  }
+  req2.open("GET","dugong.css",true)
+  req2.send()
+</script>
+
+<style>
+  html, body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  #meta-container{
+    height: 26em;
+    width: 16em;
+  }
+</style>

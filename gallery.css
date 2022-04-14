@@ -145,6 +145,7 @@ span{
   position: absolute;
   height: 32em;
   width: 38em;
+  margin-top: 10vh;
   display: grid;
   justify-items: center;
   overflow: hidden;
@@ -162,6 +163,8 @@ span{
   overflow-y: scroll;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  scrollbar-width: 0.8em;
+  scrollbar-color: #ADCDBD #3E3E3E;
 }
 
 #sidebar-content{
@@ -203,33 +206,165 @@ span{
   cursor: pointer;
 }
 
+.active{
+  font-weight: 700;
+  border-style: dotted;
+}
+
 .selected{
   box-shadow: inset 0.2em 0.2em 2em 0em rgba(225, 220, 245, 0.4);
 }
 
-#sidebar::-webkit-scrollbar-track {
+#codebox{
+  position: absolute;
+  top: -12vh;
+  right: 2vw;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-color: #3e3e3e;
+  height: 30vh;
+  width: 22vw;
+  border-style: groove;
+  border-color: #4e4e4e;
+  border-width: 0.4em;
+  border-radius: 0.9em;
+  justify-items: center;
+}
+
+#nom{
+  padding: 0.5em 0 0.5em 2.5vw;
+  width: 100%;
+  text-align: center;
+  color:rgb(253, 253, 253);
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.5em;
+  text-shadow: -0.1em 0.1em 0 rgba(255, 90, 206, 0.733);
+}
+
+.cs-contain{
+  width: 90%;
+  height: 90%;
+  background-color: #2A2A2A;
+  border-style: groove;
+  border-color: #4e4e4e;
+  display: grid;
+  align-items: flex-start;
+  justify-items: flex-start;
+}
+
+textarea{
+  width: 100%;
+  height: 90%;
+  background-color: #2A2A2A;
+  color: #ADCDBD;
+  margin: 1em;
+  font-family: 'Work Sans', sans-serif;
+  outline: none;
+  border-width: 0;
+  overflow-y: scroll;
+  scrollbar-color: #ADCDBD #1A1A1A;
+  white-space: pre-wrap;
+}
+
+::selection {
+  background: rgba(0,0,0,0);
+}
+
+textarea::selection {
+  background: #3E3E3E;
+}
+
+#tabs{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.nom-bar{
+  display: flex;
+  width: 95%;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: 'Work Sans', sans-serif;
+}
+
+#copy-btn{
+  height: 2em;
+  width: 2.5em;
+  position: relative;
+  border-radius: 50%;
+  border-color: #4e4e4e;
+  background-color: #222;
+  font-size: 1.5em;
+  font-family: 'Fredoka One', cursive;
+  cursor: pointer;
+}
+
+.copy-icon{
+  position: absolute;
+  height: 50%;
+  width: 35%;
+  border-color: #DFDDDD;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2px;
+}
+
+#cpi1{
+  top: 8;
+  left: 12;
+}
+
+#cpi2{
+  top: 12;
+  left: 16;
+}
+
+.tab{
+  margin: 0 0 0.7em 0;
+  width: 40%;
+  padding: 0.5em 0 0.5em 0;
+  cursor: pointer;
+  background-color: #2A2A2A;
+  border-color: #4e4e4e;
+  color: #DFDDDD;
+}
+
+#sidebar::-webkit-scrollbar-track, .cs-contain::-webkit-scrollbar-track {
   background-color: rgba(245, 242, 242, 0.2);
 }
 
-#sidebar::-webkit-scrollbar {
+#sidebar::-webkit-scrollbar, .cs-contain::-webkit-scrollbar {
   width: 0.8em;
   background-color: #ADCDBD;
 }
 
-#sidebar::-webkit-scrollbar-thumb {
+#sidebar::-webkit-scrollbar-thumb, .cs-contain::-webkit-scrollbar {
   background-color: #3E3E3E;
 }
 
 @media screen and (max-aspect-ratio: 3/2) {
+  #casually-css{
+    font-size: 2.5em;
+  }
+
   #comment{
-    top: 30vh;
-    font-size: 3em;
+    top: 25vh;
+    font-size: 2.25em;
+  }
+
+  #codebox{
+    width: 35vw;
   }
 }
 
 @media screen and (max-aspect-ratio: 2/3) {
-  #casually-css{
-    font-size: 5em;
+  body{
+    grid-template-columns: 1fr;
+    grid-column: 1 / 3;
+    grid-template-rows: auto 1fr;
   }
 
   #comment{
@@ -237,12 +372,39 @@ span{
     right: 11vw;
     transform: rotate(0deg);
     width: 60vw;
-    font-size: 3.5em;
+  }
+
+  #codebox{
+    display: none;
+  }
+
+  .frame{
+    border-top-style: groove;
+    border-right-style: none;
+    padding-left: 5em;
+    padding-right: 5em;
   }
 
   #container{
     height: 36em;
     width: 42em;
+    margin-top: 0;
+    transform: translateY(-15vh);
+  }
+
+  #sidebar{
+    width: 100%;
+    height: 18vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  #sidebar-content{
+    flex-direction: row;
+  }
+
+  #toggler{
+    display: none;
   }
 
   .close{

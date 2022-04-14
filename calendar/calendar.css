@@ -1,18 +1,3 @@
-html, body{
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  width: 100vw;
-  /*background-color: rgb(146, 206, 203);*/
-  display: grid;
-  justify-items: center;
-  align-items: center;
-}
-
-/*=================
-//  ARTWORK CSS
-=================*/
-
 :root{
   --calendarPage: lightblue; 
   --divider: lightskyblue;
@@ -24,15 +9,14 @@ html, body{
 }
 
 .artboard{
-  height: auto;
-  width: auto;
-  transform: scale(50%);
+  height: inherit;
+  width: inherit;
 }
 
 .calendar-shape{
   background-color: var(--shadowColor);
-  height: 35em;
-  width: 40em;
+  height: inherit;
+  width: inherit;
   border-radius: 2.5em;
 }
 
