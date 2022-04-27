@@ -1,32 +1,14 @@
-html, body{
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  width: 100vw;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-}
-
-/*=================
-//  ARTWORK CSS
-=================*/
-
-:root{
-  --swatch: lightgrey; 
-}
-
 .artboard{
-  height: auto;
-  width: auto;
+  height: inherit;
+  width: inherit;
 }
 
 .button{
-  width: 16em;
-  height: 3em;
+  height: inherit;
+  width: inherit;
   position: relative;
-  border-radius: 0.5em;
-  border: 0.2em groove;
+  border-radius: 1em;
+  border: 0.3em groove;
   display: grid;
   justify-items: center;
   align-items: center;
@@ -118,6 +100,7 @@ html, body{
   z-index: 8;
   font-family: 'Fredoka One', cursive;
   font-weight: 800;
+  font-size: 3ex;
   color: #fff;
   text-shadow: rgba(80, 73, 73, 0.5) 1px 2px 2px;
 }

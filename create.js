@@ -1,18 +1,5 @@
-<html>
-  
-  <head>
-    <meta charset="utf-8">
-    <title> Casually CSS | Orange </title>
-  </head>
-
-  <body>
-    <div id="meta-container"></div>
-  </body>
-</html>
-
-
-<script>
-  let container = document.getElementById("meta-container")
+// Takes an artwork name and the div container to place it in
+function create(container,name){
   const req1 = new XMLHttpRequest();
   req1.onreadystatechange=function(){
     if (req1.readyState==4 && req1.status==200){
@@ -20,7 +7,7 @@
       container.innerHTML = html;
     }
   }
-  req1.open("GET", "orange.txt", true);
+  req1.open("GET", name + "/" + name + ".txt", true);
   req1.send();
 
   const req2 = new XMLHttpRequest();
@@ -40,24 +27,8 @@
       container.innerHTML += `<style> ${css} </style>`
     }
   }
-  req2.open("GET","orange.css",true)
+  req2.open("GET", name + "/" + name + ".css",true)
   req2.send()
-</script>
+}
 
-
-<style>
-  html, body{
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-  }
-  
-  #meta-container{
-    height: 18em;
-    width: 18em;
-  }
-</style>
+module.exports = create
