@@ -1,0 +1,36 @@
+<div class="artboard">
+    <div class="boba">
+        <div class="above">
+          <span class="straw">
+            <span class="straw-body"></span>
+            <span class="straw-end"></span>
+          </span>
+        </div>
+        <div class="lid"></div>
+        <div class="body">
+          <span class="cup">
+            <span class="pearl"></span>
+            <span class="pearl"></span>
+            <span class="pearl"></span>
+            <span class="pearl"></span>
+            <span class="pearl"></span>
+            <span class="pearl"></span>
+            <span class="pearl"></span>
+            <span class="pearl"></span>
+            <span class="pearl"></span>
+            <span class="pearl"></span>
+            <span class="pearl"></span>
+            <span class="drink"></span>
+            <span class="straw">
+              <span class="straw-body"></span>
+              <span class="straw-end"></span>
+            </span>
+          </span>
+        </div>
+        <div class="bottom">
+          <span class="base">
+            <span class="base-drink"></span>
+          </span>
+        </div>
+    </div>
+</div>

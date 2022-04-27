@@ -1,0 +1,20 @@
+<div class="artboard">
+  <div class="leaf">
+    <div class="leaf-1">   </div>
+    <div class="leaf-2">   </div>
+    <div class="leaf-3">   </div>
+    <div class="leaf-4">   
+      <span class="deco">  </span>
+      <span class="bord">  </span>
+    </div>
+  </div>
+  <div class="orange">
+    <div class="inner">
+      <div class="line">                  </div>
+      <div class="line fourfive">         </div>
+      <div class="line ninety">           </div>
+      <div class="line onethreefive">     </div>
+      <div class="center">                </div>
+    </div>
+  </div>
+</div>

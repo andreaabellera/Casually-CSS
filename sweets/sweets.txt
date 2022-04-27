@@ -1,0 +1,52 @@
+<div class="artboard">
+    <div class="sweets-container">
+        <span class="chip"></span>
+        <span class="chip"></span>
+        <span class="chip"></span>
+        <span class="chip"></span>
+        <span class="chip"></span>
+        <span class="chip"></span>
+        <span class="chip"></span>
+        <div class="cookie-bite">
+          <div class="bite bite11"></div>
+          <div class="bite bite12"></div>
+          <div class="cookie q1-sharp bite13"></div>
+        </div>
+        <div class="lolli-bite">
+          <div class="bite bite21"></div>
+          <div class="bite bite22"></div>
+          <div class="bite bite23"></div>
+        </div>
+        <div class="lollipop-container">
+          <div class="lolli-head quadrants">
+            <div class="lolli full q2">
+              <span class="lolli q2 three-fourth"></span>
+              <span class="lolli q2 half"></span>
+              <span class="lolli q2 one-fourth"></span>
+            </div>
+            <div class="lolli full q1">
+              <span class="lolli q1 three-fourth"></span>
+              <span class="lolli q1 half"></span>
+              <span class="lolli q1 one-fourth"></span>
+            </div>
+            <div class="lolli full q3">
+              <span class="lolli q3-sharp three-fourth"></span>
+              <span class="lolli q3-sharp half"></span>
+              <span class="lolli end"></span>
+            </div>
+            <div class="lolli full q4">
+              <span class="lolli q4-sharp twist1"></span>
+              <span class="lolli q4-sharp twist2"></span>
+              <span class="lolli q4-sharp twist3"></span>
+            </div>
+          </div>
+          <div class="stick"></div>
+        </div>
+        <div class="cookie-container quadrants">
+          <div class="cookie full q2"></div>
+          <div class="cookie full q1"></div>
+          <div class="cookie full q3"></div>
+          <div class="cookie full q4"></div>
+        </div>
+    </div>
+</div>

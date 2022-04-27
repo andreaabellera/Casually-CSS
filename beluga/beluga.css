@@ -1,18 +1,3 @@
-html, body{
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  width: 100vw;
-  /* background-color: gainsboro; */
-  display: grid;
-  justify-items: center;
-  align-items: center;
-}
-
-/*=================
-//  ARTWORK CSS
-=================*/
-
 :root{
   --skin: whitesmoke; 
   --shade: #D4D0E6; 
@@ -21,10 +6,9 @@ html, body{
 }
 
 .artboard{
-  height: 20em;
-  width: 24em;
-  display: grid;
-  align-items: center;
+  position: relative;
+  height: inherit;
+  height: inherit;
 }
 
 .skin{
@@ -39,6 +23,7 @@ html, body{
   grid-template-rows: 1fr auto;
   animation: swim 3s ease-in-out;
   animation-iteration-count: infinite;
+  transform: rotate(0deg) translateY(5em);
 }
 
 .fin1{
@@ -271,10 +256,10 @@ html, body{
 
 @keyframes swim{
   45%{
-    transform: rotate(20deg);
+    transform: rotate(20deg) translateY(2em);
   }
   100%{
-    transform: rotate(0deg);
+    transform: rotate(0deg) translateY(5em);
   }
 }
 
