@@ -17,7 +17,6 @@ html, body{
   --outline: black;
   --hair: #37291E;
   --fur: #564C45;
-  --furDark: #211B12;
   --horn: #E7E3DA;
   --nose: #3F3F3F;
 }
@@ -27,12 +26,19 @@ html, body{
   width: 35em;
 }
 
-.bison{
+.bison, .bison-upper{
   position: relative;
+  z-index: 3;
+  height: inherit;
+  width: inherit;
 }
 
 .bison:hover{
   cursor: pointer;
+}
+
+.bison-upper:hover{
+  animation: dancing 4s ease-in-out infinite;
 }
 
 .hair{
@@ -45,10 +51,6 @@ html, body{
 
 .hairDark{
   background-color: var(--hairDark);
-}
-
-.furDark{
-  background-color: var(--furDark);
 }
 
 .bison-body{
@@ -147,7 +149,7 @@ html, body{
   top: 17em;
   height: 1.5em;
   width: 4.8em;
-  background-color: var(--furDark);
+  filter: brightness(40%);
   border-width: 0.3em;
   border-color: var(--outline);
   border-style: solid;
@@ -237,7 +239,7 @@ html, body{
   position: absolute;
   top: 1em;
   z-index: 6;
-  height: 2.25em;
+  height: 2.5em;
   background-color: darkgrey;
   border-width: 0.2em;
   border-color: var(--outline);
@@ -250,21 +252,21 @@ html, body{
 
 .eye-left{
   right: 0;
-  border-top-left-radius: 3em;
+  border-top-left-radius: 2em;
   border-bottom-left-radius: 3em;
   border-bottom-right-radius: 40%;
   border-top-right-radius: 40%;
-  width: 1.05em;
+  width: 1.25em;
   justify-content: flex-end;
 }
 
 .eye-right{
   left: 40%;
-  border-top-right-radius: 3em;
+  border-top-right-radius: 2em;
   border-bottom-right-radius: 3em;
   border-bottom-left-radius: 40%;
   border-top-left-radius: 40%;
-  width: 0.85em;
+  width: 1em;
 }
 
 .eye-pupil-left{
@@ -295,7 +297,7 @@ html, body{
   grid-template-columns: 35% 10% 20% 10% 25%;
 }
 
-.bison-hair:hover, .bison-tail:hover{
+.bison-tail{
   animation: swaying 0.8s ease-in-out infinite;
 }
 
@@ -424,7 +426,7 @@ html, body{
 }
 
 .back-near{
-  z-index: 2;
+  z-index: 5;
   top: 18em;
   left: 5em;
   overflow: hidden;
@@ -602,5 +604,25 @@ html, body{
   }
   100%{
     transform: rotate(0deg);
+  }
+}
+
+@keyframes dancing{
+  0%{
+    transform: translate(0em, 0em);
+  }
+  25%{
+    /* transform: rotate(3deg); */
+    transform: translate(0.5em, 1em) rotate(3deg);
+  }
+  50%{
+    transform: translate(1em, 0em);
+  }
+  75%{
+    /* transform: rotate(3deg); */
+    transform: translate(0.5em, 1em);
+  }
+  100%{
+    transform: translate(0em, 0em);
   }
 }
