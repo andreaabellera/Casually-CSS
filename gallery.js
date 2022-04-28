@@ -83,6 +83,13 @@ const beluga = {
     name: "Beaan"
 };
 
+const swiss = {
+    id: "swiss",
+    link: "swiss/swiss.html",
+    comment: "Hiyaaah!",
+    name: "Swiss Army Knife"
+};
+
 const button = {
     id: "button",
     link: "button/button.html",
@@ -103,7 +110,8 @@ const button = {
 const artworks = [
     hippo,
     sweets,
-    bison, 
+    bison,
+    swiss, 
     orange, 
     calendar,
     dugong, 
