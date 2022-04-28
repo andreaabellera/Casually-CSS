@@ -1,0 +1,84 @@
+<div class="artboard">
+    <div class="bison">
+        <div class="bison-upper">
+          <div class="bison-horn horn-left"></div>
+          <div class="bison-horn horn-right"></div>
+          <div class="bison-mustache fur"></div>
+          <div class="bison-ear ear-left"></div>
+          <div class="bison-ear ear-right"></div>
+          <div class="bison-head">
+            <div class="head-top">
+              <div class="se-sharp fur"></div>
+              <div class="sw-sharp fur"></div>
+            </div>
+            <div class="head-bottom">
+              <div class="ne-sharp fur stabilize">
+                <div class="eye eye-left">
+                  <div class="eye-pupil-left"></div>
+                </div>
+              </div>
+              <div class="fur stabilize">
+                <div class="bison-nose">
+                  <div class="nose-top">
+                    <div class="nostril-left"></div>
+                    <div class="nostril-right"></div>
+                  </div>
+                  <div class="nose-bottom"></div>
+                </div>
+              </div>
+              <div class="nw-sharp fur stabilize">
+                <div class="eye eye-right">
+                  <div class="eye-pupil-right"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bison-hair">
+            <div class="se-sharp hair sect1"></div>
+            <div class="sw-sharp hair sect2"></div>
+            <div class="seg1">
+              <div class="ne-sharp hair"></div>
+            </div>
+            <div class="seg2">
+              <div class="hair"></div>
+              <div class="nw-sharp hair"></div>
+            </div>
+            <div class="seg3">
+              <div class="hair"></div>
+              <div class="ne-sharp hair"></div>
+            </div>
+            <div class="seg3">
+              <div class="hair"></div>
+              <div class="nw-sharp hair"></div>
+            </div>
+            <div class="seg4">
+              <div class="nw-sharp hair"></div>
+            </div>
+          </div>
+          <div class="bison-body"></div>
+          <div class="bison-tail">
+            <div></div>
+            <div class="tail1 se-sharp"></div>
+            <div></div>
+            <div class="tail2">   <div class="tail-line"></div>   </div>
+            <div class="tail3"></div>
+          </div>
+        </div>
+        <div class="bison-leg front-near">
+          <div class="leg-top fur"></div>
+          <div class="leg-bottom fur"></div>
+        </div>
+        <div class="bison-leg front-far">
+          <div class="leg-top fur"></div>
+          <div class="leg-bottom fur"></div>
+        </div>
+        <div class="bison-leg back-near">
+          <div class="leg-top fur"></div>
+          <div class="leg-bottom fur"></div>
+        </div>
+        <div class="bison-leg back-far">
+          <div class="leg-top fur"></div>
+          <div class="leg-bottom fur"></div>
+        </div>
+    </div>
+</div>
