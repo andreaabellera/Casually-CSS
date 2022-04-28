@@ -1,0 +1,19 @@
+<div class="artboard">
+  <div class="knife">
+    <div class="base"></div>
+    <div class="opener"></div>
+    <div class="blade"></div>
+    <div class="short"></div>
+    <div class="file"></div>
+    <div class="scissor"></div>
+    <div class="hbox opener-ct"></div>
+    <div class="hbox short-ct">
+      
+    </div>
+    <div class="hbox blade-ct">
+    </div>
+    <div class="hbox file-ct"></div>
+    <div class="hbox scissor-ct"></div>
+    <div class="back"></div>
+  </div>
+</div>
