@@ -1,0 +1,250 @@
+:root{
+  --base: firebrick;
+  --back: white;
+  --blade: linear-gradient(204deg, lightgrey, darkgrey, #ebedee, lightgrey);
+}
+
+.artboard{
+  height: inherit;
+  width: inherit;
+}
+
+.knife{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  /* animation: spinknife 9s cubic-bezier(.75,.22,.27,.73) infinite; */
+}
+
+.base{
+  position: absolute;
+  z-index: 12;
+  top:50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  height: 3.5em;
+  width: 14em;
+  background-color: var(--base);
+  border-radius: 8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back{
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-49% , -47%);
+  height: 3.5em;
+  width: 14em;
+  background-color: var(--back);
+  border-radius: 8em;
+}
+
+.clip{
+  height: 1.5em;
+  width: 1.5em;
+  background-color: var(--blade);
+}
+
+.knife{
+  cursor: pointer;
+}
+
+.hbox{
+  position: absolute;
+}
+
+.opener-ct{
+  z-index: 2;
+  top: 5.5em;
+  left: 3.5em;
+  height: 5em;
+  width: 5em;
+  background-color: rgba(255, 0, 128, 0.5);
+}
+
+.opener{
+  background-image: var(--blade);
+  position: absolute;
+  z-index: 4;
+  top: 5.5em;
+  left: 4em;
+  height: 4.75em;
+  width: 2.75em;
+  border-top-right-radius: 100%;
+  border-top-left-radius: 10%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 30%;
+  transform: rotate(90deg) translate(3.5em, -2em);
+  animation: spinOpener 15s ease-out infinite;
+}
+
+.short-ct{
+  z-index: 2;
+  top: 5em;
+  left: 9em;
+  height: 5em;
+  width: 5em;
+  background-color: rgba(128, 255, 128, 0.5);
+  display: grid;
+  grid-template-columns: 30% 1fr;
+}
+
+.short{
+  background-image: var(--blade);
+  z-index: 3;
+  top: 5em;
+  left: 9em;
+  position: absolute;
+  height: 5em;
+  width: 2.2em;
+  border-top-left-radius: 100%;
+  transform: rotate(-90deg) translateX(-3.5em);
+  animation: spinShort 15s ease-out infinite;
+}
+
+.blade-ct{
+  z-index: 2;
+  top: 3em;
+  left: 12em;
+  height: 8em;
+  width: 8em;
+  background-color: rgba(0, 0, 255, 0.5);
+  display: grid;
+  grid-template-columns: 25% 1fr;
+}
+
+.blade{
+  background-image: var(--blade);
+  position: absolute;
+  z-index: 4;
+  top: 3em;
+  left: 12em;
+  height: 8em;
+  width: 2em;
+  border-top-right-radius: 100%;
+  border-top-left-radius: 10%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 30%;
+  transform: rotate(90deg) translateX(3.5em);
+  animation: spinBlade 15s ease-out infinite;
+}
+
+.file-ct{
+  z-index: 2;
+  top: 10em;
+  left: 14em;
+  height: 6em;
+  width: 6em;
+  background-color: rgba(255, 128, 128, 0.5);
+  display: grid;
+  grid-template-columns: 25% 1fr;
+}
+
+.file{
+  background-image: var(--blade);
+  position: absolute;
+  z-index: 4;
+  top: 8.5em;
+  left: 14em;
+  height: 6em;
+  width: 2em;
+  transform: rotate(90deg);
+  animation: spinFile 15s ease-out infinite;
+}
+
+.scissor-ct{
+  z-index: 2;
+  top: 11.5em;
+  left: 7em;
+  height: 7em;
+  width: 7em;
+  background-color: rgba(255, 255, 0, 0.5);
+  display: grid;
+  grid-template-columns: 25% 1fr;
+}
+
+.scissor{
+  background-image: var(--blade);
+  position: absolute;
+  z-index: 4;
+  top: 7em;
+  left: 7em;
+  height: 7em;
+  width: 2em;
+  border-bottom-right-radius: 100%;
+  transform: rotate(-90deg);
+  animation: spinScissor 15s ease-out infinite;
+}
+
+@keyframes spinknife{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(-1800deg);
+  }
+}
+
+@keyframes spinOpener{
+  0%{
+    transform: rotate(90deg) translate(3.5em, -2em);
+  }
+  5%{
+    transform: rotate(-20deg) translateX(0);
+  }
+  30%{
+    transform: rotate(-20deg) translateX(0);
+  }
+}
+
+@keyframes spinBlade{
+  0%{
+    transform: rotate(90deg) translateX(3.5em);
+  }
+  5%{
+    transform: rotate(0deg) translateX(0);
+  }
+  30%{
+    transform: rotate(0deg) translateX(0);
+  }
+}
+
+@keyframes spinShort{
+  0%{
+    transform: rotate(-90deg) translateX(-3.5em);
+  }
+  5%{
+    transform: rotate(0deg) translateX(0);
+  }
+  30%{
+    transform: rotate(0deg) translateX(0);
+  }
+}
+
+@keyframes spinFile{
+  0%{
+    transform: rotate(90deg);
+  }
+  5%{
+    transform: rotate(0deg) translateY(4em);
+  }
+  30%{
+    transform: rotate(0deg) translateY(4em);
+  }
+}
+
+@keyframes spinScissor{
+  0%{
+    transform: rotate(-90deg);
+  }
+  5%{
+    transform: rotate(0deg) translateY(4em);
+  }
+  30%{
+    transform: rotate(0deg) translateY(4em);
+  }
+}
