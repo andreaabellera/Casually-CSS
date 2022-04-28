@@ -31,7 +31,7 @@ const bison = {
     id: "bison",
     link: "bison/bison.html",
     comment: "From the plains of Manitoba",
-    name: ""
+    name: "Le Bison"
 };
 
 const orange = {
