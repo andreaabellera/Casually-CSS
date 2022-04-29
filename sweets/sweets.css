@@ -11,6 +11,10 @@
   width: inherit;
 }
 
+::selection {
+  background: rgba(0,0,0,0);
+}
+
 .lolli{
   background-image: var(--lolli);
 }
