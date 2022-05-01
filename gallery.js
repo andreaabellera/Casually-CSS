@@ -90,6 +90,13 @@ const swiss = {
     name: "Swiss Army Knife"
 };
 
+const matcha = {
+    id: "matcha",
+    link: "matcha/matcha.html",
+    comment: "Help yourself with some matcha on a rainy day",
+    name: "Matcha Latte"
+};
+
 const button = {
     id: "button",
     link: "button/button.html",
@@ -116,7 +123,8 @@ const artworks = [
     calendar,
     dugong, 
     boba, 
-    octopus, 
+    octopus,
+    matcha, 
     bike,
     beluga,
     button
