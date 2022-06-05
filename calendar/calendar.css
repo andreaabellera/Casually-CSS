@@ -13,6 +13,10 @@
   width: inherit;
 }
 
+::selection{
+  background-color: rgba(0,0,0,0);
+}
+
 .calendar-shape{
   background-color: var(--shadowColor);
   height: inherit;
