@@ -154,6 +154,8 @@ function loadArtwork(){
     }
     else // No link provided, default to first artwork
         document.getElementById(artworks[0].id).click();
+
+    document.getElementById("html-btn").click(); 
 }
 
 function setupHandlers(){
@@ -184,6 +186,9 @@ function setupHandlers(){
         frame.href = "#" + art.id;
         frame.classList.add("frame");
         frame.innerText = art.id;
+        frame.onclick = function () {
+            document.getElementById("html-btn").click(); 
+        }
         sidebarContent.appendChild(frame);
     }
 

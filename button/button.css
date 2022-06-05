@@ -15,6 +15,10 @@
   overflow: hidden;
 }
 
+::selection{
+  background-color: rgba(0,0,0,0);
+}
+
 .bleu{
   background-color: rgba(60, 132, 198, 0.8);
   background: linear-gradient(to right, #0b18b4, #4363b8);
