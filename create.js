@@ -1,34 +1,48 @@
-// Takes an artwork name and the div container to place it in
-function create(container,name){
-  const req1 = new XMLHttpRequest();
-  req1.onreadystatechange=function(){
-    if (req1.readyState==4 && req1.status==200){
-      html = this.responseText
-      container.innerHTML = html;
-    }
-  }
-  req1.open("GET", name + "/" + name + ".txt", true);
-  req1.send();
+/* create
+  
+  This function will take two parameters:
+  1. container: The HTML element that will house the artwork
+  2. name: The name of the artwork as a string (e.g. "orange")
 
-  const req2 = new XMLHttpRequest();
-  req2.onreadystatechange=function(){
-  if (req2.readyState==4 && req2.status==200){
-      css = this.responseText
-      let container = document.getElementById("meta-container")
-      let dimensions = [container.clientHeight,container.clientWidth]
-      if(dimensions[0] < dimensions[1]){ // landscape
-          container.style.height = dimensions[0] + "px"
-          container.style.width = dimensions[0] + "px"
-      }
-      else if(dimensions[0] > dimensions[1]){ // portrait
-          container.style.height = dimensions[1] + "px"
-          container.style.width = dimensions[1] + "px"
-      }
-      container.innerHTML += `<style> ${css} </style>`
+  Sample Usage:
+
+  // Inside your javascript file or tag
+  create(document.getElementById("myDiv"), "orange")
+   
+*/
+
+function create(container,name){
+  ;(async () => {
+    let html = await load(name + "/" + name + ".txt", container)
+    let css = await load(name + "/" + name + ".css", container, true)
+
+    if(html && css){
+      let targetHeight = container.clientHeight
+      let targetWidth = container.clientWidth
+      let artboard = container.getElementsByClassName("artboard")[0]
+      let artboardHeight = artboard.clientHeight
+      let artboardWidth = artboard.clientWidth
+
+      // Resize artboard to fit container
+      let scale = Math.min(targetHeight/artboardHeight, targetWidth/artboardWidth)
+      artboard.style.transform = "scale(" + scale + ")"
+      artboard.style.transformOrigin = "0 0"
     }
-  }
-  req2.open("GET", name + "/" + name + ".css",true)
-  req2.send()
+    else
+      console.error(`Casually CSS: Artwork load failed. Please check that your '${name}' parameter is of string type and exists in Casually CSS. If it exists, folder for '${name}' may be missing. Please redownload the '${name}' folder from 'https://github.com/andreaabellera/Casually-CSS' or reinstall the package.`)
+  })();
+}
+
+async function load(url, container, css=false){
+  const response = await fetch(url);
+  const text = await response.text();
+  
+  if (css)
+    container.innerHTML += `<style> ${text} </style>`
+  else
+    container.innerHTML += text
+
+  return response.ok;
 }
 
 module.exports = create
