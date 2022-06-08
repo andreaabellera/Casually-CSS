@@ -10,8 +10,8 @@
 
 .artboard, .cup{
   position: relative;
-  height: inherit;
-  height: inherit;
+  height: 17em;
+  width: 20em;
 }
 
 .matcha-set:hover, .teastring:hover, .blossom:hover{

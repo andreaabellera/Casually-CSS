@@ -9,8 +9,8 @@
 
 .artboard{
   position: relative;
-  height: inherit;
-  height: inherit;
+  height: 18em;
+  width: 18em;
 }
 
 .leaf{

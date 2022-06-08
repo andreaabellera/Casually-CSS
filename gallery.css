@@ -248,8 +248,9 @@ span{
   border-style: groove;
   border-color: #4e4e4e;
   display: grid;
-  align-items: flex-start;
-  justify-items: flex-start;
+  align-items: center;
+  justify-items: center;
+  overflow: hidden;
 }
 
 textarea{
@@ -332,16 +333,16 @@ textarea::selection {
   color: #DFDDDD;
 }
 
-#sidebar::-webkit-scrollbar-track, .cs-contain::-webkit-scrollbar-track {
+#sidebar::-webkit-scrollbar-track, #codespace::-webkit-scrollbar-track {
   background-color: rgba(245, 242, 242, 0.2);
 }
 
-#sidebar::-webkit-scrollbar, .cs-contain::-webkit-scrollbar {
+#sidebar::-webkit-scrollbar, #codespace::-webkit-scrollbar {
   width: 0.8em;
   background-color: #ADCDBD;
 }
 
-#sidebar::-webkit-scrollbar-thumb, .cs-contain::-webkit-scrollbar {
+#sidebar::-webkit-scrollbar-thumb, #codespace::-webkit-scrollbar-thumb {
   background-color: #3E3E3E;
 }
 

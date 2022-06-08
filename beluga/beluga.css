@@ -7,8 +7,8 @@
 
 .artboard{
   position: relative;
-  height: inherit;
-  height: inherit;
+  height: 20em;
+  width: 24em;
 }
 
 .skin{

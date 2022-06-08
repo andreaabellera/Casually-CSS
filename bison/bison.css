@@ -8,8 +8,8 @@
 
 .artboard{
   position: relative;
-  height: inherit;
-  height: inherit;
+  height: 26em;
+  width: 35em;
 }
 
 .bison, .bison-upper{
