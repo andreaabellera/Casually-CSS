@@ -29,7 +29,7 @@ The 'create' functions takes two parameters: __an HTML element__ and the __artwo
 2. At the Code Box located at the top-right of the screen, you can switch between the HTML and the CSS code snippets used to produce the artworks
 3. Copy the code snippets into your clipboard and paste them into your code accordingly. The HTML code can be contained inside a `<div>` or any element of your liking. The CSS code can be inside a `<style>` tag or in a `.css` stylesheet which you will link to your HTML head. Both HTML and CSS portions need to be present to successfully reproduce the artwork
 
-> *The artworks will inherit the height and width of its container by default, and ratios that are off can ruin an artwork. [A guide for ideal aspect ratios](/aspect-ratio-guide.md) will be published after testing*
+> *The artworks will have a set height and width by default*
 
 ## Contribute
 ### Share the Bugs

@@ -9,8 +9,9 @@
 }
 
 .artboard{
-  height: inherit;
-  width: inherit;
+  height: 28em;
+  width: 36em;
+  transform: scale(50%);
 }
 
 ::selection{
@@ -26,11 +27,11 @@
 
 .calendar{
   background-color: var(--calendarPage);
-  height: 100%;
-  width: 100%;
+  height: inherit;
+  width: inherit;
   border-radius: 2.5em;
   display: grid;
-  grid-template-rows: auto 0.5em auto auto 0.5em 1fr;
+  grid-template-rows: auto 0.4ex auto auto 0.4ex 1fr;
   font-family: 'Fredoka One', cursive;
 }
 
@@ -68,20 +69,19 @@
 }
 
 .squares{
-  justify-self: center;
+  width: 100%;
   display: grid;
-  margin: 1.5em;
-  grid-template-columns: 4em 4em 4em 4em 4em 4em 4em;
-  grid-template-rows: 3.2em 3.2em 3.2em 3.2em 3.2em;
-  grid-column-gap: 1.2em;
-  grid-gap: 1em;
+  margin: 0.5ex 4% 2.5ex 7%;
+  grid-template-columns: 11% 11% 11% 11% 11% 11% 11%;
+  grid-template-rows: 5ex 5ex 5ex 5ex 5ex;
+  grid-gap: 1ex;
 }
 
 .square{
   background-color: var(--square);
   height: 100%;
   width: 100%;
-  border-radius: 0.5em;
+  border-radius: 0.5ex;
   border-top-right-radius: 40%;
   border-bottom-left-radius: 40%;
 }
