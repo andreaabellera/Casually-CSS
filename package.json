@@ -1,6 +1,6 @@
 {
   "name": "casually-css",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "description": "Import an artwork from Casually CSS!",
   "main": "create.js",
   "scripts": {
@@ -28,9 +28,6 @@
     "url": "https://github.com/andreaabellera/Casually-CSS/issues"
   },
   "homepage": "https://github.com/andreaabellera/Casually-CSS#readme",
-  "files": [
-    "umd"
-  ],
   "devDependencies": {
     "rollup": "^2.75.6",
     "rollup-plugin-terser": "^7.0.2"
