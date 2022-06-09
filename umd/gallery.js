@@ -15,93 +15,80 @@
 
 const hippo = {
     id: "hippo",
-    link: "hippo/hippo.html",
     comment: "Happy hippo wants to play",
     name: "Hichi the Hippo"
 };
 
 const sweets = {
     id: "sweets",
-    link: "sweets/sweets.html",
     comment: "For Emily and Ann who are my very sweet friends",
     name: "Emily & Ann"
 };
 
 const bison = {
     id: "bison",
-    link: "bison/bison.html",
     comment: "From the plains of Manitoba",
     name: "Le Bison"
 };
 
 const orange = {
     id: "orange",
-    link: "orange/orange.html",
     comment: "Would you want half a citrus slice?",
     name: "Odo the Orange"
 };
 
 const calendar = {
     id: "calendar",
-    link: "calendar/calendar.html",
     comment: "I wonder what happens if I touch the page.. oh",
     name: "Cai"
 };
 
 const dugong = {
     id: "dugong",
-    link: "dugong/dugong.html",
     comment: "Mooo, I am a seacow. Not a manatee",
     name: "Sasha"
 };
 
 const boba = {
     id: "boba",
-    link: "boba/boba.html",
     comment: "Yummy, delicious boba! Hover over to drink",
     name: "(/◕ヮ◕)/"
 };
 
 const octopus = {
     id: "octopus",
-    link: "octopus/octopus.html",
     comment: "What is pink and with stretchy arms? An octopus!",
     name: "Octo Ouuu"
 };
 
 const bike = {
     id: "bike",
-    link: "bike/bike.html",
     comment: "The wheels of the bike go round and round",
     name: "Vic the vroom vroom"
 };
 
 const beluga = {
     id: "beluga",
-    link: "beluga/beluga.html",
     comment: "A Marshmallow beluga is only one of its kind",
     name: "Beaan"
 };
 
 const swiss = {
     id: "swiss",
-    link: "swiss/swiss.html",
     comment: "Hiyaaah!",
     name: "Swiss Army Knife"
 };
 
 const matcha = {
     id: "matcha",
-    link: "matcha/matcha.html",
     comment: "Help yourself with some matcha on a rainy day",
     name: "Matcha Latte"
 };
 
 const button = {
     id: "button",
-    link: "button/button.html",
     comment: "This button is made for Scientific purposes",
-    name: ""
+    name: "Button"
 };
 
 // [I1] Insert your new artwork above by creating a Javascript object for it
@@ -261,7 +248,7 @@ let html = "Failed to load HTML";
 let css = "Failed to load CSS";
 
 function loadArtboard(art) {
-    document.getElementById("container").innerHTML = "<iframe src =" + art.link + "></iframe>";
+    document.getElementById("container").innerHTML = "<iframe src = ../" + art.id + "/" + art.id + ".html" + "></iframe>";
 
     ;(async () => {
         html = await getHTML(art);
@@ -278,13 +265,13 @@ function loadArtboard(art) {
 }
 
 async function getHTML(art){
-    let response = await fetch(art.id + "/" + art.id + ".txt");
+    let response = await fetch("../" + art.id + "/" + art.id + ".txt");
     let html = await response.text();
     return html;
 }
 
 async function getCSS(art){
-    let response = await fetch(art.id + "/" + art.id + ".css");
+    let response = await fetch("../" + art.id + "/" + art.id + ".css");
     let css = await response.text();
     return css;
 }

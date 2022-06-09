@@ -8,8 +8,9 @@ The [online gallery](https://andreaabellera.github.io/Casually-CSS/) showcase is
 ### Install the Library (Under Construction)
 1. Install the Casually CSS node package into your Node.js app with  
 `npm install casually-css`  
-2. In your script, add this line at the top of your program  
-`const create = require('casually-css')` for CommonJS **or** `import create from 'casually-css'` for ES6
+2. In your script, add either line at the top of your program  
+**CommonJS:** `const create = require('casually-css')`  
+**ES6:** `import create from 'casually-css'`
 
 ### Link the Library (Browser)
 1. Include this link in your HTML head  
