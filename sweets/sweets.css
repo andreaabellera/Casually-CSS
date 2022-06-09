@@ -1,12 +1,12 @@
 :root{
   --lolli: linear-gradient(rgb(255, 182, 225) 10%, rgb(250, 208, 237) 30%, rgb(255, 192, 247), rgb(250, 208, 237), rgb(255, 182, 225) 90%); 
   --cookie: tan; 
-  --outline: rgb(218, 125, 179);
+  --sweetsOutline: rgb(218, 125, 179);
   --lollicol: white;
   --chip: #8e5e4e;
 }
 
-.artboard{
+#sweets{
   height: 22em;
   width: 22em;
 }
@@ -77,7 +77,7 @@
   height: 100%;
   width: 5%;
   border-width: 0.2em;
-  border-color: var(--outline);
+  border-color: var(--sweetsOutline);
   border-style: double;
   border-bottom-left-radius: 3em;
   border-bottom-right-radius: 3em;
@@ -105,7 +105,7 @@
   right: 0;
   border-top-left-radius: 20em;
   border-width: 0.2em;
-  border-color: var(--outline);
+  border-color: var(--sweetsOutline);
   border-left-style: double;
   border-top-style: double;
 }
@@ -115,7 +115,7 @@
   left: 0;
   border-top-right-radius: 20em;
   border-width: 0.2em;
-  border-color: var(--outline);
+  border-color: var(--sweetsOutline);
   border-right-style: double;
   border-top-style: double;
 }
@@ -125,7 +125,7 @@
   left: 0;
   border-top-right-radius: 100%;
   border-width: 0.2em;
-  border-color: var(--outline);
+  border-color: var(--sweetsOutline);
   border-right-style: double;
   border-top-style: double;
 }
@@ -140,7 +140,7 @@
   right: 0;
   border-bottom-left-radius: 20em;
   border-width: 0.2em;
-  border-color: var(--outline);
+  border-color: var(--sweetsOutline);
   border-left-style: double;
   border-bottom-style: double;
 }
@@ -150,7 +150,7 @@
   right: 0;
   border-bottom-left-radius: 80%;
   border-width: 0.2em;
-  border-color: var(--outline);
+  border-color: var(--sweetsOutline);
   border-left-style: double;
   border-bottom-style: double;
 }
@@ -160,7 +160,7 @@
   right: 0;
   border-bottom-left-radius: 70%;
   border-width: 0.2em;
-  border-color: var(--outline);
+  border-color: var(--sweetsOutline);
   border-left-style: double;
   border-bottom-style: double;
 }
@@ -176,7 +176,7 @@
   border-bottom-right-radius: 60%;
   border-top-right-radius: 75%;
   border-width: 0.2em;
-  border-color: var(--outline);
+  border-color: var(--sweetsOutline);
   border-left-style: double;
   border-right-style: double;
   border-bottom-style: double;
@@ -187,7 +187,7 @@
   left: 0;
   border-bottom-right-radius: 20em;
   border-width: 0.2em;
-  border-color: var(--outline);
+  border-color: var(--sweetsOutline);
   border-right-style: double;
   border-bottom-style: double;
 }
@@ -195,7 +195,7 @@
 .q4-sharp{
   border-bottom-right-radius: 100%;
   border-width: 0.2em;
-  border-color: var(--outline);
+  border-color: var(--sweetsOutline);
   border-right-style: double;
   border-bottom-style: double;
 }

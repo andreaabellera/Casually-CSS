@@ -1,12 +1,12 @@
 :root{
-  --skin: lightpink;
+  --octo-skin: lightpink;
   --emboss: linear-gradient(pink, rgb(250, 208, 216)); 
-  --spot: linear-gradient(whitesmoke, lightgrey);
-  --eye: radial-gradient(white, gainsboro);
-  --eyeball: radial-gradient(#5e5e5e, #1e1e1e); 
+  --octo-spot: linear-gradient(whitesmoke, lightgrey);
+  --octo-eye: radial-gradient(white, gainsboro);
+  --octo-eyeball: radial-gradient(#5e5e5e, #1e1e1e); 
 }
 
-.artboard{
+#octopus{
   display: grid;
   justify-items: center;
   align-items: center;
@@ -15,6 +15,7 @@
 
 .octopus{
   position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
 }
@@ -23,7 +24,8 @@
   cursor: pointer;
 }
 
-.head{
+.octo-head{
+  position: relative;
   height: auto;
   width: auto;
   display: grid;
@@ -31,20 +33,20 @@
   grid-template-rows: 3em 3em 3em 3em 3em 3em 2em;
 }
 
-.skin{
-  background-color: var(--skin);
+.octo-skin{
+  background-color: var(--octo-skin);
 }
 
 .emboss{
   background: var(--emboss);
 }
 
-.spot{
-  background: var(--spot);
+.octo-spot{
+  background: var(--octo-spot);
   position: absolute;
 }
 
-.spot1{
+.octo-spot1{
   height: 2em;
   width: 1em;
   bottom: 2em;
@@ -53,7 +55,7 @@
   transform: rotateY(-40deg) rotateZ(20deg);
 }
 
-.spot2{
+.octo-spot2{
   height: 2em;
   width: 1.6em;
   bottom: 0em;
@@ -63,7 +65,7 @@
   border-bottom-left-radius: 100%;
 }
 
-.spot3{
+.octo-spot3{
   height: 4em;
   width: 3em;
   top: 2em;
@@ -73,41 +75,41 @@
 }
 
 
-.eye{
-  background: var(--eye);
+.octo-eye{
+  background: var(--octo-eye);
   overflow: hidden;
 }
 
-.eyeball{
-  background: var(--eyeball);
+.octo-eyeball{
+  background: var(--octo-eyeball);
 }
 
-.head-junction1{
+.octo-head-junction1{
   position: relative;
   grid-row: 1/4;
   grid-column: 1/3;
 }
 
-.head-junction2{
+.octo-head-junction2{
   grid-row: 1/4;
 }
 
-.head-junction3{
+.octo-head-junction3{
   position: relative;
   grid-column: 4/6;
   grid-row: 1/4;
 }
 
-.head-junction4{
+.octo-head-junction4{
   grid-column: 3/6;
 }
 
-.head-junction5{
+.octo-head-junction5{
   grid-column: 1/3;
   grid-row: 4/6;
 }
 
-.arms{
+.octo-arms{
   position: relative;
   z-index: 2;
   height: 6em;
@@ -116,113 +118,115 @@
   grid-template-columns: 3em 3em 3em 3em 3em 1.5em 1.5em;
 }
 
-.arms-junction1{
+.octo-arms-junction1{
   grid-column: 1/3;
 }
 
-.arms-junction2{
+.octo-arms-junction2{
   grid-column: 3/7;
   border-bottom-left-radius: 100%;
   border-bottom-right-radius: 8em;
 }
 
-.arm{
+.octo-arm{
   position: absolute;
   display: grid;
   grid-template-columns: 3em 3em 3em;
   grid-template-rows: 16% 16% 16% 16% 16% 16%;
 }
 
-.arm-junction1{
+.octo-arm-junction1{
   grid-row: 1/3;
   grid-column: 2/3; 
 }
 
-.arm-junction2{
+.octo-arm-junction2{
   grid-row: 3/5;
   grid-column: 1/2; 
 }
 
-.arm-junction3{
+.octo-arm-junction3{
   grid-row: 4/6;
   grid-column: 2/3; 
 }
 
-.arm-junction4{
+.octo-arm-junction4{
   grid-row: 5/7;
   grid-column: 1/2;
 }
 
-.arm-junction5{
+.octo-arm-junction5{
   grid-row: 6/7;
   grid-column: 2/4; 
 }
 
-.arm1{
+.octo-arm1{
   transform: translate(-6.2em, 11em) rotateZ(90deg);
   height: 16em;
 }
 
-.arm2{
+.octo-arm2{
   transform: translate(-6em, 17em) rotateZ(60deg);
   height: 18em;
 }
 
-.arm3{
+.octo-arm3{
   transform: translate(-4em, 20em) rotateZ(35deg);
   height: 17em;
 }
 
-.arm4{
+.octo-arm4{
   transform: translate(3em, 21em) rotateZ(35deg) rotateY(180deg);
   height: 16em;
 }
 
-.arm5{
+.octo-arm5{
   transform: translate(6.5em, 24em) rotateZ(20deg) rotateY(180deg);
   height: 18em;
 }
 
-.arm6{
+.octo-arm6{
   transform: translate(11em, 24em) rotateZ(-40deg);
   height: 16em;
 }
 
-.arm7{
+.octo-arm7{
   transform: translate(13em, 15em) rotateZ(-70deg);
   height: 16em;
+  z-index: 0;
 }
 
-.arm8{
+.octo-arm8{
   transform: translate(10em, 9em) rotateZ(-95deg);
   height: 16em;
+  z-index: 0;
 }
 
-.arm:hover{
+.octo-arm:hover{
   cursor: pointer;
-  animation: stretch 1s ease-in;
+  animation: octo-stretch 1s ease-in;
 }
 
 /*===================
 // CURVE SHAPES 
 ===================*/
 
-.inverted{
+.octo-inverted{
   background-color: rgba(0,0,0,0);
-  box-shadow: 0em -2.3em 0em 0em var(--skin);
+  box-shadow: 0em -2.3em 0em 0em var(--octo-skin);
 }
 
-.inverted-n{
+.octo-inverted-n{
   background-color: rgba(0,0,0,0);
-  box-shadow: 0em 2.3em 0em 0em var(--skin);
+  box-shadow: 0em 2.3em 0em 0em var(--octo-skin);
 }
 
-.half-height{
+.octo-half-height{
   display: grid;
   grid-template-rows: 50% 50%;
 }
 
-.half-width{
+.octo-half-width{
   display: grid;
   grid-template-columns: 50% 50%;
 }
@@ -232,62 +236,62 @@
   grid-template-rows: 75% 25%;
 }
 
-.se{
+.octo-se{
   border-top-left-radius: 20em;
   height: 100%;
   width: 100%;
 }
 
-.se-sharp{
+.octo-se-sharp{
   border-top-left-radius: 100%;
   height: 100%;
   width: 100%;
 }
 
-.ne{
+.octo-ne{
   border-bottom-left-radius: 20em;
   height: 100%;
   width: 100%;
 }
 
-.ne-sharp{
+.octo-ne-sharp{
   border-bottom-left-radius: 100%;
   height: 100%;
   width: 100%;
 }
 
-.nw{
+.octo-nw{
   border-bottom-right-radius: 20em;
   height: 100%;
   width: 100%;
 }
 
-.nw-sharp{
+.octo-nw-sharp{
   border-bottom-right-radius: 100%;
   height: 100%;
   width: 100%;
 }
 
-.sw{
+.octo-sw{
   border-top-right-radius: 20em;
   height: 100%;
   width: 100%;
 }
 
-.sw-sharp{
+.octo-sw-sharp{
   border-top-right-radius: 100%;
   height: 100%;
   width: 100%;
 }
 
-.cap{
+.octo-cap{
   border-bottom-left-radius: 100%;
   border-bottom-right-radius: 100%;
   height: 70%;
   width: 100%;
 }
 
-@keyframes stretch{
+@keyframes octo-stretch{
   0%{
     height: 16em;
   }

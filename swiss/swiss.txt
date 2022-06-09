@@ -1,6 +1,6 @@
-<div class="artboard">
+<div id="swiss" class="artboard">
   <div class="knife">
-    <div class="base">
+    <div class="swissBase">
       <div class="clip"></div>
       <div class="insignia">
         <div class="crossv"></div>
@@ -13,6 +13,6 @@
     <div class="file"></div>
     <div class="scissor1"></div>
     <div class="scissor2"></div>
-    <div class="back"></div>
+    <div class="swissBack"></div>
   </div>
 </div>

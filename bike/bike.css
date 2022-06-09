@@ -1,14 +1,14 @@
 :root{ 
-  --primary: firebrick;
-  --secondary: grey;
-  --tertiary: #2e2e2e;
-  --wheel: #4e4e4e;
-  --spokes: lightgrey;
+  --bikePrimary: firebrick;
+  --bikeSecondary: grey;
+  --bikeTertiary: #2e2e2e;
+  --bikeWheel: #4e4e4e;
+  --bikebikeSpokes: lightgrey;
   --axle: darkgoldenrod;
   --pedal: darkgrey;
 }
 
-.artboard{
+#bike{
   position: relative;
   height: 18em;
   width: 30em;
@@ -38,13 +38,13 @@
 .pedal-box .bar{
   height: 0.8em;
   width: 7em;
-  background-color: var(--secondary);
+  background-color: var(--bikeSecondary);
 }
 
 .pedal-axle{
   height: 2em;
   width: 2em;
-  background-color: var(--tertiary);
+  background-color: var(--bikeTertiary);
   border-radius: 2em;
   transform: scale(110%);
 }
@@ -68,13 +68,13 @@
 .pedal-support .bar{
   height: 0.8em;
   width: 8.5em;
-  background-color: var(--secondary);
+  background-color: var(--bikeSecondary);
 }
 
 .pedal-support .curve{
   height: 1.5em;
   width: 2em;
-  border-color: var(--tertiary);
+  border-color: var(--bikeTertiary);
   border-bottom-right-radius: 100%;
   border-bottom-style: solid;
   border-right-style: solid;
@@ -93,20 +93,20 @@
 .seat-box .bar{
   height: 0.8em;
   width: 10em;
-  background-color: var(--primary);
+  background-color: var(--bikePrimary);
 }
 
 .seat{
   height: 4em;
   width: 1.5em;
-  background-color: var(--tertiary);
+  background-color: var(--bikeTertiary);
   border-top-left-radius: 2em;
   border-bottom-left-radius: 100%;
   border-bottom-right-radius: 35%;
   transform: scale(110%);
 }
 
-.handle-box{
+.bikeHandle-box{
   position: absolute;
   display: flex;
   align-items: flex-start;
@@ -115,16 +115,16 @@
   right: 0.8em;
 }
 
-.handle-box .bar{
+.bikeHandle-box .bar{
   height: 0.8em;
   width: 12em;
-  background-color: var(--primary);
+  background-color: var(--bikePrimary);
 }
 
-.handle{
+.bikeHandle{
   height: 3em;
   width: 0.65em;
-  background-color: var(--tertiary);
+  background-color: var(--bikeTertiary);
   border-top-right-radius: 2em;
   transform: scale(130%);
 }
@@ -135,7 +135,7 @@
   width: 9.8em;
   top: 5em;
   left: 10.5em;
-  background-color: var(--primary);
+  background-color: var(--bikePrimary);
   transform: rotate(-20deg);
 }
 
@@ -145,7 +145,7 @@
   width: 11.1em;
   top: 8em;
   left: 11em;
-  background-color: var(--primary);
+  background-color: var(--bikePrimary);
   transform: rotate(-46deg);
   display: flex;
   align-items: center;
@@ -158,7 +158,7 @@
   font-size: 0.4em;
 }
 
-.wheel-box{
+.bikeWheel-box{
   position: absolute;
   height: 100%;
   width: 100%;
@@ -167,11 +167,11 @@
   align-items: flex-end;
 }
 
-.wheel{
+.bikeWheel{
   position: relative;
   height: 8.3em;
   width: 8.3em;
-  border-color: var(--wheel);
+  border-color: var(--bikeWheel);
   border-radius: 16em;
   border-width: 1.4em;
   border-style: solid;
@@ -180,8 +180,8 @@
   align-items: center;
 }
 
-.wheel:hover{
-  animation: spin 0.5s linear;
+.bikeWheel:hover{
+  animation: bikeSpin 0.5s linear;
   animation-iteration-count: infinite;
 }
 
@@ -193,9 +193,9 @@
   border-radius: 6em;
 }
 
-.spoke{
+.bikeSpoke{
   position: absolute;
-  background-color: var(--spokes);
+  background-color: var(--bikebikeSpokes);
   height: 99%;
   width: 0.2em;
 }
@@ -220,7 +220,7 @@
   transform: rotate(150deg);
 }
 
-@keyframes spin {
+@keyframes bikeSpin {
   0% {
     transform: rotate(0deg);
   }

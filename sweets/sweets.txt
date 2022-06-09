@@ -1,4 +1,4 @@
-<div class="artboard">
+<div id="sweets" class="artboard">
     <div class="sweets-container">
         <span class="chip"></span>
         <span class="chip"></span>

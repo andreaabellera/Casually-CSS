@@ -8,8 +8,20 @@
   </head>
 
   <body>
-    <div id="meta-container"></div>
-    <div id="another-container"></div>
+    <div id="meta">
+      <div class="test-container"></div>
+      <div class="test-container"></div>
+      <div class="test-container"></div>
+      <div class="test-container"></div>
+      <div class="test-container"></div>
+      <div class="test-container"></div>
+      <div class="test-container"></div>
+      <div class="test-container"></div>
+      <div class="test-container"></div>
+      <div class="test-container"></div>
+      <div class="test-container"></div>
+      <div class="test-container"></div>
+    </div>
   </body>
 </html>
 
@@ -25,23 +37,44 @@ html, body{
   align-items: center;
 }
 
-#meta-container{
-  border-width: 0.2em;
-  border-style: dashed;
-  height: 20em;
-  width: 16em;
+#meta{
+  height: 90%;
+  width: 85%;
+  display: grid;
+  grid-template-columns: 15vw 15vw 15vw 15vw;
+  grid-template-rows: 20vh 20vh 20vh;
+  grid-row-gap: 8vh;
+  grid-column-gap: 8vw;
 }
-#another-container{
+
+.test-container{
   border-width: 0.2em;
   border-style: dashed;
-  height: 12em;
-  width: 12em;
+  height: 100%;
+  width: 100%;
 }
 </style>
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
-    create(document.getElementById("meta-container"),"hippo");
-    create(document.getElementById("another-container"),"hippo");
+    let artworks = [
+      "beluga",
+      "bike",
+      "bison",
+      "boba",
+      "calendar",
+      "dugong",
+      "hippo",
+      "matcha",
+      "octopus",
+      "orange",
+      "sweets",
+      "swiss"
+    ]
+
+    let boxes = document.getElementsByClassName("test-container")
+    for(let i = 0; i < boxes.length; i++)
+      create(boxes[i], artworks[i])
+
   });
 </script>

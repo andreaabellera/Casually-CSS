@@ -1,21 +1,22 @@
 :root{
-  --skin: darkorange; 
+  --orangeSkin: darkorange; 
   --vein: rgb(255, 186, 59);
   --citrus: orange;
-  --leaf: forestgreen;
-  --leafShadow: green;
-  --leafHighlight: mediumseagreen;
+  --orangeLeaf: forestgreen;
+  --orangeLeafShadow: green;
+  --orangeLeafHighlight: mediumseagreen;
 }
 
-.artboard{
+#orange{
   position: relative;
   height: 18em;
   width: 18em;
 }
 
-.leaf{
+.orangeLeaf{
   position: absolute;
   right:0;
+  top:0;
   height: 40%;
   width: 40%;
   display: grid;
@@ -23,20 +24,20 @@
   grid-template-columns: 70% 30%;
 }
 
-.leaf:hover{
+.orangeLeaf:hover{
   cursor: pointer;
   animation: jiggle 3s linear;
   animation-iteration-count: infinite;
 }
 
-.leaf-1{
+.orangeLeaf-1{
   border-top-left-radius: 100%;
-  background-color: var(--leaf);
+  background-color: var(--orangeLeaf);
 }
 
-.leaf-2{
-  background-color: var(--leaf);
-  border-color: var(--leafHighlight);
+.orangeLeaf-2{
+  background-color: var(--orangeLeaf);
+  border-color: var(--orangeLeafHighlight);
   border-style: solid;
   border-width: 50%;
   border-bottom-style: none;
@@ -44,15 +45,15 @@
   border-left-style: none;
 }
 
-.leaf-3{
+.orangeLeaf-3{
   border-bottom-left-radius: 8em;
-  background-color: var(--leafShadow);
+  background-color: var(--orangeLeafShadow);
 }
 
-.leaf-4{
+.orangeLeaf-4{
   border-bottom-right-radius: 100%;
-  background-color: var(--leafShadow);
-  border-color: var(--leafHighlight);
+  background-color: var(--orangeLeafShadow);
+  border-color: var(--orangeLeafHighlight);
   border-style: solid;
   border-width: 50%;
   border-bottom-style: none;
@@ -63,26 +64,26 @@
 .deco{
   height: 100%;
   width: 100%;
-  border-color: var(--leaf);
+  border-color: var(--orangeLeaf);
   border-style: solid;
   border-width: thick;
   border-bottom-right-radius: 100%;
 }
 
-.lower-leaf{
+.lower-orangeLeaf{
   border-bottom-right-radius: 120%;
   border-bottom-left-radius: 0;
-  background-color: var(--leaf);
+  background-color: var(--orangeLeaf);
 }
 
 .orange{
   position: absolute;
   z-index: 1;
-  background-color: var(--skin);
+  background-color: var(--orangeSkin);
   height: 90%;
   width: 90%;
   border-radius: 16em;
-  border-color: var(--skin);
+  border-color: var(--orangeSkin);
   border-width: thick;
   border-style: solid;
   display: grid;
@@ -95,7 +96,7 @@
   animation: spin 1.5s ease-in-out;
 }
 
-.inner{
+.orangeInner{
   position: relative;
   height: 80%;
   width: 80%;
@@ -109,7 +110,7 @@
   align-items: center;
 }
 
-.line{
+.orangeLine{
   position: absolute;
   height: 5%;
   width: 105%;
@@ -128,7 +129,7 @@
   transform: rotate(135deg);
 }
 
-.center{
+.orangeCenter{
   position: absolute;
   height: 6%;
   width: 6%;
