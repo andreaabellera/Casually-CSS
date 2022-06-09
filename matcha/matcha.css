@@ -8,10 +8,14 @@
   --blossom: #ffc0cb;
 }
 
-.artboard, .cup{
+.artboard{
   position: relative;
   height: 17em;
   width: 20em;
+}
+
+.cup{
+  height: max-content;
 }
 
 .matcha-set:hover, .teastring:hover, .blossom:hover{
