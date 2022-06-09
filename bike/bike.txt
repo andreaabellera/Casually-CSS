@@ -1,29 +1,29 @@
-<div class="artboard">
+<div id="bike" class="artboard">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <div class="bike">
-        <span class="wheel-box">
-          <div class="wheel">
-            <span class="spoke"></span>
-            <span class="spoke thirty"></span>
-            <span class="spoke sixty"></span>
-            <span class="spoke ninety"></span>
-            <span class="spoke onetwenty"></span>
-            <span class="spoke onefifty"></span>
+        <span class="bikeWheel-box">
+          <div class="bikeWheel">
+            <span class="bikeSpoke"></span>
+            <span class="bikeSpoke thirty"></span>
+            <span class="bikeSpoke sixty"></span>
+            <span class="bikeSpoke ninety"></span>
+            <span class="bikeSpoke onetwenty"></span>
+            <span class="bikeSpoke onefifty"></span>
             <span class="axle"></span>
           </div>
-          <div class="wheel">
-            <span class="spoke"></span>
-            <span class="spoke thirty"></span>
-            <span class="spoke sixty"></span>
-            <span class="spoke ninety"></span>
-            <span class="spoke onetwenty"></span>
-            <span class="spoke onefifty"></span>
+          <div class="bikeWheel">
+            <span class="bikeSpoke"></span>
+            <span class="bikeSpoke thirty"></span>
+            <span class="bikeSpoke sixty"></span>
+            <span class="bikeSpoke ninety"></span>
+            <span class="bikeSpoke onetwenty"></span>
+            <span class="bikeSpoke onefifty"></span>
             <span class="axle"></span>
           </div>
         </span>
-        <span class="handle-box">
+        <span class="bikeHandle-box">
           <div class="bar"></div>
-          <div class="handle"></div>
+          <div class="bikeHandle"></div>
         </span>
         <span class="seat-box">
           <div class="bar"></div>
