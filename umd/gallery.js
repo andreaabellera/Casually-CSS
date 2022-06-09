@@ -248,7 +248,7 @@ let html = "Failed to load HTML";
 let css = "Failed to load CSS";
 
 function loadArtboard(art) {
-    document.getElementById("container").innerHTML = "<iframe src = ../" + art.id + "/" + art.id + ".html" + "></iframe>";
+    document.getElementById("container").innerHTML = "<iframe src =" + art.id + "/" + art.id + ".html" + "></iframe>";
 
     ;(async () => {
         html = await getHTML(art);
@@ -265,13 +265,13 @@ function loadArtboard(art) {
 }
 
 async function getHTML(art){
-    let response = await fetch("../" + art.id + "/" + art.id + ".txt");
+    let response = await fetch(art.id + "/" + art.id + ".txt");
     let html = await response.text();
     return html;
 }
 
 async function getCSS(art){
-    let response = await fetch("../" + art.id + "/" + art.id + ".css");
+    let response = await fetch(art.id + "/" + art.id + ".css");
     let css = await response.text();
     return css;
 }
