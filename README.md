@@ -1,20 +1,20 @@
-![Casually CSS Banner](/casually-banner.png)
+![Casually CSS Banner](/umd/casually-banner.png)
 A collection of CSS artworks, casually created, and curated with care  
 
 ## Gallery
 The [online gallery](https://andreaabellera.github.io/Casually-CSS/) showcase is deployed with Github Pages. Individual Casually CSS artworks are located inside their corresponding folders
 
 ## Usage
-### Install the Library (for Node.js App)
+### Install the Library (Under Construction)
 1. Install the Casually CSS node package into your Node.js app with  
 `npm install casually-css`  
 2. In your script, add this line at the top of your program  
-`const create = require('casually-css')`
+`const create = require('casually-css')` for CommonJS **or** `import create from 'casually-css'` for ES6
 
-### Link the Library (if not using Node.js)
+### Link the Library (Browser)
 1. Include this link in your HTML head  
-`<script src="https://unpkg.com/casually-css@0.0.2/umd/bundle.js"></script>`
-2. Download the folders of the artworks that you are going to use. Ensure your script is located one level above the artwork folder (not in the same folder as the artwork) 
+`<script src="https://unpkg.com/casually-css@0.0.6/umd/casuallycss.esm.min.js"></script>`
+2. Download the folders of the artworks that you are going to use. Ensure your script in the same directory level as the artwork folder (not inside the artwork folder) 
 
 ### Import an Artwork
 After installing the package, you can start importing artworks with the JS function 'create'
