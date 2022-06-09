@@ -1,10 +1,12 @@
 {
   "name": "casually-css",
-  "version": "0.0.2",
+  "version": "0.0.6",
   "description": "Import an artwork from Casually CSS!",
   "main": "create.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "watch": "rollup -c -w"
   },
   "repository": {
     "type": "git",
@@ -14,16 +16,23 @@
     "node": ">= 8.0.0"
   },
   "keywords": [
+    "casually-css",
     "casuallycss",
     "casually",
     "cssart",
     "instantart"
   ],
-  "author": "Andrea Abellera <andrea.abellera@gmail.com>",
+  "author": "Andrea Abellera",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/andreaabellera/Casually-CSS/issues"
   },
   "homepage": "https://github.com/andreaabellera/Casually-CSS#readme",
-  "files": ["umd"]
+  "files": [
+    "umd"
+  ],
+  "devDependencies": {
+    "rollup": "^2.75.6",
+    "rollup-plugin-terser": "^7.0.2"
+  }
 }
