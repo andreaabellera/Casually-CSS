@@ -16,6 +16,7 @@
 
 .matcha-cup{
   height: max-content;
+  margin-left: 1.85em;
 }
 
 .matcha-set:hover, .teamatcha-string:hover, .matcha-blossom:hover{
@@ -34,7 +35,7 @@
   z-index: 5;
   top: 4em;
   height: 10em;
-  width: 15.5em;
+  width: 15em;
   display: grid;
   grid-template-rows: 30% 1fr;
 }
@@ -55,7 +56,7 @@
   background-image: var(--matcha-drink);
   top: 2.5em;
   height: 7em;
-  width: 15.5em;
+  width: 15em;
   border-radius: 100%;
   overflow: hidden;
 }
@@ -82,7 +83,7 @@
   z-index: 3;
   background-image: radial-gradient(ellipse at bottom, #2e2e2e 0%, var(--matcha-cupInner) 70%);
   height: 8em;
-  width: 15.5em;
+  width: 15em;
   border-radius: 100%;
 }
 
@@ -92,7 +93,7 @@
   background-color: var(--matcha-wood);
   height: 6.5em;
   width: 100%;
-  transform: translateX(-1.85em);
+  /*transform: translateX(-1.85em);*/
   border-radius: 40%;
 }
 
