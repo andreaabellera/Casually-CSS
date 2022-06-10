@@ -5,25 +5,33 @@ A collection of CSS artworks, casually created, and curated with care
 The [online gallery](https://andreaabellera.github.io/Casually-CSS/) showcase is deployed with Github Pages. Individual Casually CSS artworks are located inside their corresponding folders
 
 ## Usage
-### Install the Library (Under Construction)
+### Import an Artwork
+#### SvelteJS
+1. Install the Casually CSS node package into your Svelte app with  
+`npm install casually-css` 
+2. Inside the `<script>` tag of your Svelte file, import the Svelte component for the artwork of your choice  
+`import YourComponentName from "casually-css/{artwork}/{artwork}.svelte"`  
+**Sample usage:** `import Bike from 'casually-css/bike/bike.svelte'`
+
+> Props can be passed to modify an artwork's colors and animation attributes. Detailed documentation for props will be available soon! 
+
+#### Browser
+1. Include this link in your HTML head  
+`<script src=""https://unpkg.com/casually-css@0.5.0/create.js"></script>`  
+2. Download the folders of the artworks that you are going to use. Ensure your script in the same directory level as the artwork folder (not inside the artwork folder)  
+3. You can start importing artworks with the JS function 'create'. It takes two parameters: __an HTML element__ and the __artwork name__. The artwork will resize to fill and fit inside its HTML element container.  
+`create(yourElement, 'orange')`  
+
+> The artwork will attach to either the **left** or **top** of its HTML element container if the artwork and container possess different aspect ratios
+
+#### Other Node.js Apps or Frameworks (Bug: Path Issue needs Resolve)
 1. Install the Casually CSS node package into your Node.js app with  
 `npm install casually-css`  
 2. In your script, add either line at the top of your program  
 **CommonJS:** `const create = require('casually-css')`  
-**ES6:** `import create from 'casually-css'`
-
-### Link the Library (Browser)
-1. Include this link in your HTML head  
-`<script src=""https://unpkg.com/casually-css@0.5.0/create.js"></script>`
-2. Download the folders of the artworks that you are going to use. Ensure your script in the same directory level as the artwork folder (not inside the artwork folder) 
-
-### Import an Artwork
-After installing the package, you can start importing artworks with the JS function 'create'
-
-The 'create' functions takes two parameters: __an HTML element__ and the __artwork name__. The HTML element container will resize to match the artwork aspect ratio  
-`create(yourElement, 'orange')`
-
-> *So far, only the [orange](https://andreaabellera.github.io/Casually-CSS/#orange) artwork is available under the library. Importable versions of other artworks and custom color passing are coming soon!*
+**ES6:** `import create from 'casually-css'`  
+3. You can start importing artworks with the JS function 'create'. It takes two parameters: __an HTML element__ and the __artwork name__. The artwork will resize to fill and fit inside its HTML element container.  
+`create(yourElement, 'orange')`  
 
 ### Manually add an Artwork to an HTML Div 
 1. Open the [gallery](https://andreaabellera.github.io/Casually-CSS/) and search for any artwork you like
