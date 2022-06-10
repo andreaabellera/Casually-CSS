@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title> Create Test </title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <script src="https://unpkg.com/casually-css@0.0.8/umd/casuallycss.esm.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="umd/favicon.ico">
+    <script src="https://unpkg.com/casually-css@0.3.0/create.js"></script>
   </head>
 
   <body>
     <div id="meta">
+      <span id="instr"> Press 'z' to shift artworks forward </span>
       <div class="test-container"></div>
       <div class="test-container"></div>
       <div class="test-container"></div>
@@ -41,10 +42,15 @@ html, body{
   height: 90%;
   width: 85%;
   display: grid;
-  grid-template-columns: 15vw 15vw 15vw 15vw;
-  grid-template-rows: 20vh 20vh 20vh;
+  grid-template-columns: 15vw 10vw 15vw 5vw;
+  grid-template-rows: auto 25vh 10vh 20vh;
   grid-row-gap: 8vh;
   grid-column-gap: 8vw;
+}
+
+#instr{
+  grid-column: 1/5;
+  font-size: 36px;
 }
 
 .test-container{
@@ -56,25 +62,37 @@ html, body{
 </style>
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    let artworks = [
-      "beluga",
-      "bike",
-      "bison",
-      "boba",
-      "calendar",
-      "dugong",
-      "hippo",
-      "matcha",
-      "octopus",
-      "orange",
-      "sweets",
-      "swiss"
-    ]
+  let artworks = [
+    "beluga",
+    "bike",
+    "bison",
+    "boba",
+    "calendar",
+    "dugong",
+    "hippo",
+    "matcha",
+    "octopus",
+    "orange",
+    "sweets",
+    "swiss"
+  ]
 
-    let boxes = document.getElementsByClassName("test-container")
-    for(let i = 0; i < boxes.length; i++)
+  let boxes = document.getElementsByClassName("test-container")
+
+  document.addEventListener("DOMContentLoaded", () => { loadArtworks() });
+  document.addEventListener("keydown", (e) => {
+    if(e.keyCode == 90){
+      let art = artworks.pop()
+      artworks.unshift(art)
+      loadArtworks(true)
+    }
+  })
+
+  function loadArtworks(clear=false){
+    for(let i = 0; i < boxes.length; i++){
+      if(clear)
+        boxes[i].innerHTML = ""
       create(boxes[i], artworks[i])
-
-  });
+    }
+  }
 </script>

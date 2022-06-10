@@ -1,63 +1,63 @@
-<div class="artboard">
+<div id="hippo" class="artboard">
     <div class="hippo">
         <span class="hippo-bod">
           <span class="hippo-tail">
             <div></div>
-            <div class="tail1 se-sharp"></div>
+            <div class="hippo-tail1 hippo-se-sharp"></div>
             <div></div>
-            <div class="tail2">   <div class="tail-line"></div>   </div>
-            <div class="tail3"></div>
+            <div class="hippo-tail2">   <div class="hippo-tail-line"></div>   </div>
+            <div class="hippo-tail3"></div>
           </span>
         </span>
-        <span class="hippo-leg front-near">
-          <div class="nails">   <div class="nail se"></div>   </div>
-          <div class="nails">   <div class="nail sw"></div>   </div>
-          <div class="nails">   <div class="nail se"></div>   </div>
-          <div class="nails">   <div class="nail sw"></div>   </div>
-          <div class="nails">   <div class="nail se"></div>   </div>
+        <span class="hippo-leg hippo-front-near">
+          <div class="hippoNails">   <div class="hippoNail hippo-se"></div>   </div>
+          <div class="hippoNails">   <div class="hippoNail hippo-sw"></div>   </div>
+          <div class="hippoNails">   <div class="hippoNail hippo-se"></div>   </div>
+          <div class="hippoNails">   <div class="hippoNail hippo-sw"></div>   </div>
+          <div class="hippoNails">   <div class="hippoNail hippo-se"></div>   </div>
         </span>
-        <span class="hippo-leg front-far"></span>
-        <span class="hippo-leg back-near">
-          <div class="nails">   <div class="nail se"></div>   </div>
-          <div class="nails">   <div class="nail sw"></div>   </div>
-          <div class="nails">   <div class="nail se"></div>   </div>
-          <div class="nails">   <div class="nail sw"></div>   </div>
-          <div class="nails">   <div class="nail se"></div>   </div>
+        <span class="hippo-leg hippo-front-far"></span>
+        <span class="hippo-leg hippo-back-near">
+          <div class="hippoNails">   <div class="hippoNail hippo-se"></div>   </div>
+          <div class="hippoNails">   <div class="hippoNail hippo-sw"></div>   </div>
+          <div class="hippoNails">   <div class="hippoNail hippo-se"></div>   </div>
+          <div class="hippoNails">   <div class="hippoNail hippo-sw"></div>   </div>
+          <div class="hippoNails">   <div class="hippoNail hippo-se"></div>   </div>
         </span>
-        <span class="hippo-leg back-far"></span>
+        <span class="hippo-leg hippo-back-far"></span>
         <span class="hippo-head">
-          <div class="head-junction1 se-sharp skin">
-            <span class="ear">
-              <div class="ear-in"></div>
+          <div class="hippo-head-junction1 hippo-se-sharp hippoSkin">
+            <span class="hippoEar">
+              <div class="hippoEar-in"></div>
             </span>
           </div>
-          <div class="skin sw-sharp"></div>
-          <div class="head-junction2 skin"></div>
-          <div class="skin"></div>
-          <div class="head-junction3 skin">
-            <span class="eye1"></span>
-            <span class="eye2"></span>
+          <div class="hippoSkin hippo-sw-sharp"></div>
+          <div class="hippo-head-junction2 hippoSkin"></div>
+          <div class="hippoSkin"></div>
+          <div class="hippo-head-junction3 hippoSkin">
+            <span class="hippoEye1"></span>
+            <span class="hippoEye2"></span>
           </div>
-          <div class="skin sw-sharp"></div>
+          <div class="hippoSkin hippo-sw-sharp"></div>
           <div></div>
-          <div class="head-junction4 ne skin"></div>
-          <div class="skin nw-sharp"></div>
+          <div class="hippo-head-junction4 hippo-ne hippoSkin"></div>
+          <div class="hippoSkin hippo-nw-sharp"></div>
           <div></div>
           <div></div>
           <div></div>
-          <div class="south-cap">
-            <div class="skin ne-sharp"></div>
-            <div class="skin nw-sharp"></div>
+          <div class="hippo-south-cap">
+            <div class="hippoSkin hippo-ne-sharp"></div>
+            <div class="hippoSkin hippo-nw-sharp"></div>
           </div>
         </span>
         <span class="hippo-jaw">
-          <div class="ne skin mouth-area">
-            <div class="ne mouth"></div>
+          <div class="hippo-ne hippoSkin hippoMouth-area">
+            <div class="hippo-ne hippoMouth"></div>
           </div>
-          <div class="nw skin end mouth-area">
-            <div class="nw mouth">
-              <span class="tooth"></span>
-              <span class="tooth"></span>
+          <div class="hippo-nw hippoSkin hippoEnd hippoMouth-area">
+            <div class="hippo-nw hippoMouth">
+              <span class="hippoTooth"></span>
+              <span class="hippoTooth"></span>
             </div>
           </div>
         </span>

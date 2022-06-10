@@ -1,12 +1,12 @@
 :root{
-  --straw: salmon;
-  --lid: mediumpurple;
-  --drink: rgba(207, 123, 13, 0.4);
-  --cup: lightgrey;
-  --pearl: #5E5550;
+  --bobaStraw: salmon;
+  --bobaLid: mediumpurple;
+  --bobaDrink: rgba(207, 123, 13, 0.4);
+  --bobaCup: lightgrey;
+  --bobaPearl: #5E5550;
 }
 
-.artboard{
+#boba{
   position: relative;
   height: 20em;
   width: 8em;
@@ -23,13 +23,13 @@
   cursor: pointer;
 }
 
-.above, .lid, .body, .bottom{
+.bobaAbove, .bobaLid, .bobaBody, .bottom{
   position: relative;
   display: grid;
   justify-items: center;
 }
 
-.straw{
+.bobaStraw{
   position: absolute;
   z-index: 4;
   height: 100%;
@@ -39,137 +39,137 @@
   grid-template-rows: 1fr 0.4em;
 }
 
-.straw-body{
-  background-color: var(--straw);
+.bobaStraw-body{
+  background-color: var(--bobaStraw);
 }
 
-.straw-end{
-  background-color: var(--straw);
+.bobaStraw-end{
+  background-color: var(--bobaStraw);
   border-bottom-left-radius: 100%;
   border-bottom-right-radius: 100%;
 }
 
-.lid{
-  background-color: var(--lid);
+.bobaLid{
+  background-color: var(--bobaLid);
   transform: translateY(0.25em);
   border-radius: 80%;
   z-index: 3;
 }
 
-.cup{
+.bobaCup{
   position: absolute;
   z-index: 0;
-  background-color: var(--cup);
+  background-color: var(--bobaCup);
   height: 100%;
   width: 85%;
   clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 15% 100%);
   display: grid;
 }
 
-.drink{
+.bobaDrink{
   position: absolute;
   z-index: 8;
-  background-color: var(--drink);
+  background-color: var(--bobaDrink);
   height: 100%;
   width: 100%;
   bottom: 0;
 }
 
-.drink:hover{
+.bobaDrink:hover{
   animation: slurp 3s ease-in;
   animation-iteration-count: infinite;
 }
 
-.body .straw{
+.bobaBody .bobaStraw{
   z-index: 2;
   transform: scaleY(110%);
   justify-self: center;
 }
 
-.body .straw-body, .body .straw-end{
+.bobaBody .bobaStraw-body, .bobaBody .bobaStraw-end{
   opacity: 0.4;
 }
 
-.pearl{
+.bobaPearl{
   position: absolute;
   z-index: 7;
   height: 1em;
   width: 1em;
   border-radius: 3em;
-  background-color: var(--pearl);
+  background-color: var(--bobaPearl);
 }
 
-.pearl:nth-child(0){
+.bobaPearl:nth-child(0){
   bottom: 0em;
   left: 4em;
 }
 
-.pearl:nth-child(1){
+.bobaPearl:nth-child(1){
   bottom: 2em;
   left: 3em;
 }
 
-.pearl:nth-child(2){
+.bobaPearl:nth-child(2){
   bottom: 0em;
   left: 3em;
 }
 
-.pearl:nth-child(3){
+.bobaPearl:nth-child(3){
   bottom: 0.1em;
   left: 1em;
 }
 
-.pearl:nth-child(4){
+.bobaPearl:nth-child(4){
   bottom: 0.3em;
   left: 3.4em;
 }
 
-.pearl:nth-child(5){
+.bobaPearl:nth-child(5){
   bottom: 0.5em;
   left: 2em;
 }
 
-.pearl:nth-child(6){
+.bobaPearl:nth-child(6){
   bottom: 1.0em;
   left: 4em;
 }
 
-.pearl:nth-child(7){
+.bobaPearl:nth-child(7){
   bottom: 0em;
   left: 4.4em;
 }
 
-.pearl:nth-child(8){
+.bobaPearl:nth-child(8){
   bottom: 0.4em;
   left: 4.8em;
 }
 
-.pearl:nth-child(9){
+.bobaPearl:nth-child(9){
   bottom: 1.7em;
   left: 4.3em;
 }
 
-.pearl:nth-child(10){
+.bobaPearl:nth-child(10){
   bottom: 1.5em;
   right: 4.3em;
 }
 
-.pearl:nth-child(11){
+.bobaPearl:nth-child(11){
   bottom: 1em;
   left: 2.8em;
 }
 
 .base{
-  background-color: var(--cup);
+  background-color: var(--bobaCup);
   height: 100%;
   width: 60%;
   border-bottom-left-radius: 80%;
   border-bottom-right-radius: 80%;
 }
 
-.base-drink{
+.base-bobaDrink{
   position: absolute;
-  background-color: var(--drink);
+  background-color: var(--bobaDrink);
   height: 100%;
   width: 60%;
   border-bottom-left-radius: 80%;

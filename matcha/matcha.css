@@ -1,24 +1,24 @@
 :root{
-  --cup: #3e4044;
-  --cupInner: #aa3333;
-  --drink: linear-gradient(120deg, #608850 0%, #78AE60, #88BB80 80%, #67A070 90%, #656840 100%);
-  --wood: #565144;
-  --paper: #dd9922;
-  --woodTop: linear-gradient(to top, tan, rgb(170, 146, 113));
-  --blossom: #ffc0cb;
+  --matcha-cup: #3e4044;
+  --matcha-cupInner: #aa3333;
+  --matcha-drink: linear-gradient(120deg, #608850 0%, #78AE60, #88BB80 80%, #67A070 90%, #656840 100%);
+  --matcha-wood: #565144;
+  --tea-paper: #dd9922;
+  --matcha-woodTop: linear-gradient(to top, tan, rgb(170, 146, 113));
+  --matcha-blossom: #ffc0cb;
 }
 
-.artboard{
+#matcha{
   position: relative;
   height: 17em;
   width: 20em;
 }
 
-.cup{
+.matcha-cup{
   height: max-content;
 }
 
-.matcha-set:hover, .teastring:hover, .blossom:hover{
+.matcha-set:hover, .teamatcha-string:hover, .matcha-blossom:hover{
   cursor: pointer;
 }
 
@@ -29,7 +29,7 @@
   grid-template-rows: 1fr auto; 
 }
 
-.cup-front{
+.matcha-cup-front{
   position: absolute;
   z-index: 5;
   top: 4em;
@@ -39,20 +39,20 @@
   grid-template-rows: 30% 1fr;
 }
 
-.cup-front-top{
-  background-image: radial-gradient(ellipse at top, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 71%, var(--cup) 71.5%);
+.matcha-cup-front-top{
+  background-image: radial-gradient(ellipse at top, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 71%, var(--matcha-cup) 71.5%);
 }
 
-.cup-front-bottom{
-  background-image: linear-gradient(to top, #1e1e1e 0%, var(--cup) 100%);
+.matcha-cup-front-bottom{
+  background-image: linear-gradient(to top, #1e1e1e 0%, var(--matcha-cup) 100%);
   border-bottom-left-radius: 9em;
   border-bottom-right-radius: 9em;
 }
 
-.drink{
+.matcha-drink{
   position: absolute;
   z-index: 4;
-  background-image: var(--drink);
+  background-image: var(--matcha-drink);
   top: 2.5em;
   height: 7em;
   width: 15.5em;
@@ -77,34 +77,34 @@
   animation: surface 3s ease-out infinite;
 }
 
-.cup-back{
+.matcha-cup-back{
   position: absolute;
   z-index: 3;
-  background-image: radial-gradient(ellipse at bottom, #2e2e2e 0%, var(--cupInner) 70%);
+  background-image: radial-gradient(ellipse at bottom, #2e2e2e 0%, var(--matcha-cupInner) 70%);
   height: 8em;
   width: 15.5em;
   border-radius: 100%;
 }
 
-.wood{
+.matcha-wood{
   position: relative;
   overflow: hidden;
-  background-color: var(--wood);
+  background-color: var(--matcha-wood);
   height: 6.5em;
   width: 100%;
   transform: translateX(-1.85em);
   border-radius: 40%;
 }
 
-.wood-inner{
+.matcha-wood-inner{
   position: absolute;
   height: 55%;
   width: 100%;
-  background-image: var(--woodTop);
+  background-image: var(--matcha-woodTop);
   border-radius: 9em;
 }
 
-.teastring{
+.teamatcha-string{
   position: absolute;
   z-index: 6;
   top: 37%;
@@ -116,30 +116,30 @@
   justify-items: center;
 }
 
-.string{
+.matcha-string{
   background-color: gainsboro;
   width: 2px;
   transform: translateY(0.5em);
   z-index: 2;
 }
 
-.paper{
+.tea-paper{
   height: 100%;
   width: 100%;
   display: grid;
   grid-template-rows: 50%, 50%;
 }
 
-.paper-top{
+.tea-paper-top{
   clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
-  background-image: radial-gradient(circle, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 20%, var(--paper) 20%, var(--paper) 100%);
+  background-image: radial-gradient(circle, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 20%, var(--tea-paper) 20%, var(--tea-paper) 100%);
 }
 
-.paper-bottom{
-  background-color: var(--paper);
+.tea-paper-bottom{
+  background-color: var(--tea-paper);
 }
 
-.blossom{
+.matcha-blossom{
   position: absolute;
   z-index: 7;
   top: 60%;
@@ -148,16 +148,16 @@
   width: 5em;
 }
 
-.petal{
+.matcha-petal{
   height: 100%;
   width: 2.3em;
-  background-color: var(--blossom);
+  background-color: var(--matcha-blossom);
   border-top-left-radius: 100%;
   border-top-right-radius: 100%;
   border-bottom-left-radius: 100%;
 }
 
-.half-height{
+.matcha-half-height{
   height: 100%;
   width: 100%;
   position: absolute;
@@ -165,24 +165,24 @@
   grid-template-rows: 50% 50%;
 }
 
-.half-height:nth-of-type(2){
+.matcha-half-height:nth-of-type(2){
   transform: rotate(72deg);
   filter:brightness(90%);
 }
-.half-height:nth-of-type(3){
+.matcha-half-height:nth-of-type(3){
   transform: rotate(144deg);
   filter:brightness(83%);
 }
-.half-height:nth-of-type(4){
+.matcha-half-height:nth-of-type(4){
   transform: rotate(216deg);
   filter:brightness(75%);
 }
-.half-height:nth-of-type(5){
+.matcha-half-height:nth-of-type(5){
   transform: rotate(288deg);
   filter:brightness(83%);
 }
 
-.handle{
+.matcha-handle{
   position: absolute;
   z-index: 1;
   height: 4em;
@@ -192,7 +192,7 @@
   filter: brightness(85%);
   border-style: solid;
   border-width: 1.25em;
-  border-color: var(--cup);
+  border-color: var(--matcha-cup);
   border-bottom-right-radius: 3em;
   border-top-right-radius: 3em;
   border-top-left-radius: 3em;

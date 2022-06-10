@@ -1,35 +1,35 @@
-<div class="artboard">
+<div id="boba" class="artboard">
     <div class="boba">
-        <div class="above">
-          <span class="straw">
-            <span class="straw-body"></span>
-            <span class="straw-end"></span>
+        <div class="bobaAbove">
+          <span class="bobaStraw">
+            <span class="bobaStraw-body"></span>
+            <span class="bobaStraw-end"></span>
           </span>
         </div>
-        <div class="lid"></div>
-        <div class="body">
-          <span class="cup">
-            <span class="pearl"></span>
-            <span class="pearl"></span>
-            <span class="pearl"></span>
-            <span class="pearl"></span>
-            <span class="pearl"></span>
-            <span class="pearl"></span>
-            <span class="pearl"></span>
-            <span class="pearl"></span>
-            <span class="pearl"></span>
-            <span class="pearl"></span>
-            <span class="pearl"></span>
-            <span class="drink"></span>
-            <span class="straw">
-              <span class="straw-body"></span>
-              <span class="straw-end"></span>
+        <div class="bobaLid"></div>
+        <div class="bobaBody">
+          <span class="bobaCup">
+            <span class="bobaPearl"></span>
+            <span class="bobaPearl"></span>
+            <span class="bobaPearl"></span>
+            <span class="bobaPearl"></span>
+            <span class="bobaPearl"></span>
+            <span class="bobaPearl"></span>
+            <span class="bobaPearl"></span>
+            <span class="bobaPearl"></span>
+            <span class="bobaPearl"></span>
+            <span class="bobaPearl"></span>
+            <span class="bobaPearl"></span>
+            <span class="bobaDrink"></span>
+            <span class="bobaStraw">
+              <span class="bobaStraw-body"></span>
+              <span class="bobaStraw-end"></span>
             </span>
           </span>
         </div>
         <div class="bottom">
           <span class="base">
-            <span class="base-drink"></span>
+            <span class="base-bobaDrink"></span>
           </span>
         </div>
     </div>

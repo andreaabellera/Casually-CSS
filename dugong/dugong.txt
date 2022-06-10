@@ -1,58 +1,58 @@
-<div class="artboard">
+<div id="dugong" class="artboard">
     <div class="dugong">
-        <div class="dugong-snout">
-          <div class="half-width snout-top">
-            <span class="skinLight se snout-part">
-              <span class="pt nose1"></span>
+        <div class="dugong-dugSnout">
+          <div class="dugong-half-width dugSnout-top">
+            <span class="dugongSkinLight dugong-se dugSnout-part">
+              <span class="dugPt dugNose1"></span>
             </span>
-            <span class="skinLight sw snout-part">
-              <span class="pt nose2"></span>
+            <span class="dugongSkinLight dugong-sw dugSnout-part">
+              <span class="dugPt dugNose2"></span>
             </span>
           </div>
-          <div class="snout-grid">
-            <span class="skinLight ne"></span>
-            <span class="skinLight nw-sharp"></span>
-            <span class="skinLight ne-sharp"></span>
-            <span class="skinLight nw"></span>
+          <div class="dugSnout-grid">
+            <span class="dugongSkinLight dugong-ne"></span>
+            <span class="dugongSkinLight dugong-nw-sharp"></span>
+            <span class="dugongSkinLight dugong-ne-sharp"></span>
+            <span class="dugongSkinLight dugong-nw"></span>
           </div>
         </div> 
         <div class="dugong-head">
-          <span class="head-junction1">
-            <span class="skin se-sharp head-part0">   <span class="pt eye1"></span>   </span>
-            <span class="skin stroke-left"></span>
-            <span class="skin stroke-left"><div class="ne"></div></span>
+          <span class="dug-head-junction1">
+            <span class="dugongSkin dugong-se-sharp dug-head-part0"><span class="dugPt dugEye1"></span></span>
+            <span class="dugongSkin stroke-left"></span>
+            <span class="dugongSkin stroke-left"><div class="dugong-ne"></div></span>
           </span>
-          <span class="head-part1">
-            <span class="skin stroke-top"></span>
-            <span class="skin head-part3"></span>
+          <span class="dug-head-part1">
+            <span class="dugongSkin stroke-top"></span>
+            <span class="dugongSkin dug-head-part3"></span>
           </span>
-          <span class="skin head-part2 stroke-right">    <span class="pt eye2"></span>   </span>
+          <span class="dugongSkin dug-head-part2 stroke-right"><span class="dugPt dugEye2"></span></span>
           <span></span>
-          <span class="half-width">
-            <span class="skin ne-sharp half-height">
-              <span class="mouth mouth1"></span>
+          <span class="dugong-half-width">
+            <span class="dugongSkin dugong-ne-sharp dugong-half-height">
+              <span class="dugongMouth dugongMouth1"></span>
             </span>
-            <span class="skin nw-sharp half-height">
-              <span class="mouth mouth2"></span>
+            <span class="dugongSkin dugong-nw-sharp dugong-half-height">
+              <span class="dugongMouth dugongMouth2"></span>
             </span>
           </span>
         </div>
         <div class="dugong-body">
-          <span class="skin stroke-left"></span>
-          <span class="skin sw"></span>
+          <span class="dugongSkin stroke-left"></span>
+          <span class="dugongSkin dugong-sw"></span>
           <span></span>
-          <span class="skin stroke-left"></span>
-          <span class="skin tummy-top">
-            <div class="skinDark arc">
-              <div class="skin arc"></div>
+          <span class="dugongSkin stroke-left"></span>
+          <span class="dugongSkin dugongTummy-top">
+            <div class="dugongSkinDark dugArc">
+              <div class="dugongSkin dugArc"></div>
             </div>
           </span>
-          <span class="skin sw-sharp"></span>
-          <span class="skinDark body-junction1">    <div class="tummy"></div>   </span>
+          <span class="dugongSkin dugong-sw-sharp"></span>
+          <span class="dugongSkinDark body-junction1">    <div class="dugongTummy"></div>   </span>
         </div>
         <div class="dugong-tail">
-          <span class="tail-left"></span>
-          <span class="tail-right"></span>
+          <span class="dugong-tail-left"></span>
+          <span class="dugong-tail-right"></span>
         </div>
         <div class="dugong-fin1"></div>
         <div class="dugong-fin2"></div>

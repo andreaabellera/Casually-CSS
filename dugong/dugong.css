@@ -1,19 +1,19 @@
 :root{
-  --skin: #84A7C0;
-  --skinLight: #94B7D0;
-  --skinDark: #546790;
-  --mouth: lightpink;
-  --outline: #2E2E2E;
+  --dugongSkin: #84A7C0;
+  --dugongSkinLight: #94B7D0;
+  --dugongSkinDark: #546790;
+  --dugongMouth: lightpink;
+  --dugongOutline: #2E2E2E;
 }
 
-.artboard{
+#dugong{
   height: 26em;
   width: 16em;
 }
 
 .dugong{
   position: relative;
-  animation: swim 4s ease-in-out;
+  animation: dugong-swim 4s ease-in-out;
   animation-iteration-count: infinite;
 }
 
@@ -21,59 +21,59 @@
   cursor: pointer;
 }
 
-.skin{
-  background-color: var(--skin);
+.dugongSkin{
+  background-color: var(--dugongSkin);
 }
 
-.skinLight{
-  background-color: var(--skinLight);
+.dugongSkinLight{
+  background-color: var(--dugongSkinLight);
 }
 
-.skinDark{
-  background-color: var(--skinDark);
+.dugongSkinDark{
+  background-color: var(--dugongSkinDark);
 }
 
-.mouth{
-  background-color: var(--mouth);
+.dugongMouth{
+  background-color: var(--dugongMouth);
 }
 
-.mouth1{
+.dugongMouth1{
   justify-self: flex-end;
   border-bottom-left-radius: 100%;
   width: 50%;
 }
 
-.mouth2{
+.dugongMouth2{
   border-bottom-right-radius: 100%;
   width: 50%;
 }
 
-.pt{
+.dugPt{
   position: absolute;
   z-index: 6;
   height: 1em;
   width: 0.7em;
   border-radius: 2em;
-  background-color: var(--outline);
+  background-color: var(--dugongOutline);
 }
 
-.eye1{
+.dugEye1{
   bottom: -0.5em;
   right: 0;
 }
 
-.eye2{
+.dugEye2{
   top: 0.3em;
   right: 0.2em;
 }
 
-.nose1{
+.dugNose1{
   right: 0.5em;
   top: 1em;
   transform: scale(50%) rotate(30deg);
 }
 
-.nose2{
+.dugNose2{
   left: 0.5em;
   top: 1em;
   transform: scale(50%) rotate(-30deg);
@@ -90,11 +90,11 @@
   grid-template-columns: 35% 65%;
 }
 
-.dugong-head .ne{
+.dugong-head .dugong-ne{
   border-left-width: 0em;
 }
 
-.head-junction1{
+.dug-head-junction1{
   grid-column: 1/2;
   grid-row: 1/3;
   display: grid;
@@ -103,59 +103,59 @@
 
 .stroke-top{
   border-width: 0.3em;
-  border-color: var(--outline);
+  border-color: var(--dugongOutline);
   border-top-style: solid;
 }
 
 .stroke-right{
   border-width: 0.3em;
-  border-color: var(--outline);
+  border-color: var(--dugongOutline);
   border-right-style: solid;
 }
 
 .stroke-bottom{
   border-width: 0.3em;
-  border-color: var(--outline);
+  border-color: var(--dugongOutline);
   border-bottom-style: solid;
 }
 
 .stroke-left{
   border-width: 0.3em;
-  border-color: var(--outline);
+  border-color: var(--dugongOutline);
   border-left-style: solid;
 }
 
-.head-part0{
+.dug-head-part0{
   position: relative;
 }
 
-.head-part1{
+.dug-head-part1{
   display: grid;
   grid-template-columns: 10% 90%;
 }
 
-.head-part2{
+.dug-head-part2{
   position: relative;
   border-top-right-radius: 10%;
 }
 
-.head-part6{
+.dug-head-part6{
   display: grid;
   grid-template-columns: 30% 70%;
 }
 
-.head-part3{
+.dug-head-part3{
   height: 100%;
   width: 95%;
   border-width: 0.3em;
-  border-color: var(--outline);
+  border-color: var(--dugongOutline);
   border-top-style: solid;
   border-right-style: solid;
   border-top-right-radius: 100%;
   border-bottom-right-radius: 1em;
 }
 
-.dugong-snout{
+.dugong-dugSnout{
   position: absolute;
   z-index: 5;
   top: 5em;
@@ -166,29 +166,29 @@
   grid-template-rows: 70% 30%;
 }
 
-.dugong-snout:hover{
-  animation: talk 0.7s ease-in;
+.dugong-dugSnout:hover{
+  animation: dugongTalk 0.7s ease-in;
   animation-iteration-count: infinite;
 }
 
-.snout-grid{
+.dugSnout-grid{
   display: grid;
   grid-template-columns: 1fr 15% 15% 1fr;
 }
 
-.snout-part{
+.dugSnout-part{
   position: relative;
 }
 
-.snout-top .sw, .snout-top .se{
+.dugSnout-top .dugong-sw, .dugSnout-top .dugong-se{
   border-top-width: 0em;
 }
 
-.snout-grid .ne-sharp{
+.dugSnout-grid .dugong-ne-sharp{
   border-left-width: 0em;
 }
 
-.snout-grid .nw-sharp{
+.dugSnout-grid .dugong-nw-sharp{
   border-right-width: 0em;
 }
 
@@ -204,7 +204,7 @@
   grid-template-columns: 20% 1fr 15%;
 }
 
-.dugong-body .sw-sharp{
+.dugong-body .dugong-sw-sharp{
   border-right-width: 0em;
 }
 
@@ -212,19 +212,19 @@
   grid-column: 1/4;
   grid-row: 3/4;
   border-width: 0.3em;
-  border-color: var(--outline);
+  border-color: var(--dugongOutline);
   border-bottom-style: solid;
   border-left-style: solid;
   border-bottom-left-radius: 16em;
   border-bottom-right-radius: 16em;
 }
 
-.tummy-top{
+.dugongTummy-top{
   display: grid;
   justify-items: center;
 }
 
-.arc{
+.dugArc{
   height: 90%;
   width: 100%;
   border-top-left-radius: 20em;
@@ -233,12 +233,12 @@
   justify-items: center;
 }
 
-.tummy{
+.dugongTummy{
   height: 80%;
   width: 100%;
   border-bottom-left-radius: 20em;
   border-bottom-right-radius: 20em;
-  background-color: var(--skin);
+  background-color: var(--dugongSkin);
 }
 
 .dugong-tail{
@@ -251,24 +251,24 @@
   height: 6em;
   width: 8em;
   transform: rotateX(-60deg) rotateZ(-15deg);
-  animation: tailFlip 4s ease-in-out;
+  animation: dugongTailFlip 4s ease-in-out;
   animation-iteration-count: infinite;
 }
 
-.tail-left{
-  background-color: var(--skin);
+.dugong-tail-left{
+  background-color: var(--dugongSkin);
   border-width: 0.4em;
-  border-color: var(--outline);
+  border-color: var(--dugongOutline);
   border-bottom-style: solid;
   border-left-style: solid;
   border-top-left-radius: 90%;
   border-bottom-right-radius: 50%;
 }
 
-.tail-right{
-  background-color: var(--skin);
+.dugong-tail-right{
+  background-color: var(--dugongSkin);
   border-width: 0.4em;
-  border-color: var(--outline);
+  border-color: var(--dugongOutline);
   border-bottom-style: solid;
   border-right-style: solid;
   border-top-right-radius: 90%;
@@ -282,9 +282,9 @@
   left: -1.5em;
   height: 9em;
   width: 4em;
-  background-color: var(--skin);
+  background-color: var(--dugongSkin);
   border-width: 0.3em;
-  border-color: var(--outline);
+  border-color: var(--dugongOutline);
   border-bottom-style: solid;
   border-left-style: solid;
   border-right-style: solid;
@@ -293,7 +293,7 @@
   border-bottom-left-radius: 90%;
   border-bottom-right-radius: 20%;
   transform: rotate(30deg) rotateY(30deg);
-  animation: flip1 4s ease-in-out;
+  animation: dugongFlip1 4s ease-in-out;
   animation-iteration-count: infinite;
 }
 
@@ -304,9 +304,9 @@
   right: 1.5em;
   height: 9em;
   width: 4em;
-  background-color: var(--skinDark);
+  background-color: var(--dugongSkinDark);
   border-width: 0.3em;
-  border-color: var(--outline);
+  border-color: var(--dugongOutline);
   border-bottom-style: solid;
   border-right-style: solid;
   border-top-left-radius: 30%;
@@ -314,7 +314,7 @@
   border-bottom-left-radius: 70%;
   border-bottom-right-radius: 30%;
   transform: rotate(-40deg) rotateY(-30deg);
-  animation: flip2 4s ease-in-out;
+  animation: dugongFlip2 4s ease-in-out;
   animation-iteration-count: infinite;
 }
 
@@ -322,107 +322,97 @@
 // CURVE SHAPES 
 ===================*/
 
-.inverted{
-  background-color: rgba(0,0,0,0);
-  box-shadow: 0em -1.5em 0em 0em var(--skin);
-}
-
-.inverted-n{
-  background-color: rgba(0,0,0,0);
-  box-shadow: 0em 0.5em 0em 0em var(--skin);
-}
-
-.half-height{
+.dugong-half-height{
   display: grid;
   grid-template-rows: 50% 50%;
 }
 
-.half-width{
+.dugong-half-width{
   display: grid;
   grid-template-columns: 50% 50%;
 }
 
-.se{
+.dugong-se{
   height: 100%;
   width: 100%;
   border-width: 0.3em;
-  border-color: var(--outline);
+  border-color: var(--dugongOutline);
   border-top-style: solid;
   border-left-style: solid;
   border-top-left-radius: 16em;
 }
 
-.se-sharp{
+.dugong-se-sharp{
   border-top-left-radius: 100%;
   height: 100%;
   width: 100%;
   border-width: 0.3em;
-  border-color: var(--outline);
+  border-color: var(--dugongOutline);
   border-top-style: solid;
   border-left-style: solid;
 }
 
-.ne{
+.dugong-ne{
   height: 100%;
   width: 100%;
   border-width: 0.3em;
-  border-color: var(--outline);
+  border-color: var(--dugongOutline);
   border-bottom-style: solid;
   border-left-style: solid;
   border-bottom-left-radius: 16em;
 }
 
-.ne-sharp{
+.dugong-ne-sharp{
   border-bottom-left-radius: 100%;
   height: 100%;
   width: 100%;
   border-width: 0.3em;
-  border-color: var(--outline);
+  border-color: var(--dugongOutline);
   border-bottom-style: solid;
   border-left-style: solid;
 }
 
-.nw{
+.dugong-nw{
   height: 100%;
   width: 100%;
   border-width: 0.3em;
-  border-color: var(--outline);
+  border-color: var(--dugongOutline);
   border-bottom-style: solid;
   border-right-style: solid;
   border-bottom-right-radius: 16em;
 }
 
-.nw-sharp{
+.dugong-nw-sharp{
   border-bottom-right-radius: 100%;
   height: 100%;
   width: 100%;
   border-width: 0.3em;
-  border-color: var(--outline);
+  border-color: var(--dugongOutline);
   border-bottom-style: solid;
   border-right-style: solid;
 }
 
-.sw{
+.dugong-sw{
   height: 100%;
   width: 100%;
   border-width: 0.3em;
-  border-color: var(--outline);
+  border-color: var(--dugongOutline);
   border-top-style: solid;
   border-right-style: solid;
   border-top-right-radius: 16em;
 }
 
-.sw-sharp{
+.dugong-sw-sharp{
   border-top-right-radius: 100%;
   height: 100%;
   width: 100%;
   border-width: 0.3em;
-  border-color: var(--outline);
+  border-color: var(--dugongOutline);
   border-top-style: solid;
   border-right-style: solid;
 }
 
-@keyframes talk{
+@keyframes dugongTalk{
   15%{
     transform: translateY(-0.25em) rotate(10deg);
   }
@@ -437,7 +427,7 @@
   }
 }
 
-@keyframes tailFlip{
+@keyframes dugongTailFlip{
   45%{
     top: 21em;
     transform: rotateX(-30deg) rotateZ(-15deg);
@@ -448,7 +438,7 @@
   }
 }
 
-@keyframes swim{
+@keyframes dugong-swim{
   45%{
     transform: translateY(-1em);
   }
@@ -457,7 +447,7 @@
   }
 }
 
-@keyframes flip1{
+@keyframes dugongFlip1{
   45%{
     top: 9.5em;
     left: -0.5em;
@@ -470,7 +460,7 @@
   }
 }
 
-@keyframes flip2{
+@keyframes dugongFlip2{
   45%{
     right: 3em;
     transform: rotate(-20deg) rotateY(-30deg);
