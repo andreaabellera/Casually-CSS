@@ -9,7 +9,7 @@
 
   <body>
     <div id="meta">
-      <span id="instr"> Press 'z' to shift artworks forward </span>
+      <span id="instr"> Press 'z' or 'x' to shift artworks backward/forward </span>
       <div class="test-container"></div>
       <div class="test-container"></div>
       <div class="test-container"></div>
@@ -59,6 +59,14 @@ html, body{
   height: 100%;
   width: 100%;
 }
+
+.test-container:nth-child(5), .test-container:nth-child(6){
+  border-radius: 8em;
+}
+
+.test-container:nth-child(11){
+  border-radius: 50%;
+}
 </style>
 
 <script>
@@ -81,9 +89,13 @@ html, body{
 
   document.addEventListener("DOMContentLoaded", () => { loadArtworks() });
   document.addEventListener("keydown", (e) => {
-    if(e.keyCode == 90){
+    if(e.keyCode == 88){
       let art = artworks.pop()
       artworks.unshift(art)
+      loadArtworks(true)
+    } else if(e.keyCode == 90){
+      let art = artworks.shift()
+      artworks.push(art)
       loadArtworks(true)
     }
   })
