@@ -1,0 +1,325 @@
+<div id="swiss" class="artboard">
+  <div class="knife">
+    <div class="swissBase">
+      <div class="clip"></div>
+      <div class="insignia">
+        <div class="crossv"></div>
+        <div class="crossh"></div>
+      </div>
+    </div>
+    <div class="opener"></div>
+    <div class="blade"></div>
+    <div class="short"></div>
+    <div class="file"></div>
+    <div class="scissor1"></div>
+    <div class="scissor2"></div>
+    <div class="swissBack"></div>
+  </div>
+</div>
+
+<style>
+:root{
+  --swissBase: linear-gradient(204deg, rgb(199, 66, 66), crimson);
+  --insignia: crimson;
+  --swissBack: grey;
+}
+
+#swiss{
+  height: 22em;
+  width: 22em;
+}
+
+.knife{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  animation: spinknife 15s cubic-bezier(.75,.22,.27,.73) infinite;
+}
+
+.swissBase{
+  position: absolute;
+  background-image: var(--swissBase);
+  z-index: 12;
+  top:50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  height: 3.5em;
+  width: 14em;
+  background-color: var(--swissBase);
+  border-radius: 8em;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  align-items: center;
+}
+
+.swissBack{
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-49% , -47%);
+  height: 3.5em;
+  width: 14em;
+  background-color: var(--swissBack);
+  border-radius: 8em;
+}
+
+.clip{
+  height: 0.75em;
+  width: 0.5em;
+  background-image: linear-gradient(204deg, #e8e9e6, gainsboro, #ebedee);
+  border-width: 0.2em;
+  border-right-style: solid;
+  border-color: var(--swissBack);
+}
+
+.insignia{
+  height: 1.5em;
+  width: 1.5em;
+  border-color: gainsboro;
+  border-width: 0.15em;
+  border-style: solid;
+  border-radius: 0.6em;
+  background-color: var(--insignia);
+  display: grid;
+  position: relative;
+  align-items: center;
+  justify-items: center;
+}
+
+.crossv{
+  position: absolute;
+  height: 80%;
+  width: 0.3em;
+  background-color: #ebedee;
+}
+
+.crossh{
+  position: absolute;
+  height: 0.3em;
+  width: 80%;
+  background-color: #ebedee;
+}
+
+.knife{
+  cursor: pointer;
+}
+
+.opener{
+  background-image: radial-gradient(circle at right, transparent 0%, transparent 20%, #ebedee 21%, gainsboro 60%, #e8e9e6 100%);
+  position: absolute;
+  z-index: 4;
+  top: 5.35em;
+  left: 4em;
+  height: 4.75em;
+  width: 2.75em;
+  clip-path: polygon(0% 30%, 30% 0%, 70% 0%, 100% 30%, 100% 100%, 0% 100%);
+  transform: rotate(-20deg) translateX(0);
+  animation: spinOpener 15s ease-out infinite;
+}
+
+.short{
+  background-image: linear-gradient(204deg, #e8e9e6, gainsboro, #ebedee);
+  z-index: 3;
+  top: 5em;
+  left: 9em;
+  position: absolute;
+  height: 5em;
+  width: 2.2em;
+  border-top-left-radius: 100%;
+  transform: rotate(-90deg) translateX(-3.5em);
+  animation: spinShort 15s ease-out infinite;
+}
+
+.blade{
+  background-image: linear-gradient(204deg, #ebedee, #e8e9e6, gainsboro, white);
+  position: absolute;
+  z-index: 4;
+  top: 3em;
+  left: 12em;
+  height: 8em;
+  width: 2em;
+  border-top-right-radius: 100%;
+  border-top-left-radius: 10%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 30%;
+  transform: rotate(20deg) translateX(0);
+  animation: spinBlade 15s ease-out infinite;
+}
+
+.file{
+  background-image: repeating-linear-gradient(204deg, #ebedee 0.2em, #ebedee 0.3em, darkgrey 0.32em);
+  position: absolute;
+  z-index: 4;
+  top: 8em;
+  left: 13.05em;
+  height: 6em;
+  width: 2em;
+  transform: rotate(90deg);
+  border-width: 0.2em;
+  border-style: double;
+  border-color: rgb(210, 209, 209);
+  animation: spinFile 15s ease-out infinite;
+}
+
+.scissor1{
+  background-image: linear-gradient(204deg, #ebedee, #e8e9e6, gainsboro, white);
+  position: absolute;
+  z-index: 4;
+  top: 7.5em;
+  left: 7.25em;
+  height: 7em;
+  width: 2em;
+  border-bottom-right-radius: 100%;
+  transform: rotate(-90deg);
+  animation: spinScissor1 15s ease-out infinite;
+}
+
+.scissor2{
+  background-image: linear-gradient(204deg, #e8e9e6, gainsboro, #ebedee, lightgrey);
+  position: absolute;
+  z-index: 4;
+  top: 7.5em;
+  left: 7.25em;
+  height: 7em;
+  width: 2em;
+  border-bottom-left-radius: 100%;
+  transform: rotate(-90deg);
+  animation: spinScissor2 15s ease-out infinite;
+}
+
+@keyframes spinknife{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(-1800deg);
+  }
+}
+
+@keyframes spinOpener{
+  0%{
+    transform: rotate(-20deg) translateX(0);
+  }
+  5%{
+    transform: rotate(-20deg) translateX(0);
+  }
+  30%{
+    transform: rotate(90deg) translate(3.5em, -2em);
+  }
+  85%{
+    transform: rotate(90deg) translate(3.5em, -2em);
+  }
+  90%{
+    transform: rotate(-20deg) translateX(0);
+  }
+}
+
+@keyframes spinBlade{
+  0%{
+    transform: rotate(20deg) translateX(0);
+  }
+  5%{
+    transform: rotate(20deg) translateX(0);
+  }
+  30%{
+    transform: rotate(90deg) translateX(3.5em);
+  }
+  80%{
+    transform: rotate(90deg) translateX(3.5em);
+  }
+  85%{
+    transform: rotate(20deg) translateX(0);
+  }
+}
+
+@keyframes spinShort{
+  0%{
+    transform: rotate(-90deg) translateX(-3.5em);
+  }
+  5%{
+    transform: rotate(0deg) translateX(0);
+  }
+  30%{
+    transform: rotate(0deg) translateX(0);
+  }
+  55%{
+    transform: rotate(-90deg) translateX(-3.5em);
+  }
+}
+
+@keyframes spinFile{
+  0%{
+    transform: rotate(90deg);
+  }
+  5%{
+    transform: rotate(-45deg) translateY(3.5em);
+  }
+  30%{
+    transform: rotate(-45deg) translateY(3.5em);
+  }
+  60%{
+    transform: rotate(90deg);
+  }
+  90%{
+    transform: rotate(90deg);
+  }
+  95%{
+    transform: rotate(-45deg) translateY(3.5em);
+  }
+}
+
+@keyframes spinScissor1{
+  0%{
+    transform: rotate(-90deg);
+  }
+  5%{
+    transform: rotate(-60deg) translateY(4em);
+  }
+  10%{
+    transform: rotate(-40deg) translateY(4em);
+  }
+  15%{
+    transform: rotate(-60deg) translateY(4em);
+  }
+  20%{
+    transform: rotate(-35deg) translateY(4em);
+  }
+  25%{
+    transform: rotate(-40deg) translateY(4em);
+  }
+  30%{
+    transform: rotate(-60deg) translateY(4em);
+  }
+  50%{
+    transform: rotate(-90deg);
+  }
+}
+
+@keyframes spinScissor2{
+  0%{
+    transform: rotate(-90deg);
+  }
+  5%{
+    transform: rotate(0deg) translateY(4em);
+  }
+  10%{
+    transform: rotate(-25deg) translateY(4em);
+  }
+  15%{
+    transform: rotate(0deg) translateY(4em);
+  }
+  20%{
+    transform: rotate(-25deg) translateY(4em);
+  }
+  25%{
+    transform: rotate(0deg) translateY(4em);
+  }
+  30%{
+    transform: rotate(0deg) translateY(4em);
+  }
+  50%{
+    transform: rotate(-90deg);
+  }
+}
+</style>
