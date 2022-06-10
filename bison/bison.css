@@ -1,12 +1,12 @@
 :root{
-  --outline: black;
-  --hair: #37291E;
-  --fur: #564C45;
-  --horn: #E7E3DA;
-  --nose: #3F3F3F;
+  --bisOutline: black;
+  --bisHair: #37291E;
+  --bisFur: #564C45;
+  --bisHorn: #E7E3DA;
+  --bisNose: #3F3F3F;
 }
 
-.artboard{
+#bison{
   position: relative;
   height: 26em;
   width: 35em;
@@ -24,19 +24,19 @@
 }
 
 .bison-upper:hover{
-  animation: dancing 4s ease-in-out infinite;
+  animation: bisDancing 4s ease-in-out infinite;
 }
 
-.hair{
-  background-color: var(--hair);
+.bisHair{
+  background-color: var(--bisHair);
 }
 
-.fur{
-  background-color: var(--fur);
+.bisFur{
+  background-color: var(--bisFur);
 }
 
-.hairDark{
-  background-color: var(--hairDark);
+.bisHairDark{
+  background-color: var(--bisHairDark);
 }
 
 .bison-body{
@@ -46,9 +46,9 @@
   top: 2em;
   height: 18em;
   width: 26em;
-  background-color: var(--fur);
+  background-color: var(--bisFur);
   border-width: 0.3em;
-  border-color: var(--outline);
+  border-color: var(--bisOutline);
   border-style: solid;
   border-top-left-radius: 100%;
   border-top-right-radius: 60%;
@@ -56,7 +56,7 @@
   border-bottom-right-radius: 90%;
 }
 
-.bison-head{
+.bison-bisHead{
   position: absolute;
   z-index: 4;
   right: 3.5em;
@@ -67,7 +67,7 @@
   grid-template-rows: 35% 65%;
 }
 
-.bison-nose{
+.bison-bisNose{
   position: absolute;
   z-index: 6;
   height: 3em;
@@ -79,12 +79,12 @@
   justify-items: center;
 }
 
-.nose-top{
+.bisNose-top{
   position: relative;
   width: 100%;
-  background-color: var(--nose);
+  background-color: var(--bisNose);
   border-width: 0.3em;
-  border-color: var(--outline);
+  border-color: var(--bisOutline);
   border-style: solid;
   border-top-left-radius: 90%;
   border-top-right-radius: 90%;
@@ -93,39 +93,39 @@
   overflow: hidden;
 }
 
-.nostril-left{
+.bisNostril-left{
   position: absolute;
   z-index: 8;
   top: 0.5em;
   height: 0.75em;
   width: 1em;
-  background-color: var(--outline);
+  background-color: var(--bisOutline);
   border-radius: 100%;
   transform: rotate(45deg);
 }
 
-.nostril-right{
+.bisNostril-right{
   position: absolute;
   z-index: 8;
   right: 0;
   top: 0.5em;
   height: 0.75em;
   width: 1em;
-  background-color: var(--outline);
+  background-color: var(--bisOutline);
   border-radius: 100%;
   transform: rotate(-45deg);
 }
 
-.nose-bottom{
-  background-color: var(--nose);
+.bisNose-bottom{
+  background-color: var(--bisNose);
   border-width: 0.3em;
   width: 80%;
-  border-color: var(--outline);
+  border-color: var(--bisOutline);
   border-style: solid;
   border-top-style: none;
   border-bottom-left-radius: 3em;
   border-bottom-right-radius: 3em;
-  animation: chewing 8s linear infinite;
+  animation: bisChewing 8s linear infinite;
 }
 
 .bison-mustache{
@@ -137,27 +137,27 @@
   width: 4.8em;
   filter: brightness(40%);
   border-width: 0.3em;
-  border-color: var(--outline);
+  border-color: var(--bisOutline);
   border-style: solid;
   border-top-style: none;
   border-bottom-left-radius: 5em;
   border-bottom-right-radius: 5em;
 }
 
-.head-top{
+.bisHead-top{
   display: grid;
   grid-template-columns: 60% 45%;
 }
 
-.head-bottom{
+.bisHead-bottom{
   display: grid;
   grid-template-columns: 35% 40% 30%;
-  border-color: var(--outline);
+  border-color: var(--bisOutline);
   border-bottom-left-radius: 65%;
   border-bottom-right-radius: 50%;
 }
 
-.bison-horn{
+.bison-bisHorn{
   position: absolute;
   z-index: 4;
   top: 1.5em;
@@ -165,39 +165,39 @@
   width: 4em;
   background-image: radial-gradient(ellipse at top right, 
   rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, 
-  var(--outline) 51%, var(--outline) 54%, var(--horn) 55%);
+  var(--bisOutline) 51%, var(--bisOutline) 54%, var(--bisHorn) 55%);
   border-width: 0.3em;
-  border-color: var(--outline);
+  border-color: var(--bisOutline);
   border-bottom-style: solid;
   border-left-style: solid;
   border-bottom-left-radius: 80%;
   border-top-left-radius: 50%;
 }
 
-.horn-left{
+.bisHorn-left{
   left: 18em;
 }
 
-.horn-right{
+.bisHorn-right{
   left: 29em;
   transform: rotateY(180deg);
 }
 
-.horn1{
+.bisHorn1{
   visibility: 0;
 }
 
-.bison-ear{
+.bison-bisEar{
   position: absolute;
   z-index: 5;
   top: 6em;
-  background-color: var(--fur);
+  background-color: var(--bisFur);
   height: 2.5em;
   border-width: 0.3em;
-  border-color: var(--outline);
+  border-color: var(--bisOutline);
 }
 
-.ear-left{
+.bisEar-left{
   right: 15em;
   width: 3em;
   border-style: solid;
@@ -207,7 +207,7 @@
   border-top-right-radius: 40%;
 }
 
-.ear-right{
+.bisEar-right{
   right: 0;
   width: 3em;
   border-style: solid;
@@ -217,26 +217,26 @@
   border-top-left-radius: 40%;
 }
 
-.stabilize{
+.bisStabilize{
   position: relative;
 }
 
-.eye{
+.bisEye{
   position: absolute;
   top: 1em;
   z-index: 6;
   height: 2.5em;
   background-color: whitesmoke;
   border-width: 0.2em;
-  border-color: var(--outline);
+  border-color: var(--bisOutline);
   border-style: solid;
   overflow: hidden;
   display: flex;
   align-items: flex-end;
-  animation: gazing 10s linear infinite;
+  animation: bisGazing 10s linear infinite;
 }
 
-.eye-left{
+.bisEye-left{
   right: 0;
   border-top-left-radius: 2em;
   border-bottom-left-radius: 3em;
@@ -246,7 +246,7 @@
   justify-content: flex-end;
 }
 
-.eye-right{
+.bisEye-right{
   left: 40%;
   border-top-right-radius: 2em;
   border-bottom-right-radius: 3em;
@@ -255,23 +255,23 @@
   width: 1em;
 }
 
-.eye-pupil-left{
+.bisEye-pupil-left{
   height: 80%;
   width: 70%;
-  background-color: var(--outline);
+  background-color: var(--bisOutline);
   border-top-left-radius: 3em;
   border-bottom-left-radius: 3em;
 }
 
-.eye-pupil-right{
+.bisEye-pupil-right{
   height: 80%;
   width: 70%;
-  background-color: var(--outline);
+  background-color: var(--bisOutline);
   border-top-right-radius: 3em;
   border-bottom-right-radius: 3em;
 }
 
-.bison-hair{
+.bison-bisHair{
   position: absolute;
   z-index: 3;
   top: 0;
@@ -284,32 +284,32 @@
 }
 
 .bison-tail{
-  animation: swaying 0.8s ease-in-out infinite;
+  animation: bisSwaying 0.8s ease-in-out infinite;
 }
 
-.sect1{
+.bis-sect1{
   grid-column: 1/4;
 }
 
-.sect2{
+.bis-sect2{
   grid-column: 4/6;
 }
 
-.seg1{
+.bis-seg1{
   height: 85%;
 }
 
-.seg2{
+.bis-seg2{
   display: grid;
   grid-template-rows: 70% 15%;
 }
 
-.seg3{
+.bis-seg3{
   display: grid;
   grid-template-rows: 70% 30%;
 }
 
-.seg4{
+.bis-seg4{
   display: grid;
   grid-template-rows: 80% 20%;
 }
@@ -326,41 +326,41 @@
   top: 10em;
 }
 
-.bison-tail .se-sharp{
+.bison-tail .bis-se-sharp{
   border-top-width: 0em;
 }
 
-.tail1{
-  background-color: var(--fur);
-  border-color: var(--outline);
+.bis-tail1{
+  background-color: var(--bisFur);
+  border-color: var(--bisOutline);
   border-left-style: solid;
 }
 
-.tail2{
-  background-color: var(--fur);
+.bis-tail2{
+  background-color: var(--bisFur);
   border-width: 0.3em;
-  border-color: var(--outline);
+  border-color: var(--bisOutline);
   border-left-style: solid;
   clip-path: polygon(0% 0%, 69% 0%, 29% 100%, 0% 100%);
 }
 
-.tail-line{
+.bis-tail-line{
   width: 0.4em;
   height: 100%;
-  background-color: var(--outline);
+  background-color: var(--bisOutline);
   transform: rotate(5deg);
   clip-path: polygon(70% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
-.tail3{
-  background-color: var(--hair);
+.bis-tail3{
+  background-color: var(--bisHair);
   grid-column: 1/3;
   border-top-right-radius: 50%;
   border-top-left-radius: 1em;
   border-bottom-left-radius: 50%;
   transform: rotate(90deg);
   border-width: 0.3em;
-  border-color: var(--outline);
+  border-color: var(--bisOutline);
   border-style: solid;
 }
 
@@ -374,10 +374,10 @@
   grid-template-columns: 45% 55%;
 }
 
-.leg-top{
+.bis-leg-top{
   grid-column: 1/3;
   border-width: 0.3em;
-  border-color: var(--outline);
+  border-color: var(--bisOutline);
   border-left-style: solid;
   border-right-style: solid;
   border-bottom-style: solid;
@@ -385,11 +385,11 @@
   border-bottom-left-radius: 90%;
 }
 
-.leg-bottom{
+.bis-leg-bottom{
   grid-column: 1/2;
   grid-row: 2/3;
   border-width: 0.3em;
-  border-color: var(--outline);
+  border-color: var(--bisOutline);
   border-left-style: solid;
   border-right-style: solid;
   border-bottom-style: solid;
@@ -397,38 +397,38 @@
   transform: translate(1em, -1em);
 }
 
-.front-near{
+.bis-front-near{
   z-index: 2;
   top: 18em;
   left: 16em;
   overflow: hidden;
-  animation: footwork 8s ease-in-out infinite;
+  animation: bisFootwork 8s ease-in-out infinite;
 }
 
-.front-far{
+.bis-front-far{
   z-index: 1;
   top: 17em;
   left: 24em;
   filter: brightness(40%);
-  animation: footwork 8s ease-in-out infinite;
+  animation: bisFootwork 8s ease-in-out infinite;
   animation-delay: 6s;
 }
 
-.back-near{
+.bis-back-near{
   z-index: 5;
   top: 18em;
   left: 5em;
   overflow: hidden;
-  animation: footwork 8s ease-in-out infinite;
+  animation: bisFootwork 8s ease-in-out infinite;
   animation-delay: 4s;
 }
 
-.back-far{
+.bis-back-far{
   z-index: 1;
   top: 17em;
   left: 11em;
   filter: brightness(40%);
-  animation: footwork 8s ease-in-out infinite;
+  animation: bisFootwork 8s ease-in-out infinite;
   animation-delay: 2s;
 }
 
@@ -436,12 +436,12 @@
 // COLORS
 ===================*/
 
-.fur{
-  background-color: var(--fur);
+.bisFur{
+  background-color: var(--bisFur);
 }
 
-.hair{
-  background-color: var(--hair);
+.bisHair{
+  background-color: var(--bisHair);
 }
 
 /*===================
@@ -450,12 +450,12 @@
 
 .inverted{
   background-color: rgba(0,0,0,0);
-  box-shadow: 0em -1.5em 0em 0em var(--hair);
+  box-shadow: 0em -1.5em 0em 0em var(--bisHair);
 }
 
 .inverted-n{
   background-color: rgba(0,0,0,0);
-  box-shadow: 0em 0.5em 0em 0em var(--hair);
+  box-shadow: 0em 0.5em 0em 0em var(--bisHair);
 }
 
 .half-height{
@@ -472,18 +472,18 @@
   height: 100%;
   width: 100%;
   border-width: 0.3em;
-  border-color: var(--outline);
+  border-color: var(--bisOutline);
   border-top-style: solid;
   border-left-style: solid;
   border-top-left-radius: 16em;
 }
 
-.se-sharp{
+.bis-se-sharp{
   border-top-left-radius: 100%;
   height: 100%;
   width: 100%;
   border-width: 0.3em;
-  border-color: var(--outline);
+  border-color: var(--bisOutline);
   border-top-style: solid;
   border-left-style: solid;
 }
@@ -492,18 +492,18 @@
   height: 100%;
   width: 100%;
   border-width: 0.3em;
-  border-color: var(--outline);
+  border-color: var(--bisOutline);
   border-bottom-style: solid;
   border-left-style: solid;
   border-bottom-left-radius: 16em;
 }
 
-.ne-sharp{
+.bis-ne-sharp{
   border-bottom-left-radius: 100%;
   height: 100%;
   width: 100%;
   border-width: 0.3em;
-  border-color: var(--outline);
+  border-color: var(--bisOutline);
   border-bottom-style: solid;
   border-left-style: solid;
 }
@@ -512,18 +512,18 @@
   height: 100%;
   width: 100%;
   border-width: 0.3em;
-  border-color: var(--outline);
+  border-color: var(--bisOutline);
   border-bottom-style: solid;
   border-right-style: solid;
   border-bottom-right-radius: 16em;
 }
 
-.nw-sharp{
+.bis-nw-sharp{
   border-bottom-right-radius: 100%;
   height: 100%;
   width: 100%;
   border-width: 0.3em;
-  border-color: var(--outline);
+  border-color: var(--bisOutline);
   border-bottom-style: solid;
   border-right-style: solid;
 }
@@ -532,24 +532,24 @@
   height: 100%;
   width: 100%;
   border-width: 0.3em;
-  border-color: var(--outline);
+  border-color: var(--bisOutline);
   border-top-style: solid;
   border-right-style: solid;
   border-top-right-radius: 16em;
 }
 
-.sw-sharp{
+.bis-sw-sharp{
   border-top-right-radius: 100%;
   height: 100%;
   width: 100%;
   border-width: 0.3em;
-  border-color: var(--outline);
+  border-color: var(--bisOutline);
   border-top-style: solid;
   border-right-style: solid;
 }
 
 
-@keyframes chewing{
+@keyframes bisChewing{
   0%{
     width: 80%;
   }
@@ -573,7 +573,7 @@
   }
 }
 
-@keyframes gazing{
+@keyframes bisGazing{
   10%{
     align-items: center;
   }
@@ -588,7 +588,7 @@
   }
 }
 
-@keyframes swaying{
+@keyframes bisSwaying{
   0%{
     transform: rotate(0deg);
   }
@@ -600,7 +600,7 @@
   }
 }
 
-@keyframes dancing{
+@keyframes bisDancing{
   0%{
     transform: translate(0em, 0em);
   }
@@ -618,7 +618,7 @@
   }
 }
 
-@keyframes footwork{
+@keyframes bisFootwork{
   0%{
     transform: translateY(0em);
   }

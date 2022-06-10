@@ -1,12 +1,12 @@
-<div class="artboard">
+<div id="calendar" class="artboard">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <div class="calendar-shape">
         <div class="calendar">
-          <div class="header">
+          <div class="calHeader">
             <p> February </p>
             <p id="year"> 2017 </p>
           </div>
-          <div class="divider"></div>
+          <div class="calDivider"></div>
           <div class="days">
             <p> Su </p>
             <p> M </p>
@@ -16,44 +16,44 @@
             <p> F </p>
             <p> Sa </p>
           </div>
-          <div class="squares">
-            <div class="square"> </div>
-            <div class="square"> </div>
-            <div class="square"> </div>
-            <div class="square"> <p> 1 </p> </div>
-            <div class="square"> <p> 2 </p> </div>
-            <div class="square"> <p> 3 </p> </div>
-            <div class="square"> <p> 4 </p> </div>
-            <div class="square"> <p> 5 </p> </div>
-            <div class="square"> <p> 6 </p> </div>
-            <div class="square"> <p> 7 </p> </div>
-            <div class="square"> <p> 8 </p> </div>
-            <div class="square"> <p> 9 </p> </div>
-            <div class="square"> <p> 10 </p> </div>
-            <div class="square"> <p> 11 </p> </div>
-            <div class="square"> <p> 12 </p> </div>
-            <div class="square"> <p> 13 </p> </div>
-            <div class="square"> <p> 14 </p> </div>
-            <div class="square"> <p> 15 </p> </div>
-            <div class="square"> <p> 16 </p> </div>
-            <div class="square"> <p> 17 </p> </div>
-            <div class="square"> <p> 18 </p> </div>
-            <div class="square"> <p> 19 </p> </div>
-            <div class="square"> <p> 20 </p> </div>
-            <div class="square"> <p> 21 </p> </div>
-            <div class="square"> <p> 22 </p> </div>
-            <div class="square"> <p> 23 </p> </div>
-            <div class="square"> <p> 24 </p> </div>
-            <div class="square"> <p> 25 </p> </div>
-            <div class="square"> <p> 26 </p> </div>
-            <div class="square"> <p> 27 </p> </div>
-            <div class="square"> <p> 28 </p> </div>
-            <div class="square"> </div>
-            <div class="square"> </div>
-            <div class="square"> </div>
-            <div class="square"> </div>
+          <div class="calSqs">
+            <div class="calSq"> </div>
+            <div class="calSq"> </div>
+            <div class="calSq"> </div>
+            <div class="calSq"> <p> 1 </p> </div>
+            <div class="calSq"> <p> 2 </p> </div>
+            <div class="calSq"> <p> 3 </p> </div>
+            <div class="calSq"> <p> 4 </p> </div>
+            <div class="calSq"> <p> 5 </p> </div>
+            <div class="calSq"> <p> 6 </p> </div>
+            <div class="calSq"> <p> 7 </p> </div>
+            <div class="calSq"> <p> 8 </p> </div>
+            <div class="calSq"> <p> 9 </p> </div>
+            <div class="calSq"> <p> 10 </p> </div>
+            <div class="calSq"> <p> 11 </p> </div>
+            <div class="calSq"> <p> 12 </p> </div>
+            <div class="calSq"> <p> 13 </p> </div>
+            <div class="calSq"> <p> 14 </p> </div>
+            <div class="calSq"> <p> 15 </p> </div>
+            <div class="calSq"> <p> 16 </p> </div>
+            <div class="calSq"> <p> 17 </p> </div>
+            <div class="calSq"> <p> 18 </p> </div>
+            <div class="calSq"> <p> 19 </p> </div>
+            <div class="calSq"> <p> 20 </p> </div>
+            <div class="calSq"> <p> 21 </p> </div>
+            <div class="calSq"> <p> 22 </p> </div>
+            <div class="calSq"> <p> 23 </p> </div>
+            <div class="calSq"> <p> 24 </p> </div>
+            <div class="calSq"> <p> 25 </p> </div>
+            <div class="calSq"> <p> 26 </p> </div>
+            <div class="calSq"> <p> 27 </p> </div>
+            <div class="calSq"> <p> 28 </p> </div>
+            <div class="calSq"> </div>
+            <div class="calSq"> </div>
+            <div class="calSq"> </div>
+            <div class="calSq"> </div>
           </div>
-          <div class="divider"></div>
+          <div class="calDivider"></div>
         </div>
     </div>
 </div>

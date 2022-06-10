@@ -1,84 +1,84 @@
-<div class="artboard">
+<div id="bison" class="artboard">
     <div class="bison">
         <div class="bison-upper">
-          <div class="bison-horn horn-left"></div>
-          <div class="bison-horn horn-right"></div>
-          <div class="bison-mustache fur"></div>
-          <div class="bison-ear ear-left"></div>
-          <div class="bison-ear ear-right"></div>
-          <div class="bison-head">
-            <div class="head-top">
-              <div class="se-sharp fur"></div>
-              <div class="sw-sharp fur"></div>
+          <div class="bison-bisHorn bisHorn-left"></div>
+          <div class="bison-bisHorn bisHorn-right"></div>
+          <div class="bison-mustache bisFur"></div>
+          <div class="bison-bisEar bisEar-left"></div>
+          <div class="bison-bisEar bisEar-right"></div>
+          <div class="bison-bisHead">
+            <div class="bisHead-top">
+              <div class="bis-se-sharp bisFur"></div>
+              <div class="bis-sw-sharp bisFur"></div>
             </div>
-            <div class="head-bottom">
-              <div class="ne-sharp fur stabilize">
-                <div class="eye eye-left">
-                  <div class="eye-pupil-left"></div>
+            <div class="bisHead-bottom">
+              <div class="bis-ne-sharp bisFur bisStabilize">
+                <div class="bisEye bisEye-left">
+                  <div class="bisEye-pupil-left"></div>
                 </div>
               </div>
-              <div class="fur stabilize">
-                <div class="bison-nose">
-                  <div class="nose-top">
-                    <div class="nostril-left"></div>
-                    <div class="nostril-right"></div>
+              <div class="bisFur bisStabilize">
+                <div class="bison-bisNose">
+                  <div class="bisNose-top">
+                    <div class="bisNostril-left"></div>
+                    <div class="bisNostril-right"></div>
                   </div>
-                  <div class="nose-bottom"></div>
+                  <div class="bisNose-bottom"></div>
                 </div>
               </div>
-              <div class="nw-sharp fur stabilize">
-                <div class="eye eye-right">
-                  <div class="eye-pupil-right"></div>
+              <div class="bis-nw-sharp bisFur bisStabilize">
+                <div class="bisEye bisEye-right">
+                  <div class="bisEye-pupil-right"></div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="bison-hair">
-            <div class="se-sharp hair sect1"></div>
-            <div class="sw-sharp hair sect2"></div>
-            <div class="seg1">
-              <div class="ne-sharp hair"></div>
+          <div class="bison-bisHair">
+            <div class="bis-se-sharp bisHair bis-sect1"></div>
+            <div class="bis-sw-sharp bisHair bis-sect2"></div>
+            <div class="bis-seg1">
+              <div class="bis-ne-sharp bisHair"></div>
             </div>
-            <div class="seg2">
-              <div class="hair"></div>
-              <div class="nw-sharp hair"></div>
+            <div class="bis-seg2">
+              <div class="bisHair"></div>
+              <div class="bis-nw-sharp bisHair"></div>
             </div>
-            <div class="seg3">
-              <div class="hair"></div>
-              <div class="ne-sharp hair"></div>
+            <div class="bis-seg3">
+              <div class="bisHair"></div>
+              <div class="bis-ne-sharp bisHair"></div>
             </div>
-            <div class="seg3">
-              <div class="hair"></div>
-              <div class="nw-sharp hair"></div>
+            <div class="bis-seg3">
+              <div class="bisHair"></div>
+              <div class="bis-nw-sharp bisHair"></div>
             </div>
-            <div class="seg4">
-              <div class="nw-sharp hair"></div>
+            <div class="bis-seg4">
+              <div class="bis-nw-sharp bisHair"></div>
             </div>
           </div>
           <div class="bison-body"></div>
           <div class="bison-tail">
             <div></div>
-            <div class="tail1 se-sharp"></div>
+            <div class="bis-tail1 bis-se-sharp"></div>
             <div></div>
-            <div class="tail2">   <div class="tail-line"></div>   </div>
-            <div class="tail3"></div>
+            <div class="bis-tail2">   <div class="bis-tail-line"></div></div>
+            <div class="bis-tail3"></div>
           </div>
         </div>
-        <div class="bison-leg front-near">
-          <div class="leg-top fur"></div>
-          <div class="leg-bottom fur"></div>
+        <div class="bison-leg bis-front-near">
+          <div class="bis-leg-top bisFur"></div>
+          <div class="bis-leg-bottom bisFur"></div>
         </div>
-        <div class="bison-leg front-far">
-          <div class="leg-top fur"></div>
-          <div class="leg-bottom fur"></div>
+        <div class="bison-leg bis-front-far">
+          <div class="bis-leg-top bisFur"></div>
+          <div class="bis-leg-bottom bisFur"></div>
         </div>
-        <div class="bison-leg back-near">
-          <div class="leg-top fur"></div>
-          <div class="leg-bottom fur"></div>
+        <div class="bison-leg bis-back-near">
+          <div class="bis-leg-top bisFur"></div>
+          <div class="bis-leg-bottom bisFur"></div>
         </div>
-        <div class="bison-leg back-far">
-          <div class="leg-top fur"></div>
-          <div class="leg-bottom fur"></div>
+        <div class="bison-leg bis-back-far">
+          <div class="bis-leg-top bisFur"></div>
+          <div class="bis-leg-bottom bisFur"></div>
         </div>
     </div>
 </div>

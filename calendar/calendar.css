@@ -1,14 +1,14 @@
 :root{
   --calendarPage: lightblue; 
-  --divider: lightskyblue;
-  --square: rgb(231, 240, 243);
+  --calDivider: lightskyblue;
+  --calSq: rgb(231, 240, 243);
   --headColor: whitesmoke;
   --dayColor: #3e3e8e;
   --numberColor: lightskyblue;
   --shadowColor: #3e3e8e;
 }
 
-.artboard{
+#calendar{
   height: 28em;
   width: 36em;
   transform: scale(50%);
@@ -41,7 +41,7 @@
   animation-iteration-count: infinite;
 }
 
-.header{
+.calHeader{
   align-self: flex-start;
   margin: -0.5em 1em -0.5em 1em;
   color: var(--headColor);
@@ -54,8 +54,8 @@
   justify-self: flex-end;
 }
 
-.divider{
-  background-color: var(--divider);
+.calDivider{
+  background-color: var(--calDivider);
 }
 
 .days{
@@ -68,7 +68,7 @@
   margin-bottom: -0.5em;
 }
 
-.squares{
+.calSqs{
   width: 100%;
   display: grid;
   margin: 0.5ex 4% 2.5ex 7%;
@@ -77,8 +77,8 @@
   grid-gap: 1ex;
 }
 
-.square{
-  background-color: var(--square);
+.calSq{
+  background-color: var(--calSq);
   height: 100%;
   width: 100%;
   border-radius: 0.5ex;
@@ -86,7 +86,7 @@
   border-bottom-left-radius: 40%;
 }
 
-.square p{
+.calSq p{
   color: var(--numberColor);
   margin: 0.4em;
 }

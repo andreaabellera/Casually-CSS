@@ -1,12 +1,10 @@
 {
   "name": "casually-css",
-  "version": "0.0.8",
+  "version": "0.3.0",
   "description": "Import an artwork from Casually CSS!",
   "main": "create.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c",
-    "watch": "rollup -c -w"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -27,9 +25,5 @@
   "bugs": {
     "url": "https://github.com/andreaabellera/Casually-CSS/issues"
   },
-  "homepage": "https://github.com/andreaabellera/Casually-CSS#readme",
-  "devDependencies": {
-    "rollup": "^2.75.6",
-    "rollup-plugin-terser": "^7.0.2"
-  }
+  "homepage": "https://github.com/andreaabellera/Casually-CSS#readme"
 }

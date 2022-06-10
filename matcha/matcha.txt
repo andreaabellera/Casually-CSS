@@ -1,36 +1,36 @@
-<div class="artboard">
-  <div class="blossom">
+<div id="matcha" class="artboard">
+  <div class="matcha-blossom">
     <div class="stabilize">
-      <div class="half-height"><div class="petal"></div></div>
-      <div class="half-height"><div class="petal"></div></div>
-      <div class="half-height"><div class="petal"></div></div>
-      <div class="half-height"><div class="petal"></div></div>
-      <div class="half-height"><div class="petal"></div></div>
+      <div class="matcha-half-height"><div class="matcha-petal"></div></div>
+      <div class="matcha-half-height"><div class="matcha-petal"></div></div>
+      <div class="matcha-half-height"><div class="matcha-petal"></div></div>
+      <div class="matcha-half-height"><div class="matcha-petal"></div></div>
+      <div class="matcha-half-height"><div class="matcha-petal"></div></div>
     </div>
   </div>
-  <div class="teastring">
-    <div class="string"></div>
-    <div class="paper">
-      <div class="paper-top"></div>
-      <div class="paper-bottom"></div>
+  <div class="teamatcha-string">
+    <div class="matcha-string"></div>
+    <div class="tea-paper">
+      <div class="tea-paper-top"></div>
+      <div class="tea-paper-bottom"></div>
     </div>
   </div>
   <div class="matcha-set">
-    <div class="cup">
-      <div class="cup-front">
-        <div class="cup-front-top"></div>
-        <div class="cup-front-bottom"></div>
+    <div class="matcha-cup">
+      <div class="matcha-cup-front">
+        <div class="matcha-cup-front-top"></div>
+        <div class="matcha-cup-front-bottom"></div>
       </div>
-      <div class="drink">
+      <div class="matcha-drink">
         <div class="stabilize">
           <div class="surface"></div>
         </div>
       </div>
-      <div class="cup-back"></div>
+      <div class="matcha-cup-back"></div>
     </div>
-    <div class="wood">
-      <div class="wood-inner"></div>
+    <div class="matcha-wood">
+      <div class="matcha-wood-inner"></div>
     </div>
   </div>
-  <div class="handle"></div>
+  <div class="matcha-handle"></div>
 </div>

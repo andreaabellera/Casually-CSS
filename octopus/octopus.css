@@ -191,7 +191,7 @@
 }
 
 .octo-arm7{
-  transform: translate(13em, 15em) rotateZ(-70deg);
+  transform: translate(13em, 13em) rotateZ(-70deg);
   height: 16em;
   z-index: 0;
 }
