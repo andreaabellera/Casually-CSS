@@ -1,0 +1,125 @@
+<div class="artboard">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <div class="bleu button">
+      <span class="grad-overlay"></span>
+      <span class="box-overlay"></span>
+      <span class="glare"></span>
+      <span class="shade"></span>
+      <span class="ult-overlay"></span>
+      <span class="glare2"></span>
+      <span class="btn-text">Casually CSS</span>
+  </div>
+</div>
+
+<style>
+.artboard{
+  height: 5em;
+  width: 17em;
+}
+
+.button{
+  height: inherit;
+  width: inherit;
+  position: relative;
+  border-radius: 1em;
+  border: 0.3em groove;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+::selection{
+  background-color: rgba(0,0,0,0);
+}
+
+.bleu{
+  background-color: rgba(60, 132, 198, 0.8);
+  background: linear-gradient(to right, #0b18b4, #4363b8);
+  border-top-color: #AEAEB4;
+  border-right-color: #7376a7;
+  border-bottom-color: #8ba2c1;
+  border-left-color: #768fa5;	
+}
+
+.bleu:hover{
+  transition: 0.1s;
+  filter: brightness(110%);
+  cursor: pointer;
+}
+
+.bleu:active{
+  filter: brightness(90%);
+  background: linear-gradient(to right, #000094, #133398);
+}
+
+.grad-overlay{
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  height: 50%;
+  width: 100%;
+  background: linear-gradient(350deg, rgba(9,22,177,0.8), rgba(73,87,255,0.1));
+}
+
+.box-overlay{
+  position: relative;
+  z-index: 4;
+  height: 80%;
+  width: 96%;
+  background-image: linear-gradient(to right, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+}
+
+.glare {
+  position: absolute;
+  z-index: 3;
+  top: 5%;
+  left: 5%;
+  border-radius: 30%;
+  height: 0.6em;
+  width: 95%;
+  padding: 8px 0;
+  background-image: linear-gradient(to right, rgba(200, 190, 255, 0.3) 2%, rgba(255, 255, 255, 0.5) 10%, rgba(0, 0, 255, 0.2) 80%, rgba(0, 0, 255, 0));
+}
+
+.glare2{
+  position: absolute;
+  z-index: 7;
+  top: 0;
+  left: 0;
+  height: 40%;
+  width: 40%;
+  padding: 8px 0;
+  background-image: radial-gradient(rgba(255,255,255,1), rgba(255,255,255,0), rgba(255,255,255,0));
+}
+
+.shade {
+  position: absolute;
+  z-index: 2;
+  bottom: 10%;
+  left: 4%;
+  border-radius: 40%;
+  height: 0.8em;
+  width: 93%;
+  padding: 8px 0;
+  background-image: radial-gradient(darkblue 30%, mediumblue 100%);
+}
+
+.ult-overlay{
+  position: absolute;
+  z-index: 6;
+  height: 100%;
+  width: 100%;
+  background-image: radial-gradient(rgba(35,56,203, 0.4), rgba(7,17,182,0.4), rgba(190,190,255,0.5));
+}
+
+.btn-text{
+  position: absolute;
+  z-index: 8;
+  font-family: 'Fredoka One', cursive;
+  font-weight: 800;
+  font-size: 3ex;
+  color: #fff;
+  text-shadow: rgba(80, 73, 73, 0.5) 1px 2px 2px;
+}
+</style>

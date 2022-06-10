@@ -14,7 +14,7 @@ The [online gallery](https://andreaabellera.github.io/Casually-CSS/) showcase is
 
 ### Link the Library (Browser)
 1. Include this link in your HTML head  
-`<script src=""https://unpkg.com/casually-css@0.3.0/create.js"></script>`
+`<script src=""https://unpkg.com/casually-css@0.5.0/create.js"></script>`
 2. Download the folders of the artworks that you are going to use. Ensure your script in the same directory level as the artwork folder (not inside the artwork folder) 
 
 ### Import an Artwork
