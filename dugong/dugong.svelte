@@ -175,12 +175,6 @@
   border-right-style: solid;
 }
 
-.stroke-bottom{
-  border-width: 0.3em;
-  border-color: var(--dugongOutline);
-  border-bottom-style: solid;
-}
-
 .stroke-left{
   border-width: 0.3em;
   border-color: var(--dugongOutline);
