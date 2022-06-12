@@ -5,26 +5,25 @@ A collection of CSS artworks, casually created, and curated with care
 The [online gallery](https://andreaabellera.github.io/Casually-CSS/) showcase is deployed with Github Pages. Individual Casually CSS artworks are located inside their corresponding folders
 
 ## Import an Artwork
-### SvelteJS
+### SvelteJS App
 1. Install the Casually CSS node package into your Svelte app with  
 `npm install casually-css` 
 2. Inside the `<script>` tag of your Svelte file, import the Svelte component for the artwork of your choice  
 `import YourComponentName from "casually-css/{artwork}/{artwork}.svelte"`  
 **Sample usage:**  
-`import Bike from 'casually-css/bike/bike.svelte'`
+`import Bike from 'casually-css/@svelte/bike.svelte'`
 
 > Props can be passed to modify an artwork's colors and animation attributes. Detailed documentation for props will be available soon! 
 
 ### Browser
 1. Include this link in your HTML head  
-`<script src=""https://unpkg.com/casually-css@0.5.1/create.js"></script>`  
-2. Download the folders of the artworks that you are going to use. Ensure your script in the same directory level as the artwork folder (not inside the artwork folder)  
-3. You can start importing artworks with the JS function 'create'. It takes two parameters: __an HTML element__ and the __artwork name__. The artwork will resize to fill and fit inside its HTML element container.  
+`<script src="https://unpkg.com/casually-css@0.5.3/create.js"></script>`  
+2. You can start importing artworks with the JS function 'create'. It takes two parameters: __an HTML element__ and the __artwork name__. The artwork will resize to fill and fit inside its HTML element container.  
 `create(yourElement, 'orange')`  
 
 > The artwork will attach to either the **left** or **top** of its HTML element container if the artwork and container possess different aspect ratios
 
-### Other Node.js Apps or Frameworks (Bug: Path Issue needs Resolve)
+### Other Node.js Apps
 1. Install the Casually CSS node package into your Node.js app with  
 `npm install casually-css`  
 2. In your script, add either line at the top of your program  
