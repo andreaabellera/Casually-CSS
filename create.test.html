@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title> Create Test </title>
     <link rel="shortcut icon" type="image/x-icon" href="umd/favicon.ico">
-    <script src="https://unpkg.com/casually-css@0.5.0/create.js"></script>
+    <script src="create.js"></script>
   </head>
 
   <body>
@@ -81,8 +81,10 @@ html, body{
     "matcha",
     "octopus",
     "orange",
-    "sweets",
-    "swiss"
+    "cookie",
+    "lollipop",
+    "button",
+    "swiss",
   ]
 
   let boxes = document.getElementsByClassName("test-container")
@@ -101,7 +103,7 @@ html, body{
   })
 
   function loadArtworks(clear=false){
-    for(let i = 0; i < boxes.length; i++){
+    for(let i = 0; i < 12; i++){
       if(clear)
         boxes[i].innerHTML = ""
       create(boxes[i], artworks[i])

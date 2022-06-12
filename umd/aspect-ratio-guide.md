@@ -14,6 +14,8 @@ Aspect values yet to be tested, may be bound to change
 
 **Calendar** - [7:8] 
 
+**Cookie** - [1:1]
+
 **Dugong** - [13:8] 
 
 **Hippo** - [9:15] 
@@ -25,7 +27,6 @@ Aspect values yet to be tested, may be bound to change
 
 **Orange** - [1:1]
 
-**Sweets** - [1:1]
-- Note: pending split of lollipop and cookie
+**Lollipop** - [11:5]
 
 **Swiss** - [1:1]
