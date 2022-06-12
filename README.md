@@ -1,4 +1,4 @@
-![Casually CSS Banner](/umd/casually-banner.png)
+![Casually CSS Banner](/@siteres/casually-banner.png)
 A collection of CSS artworks, casually created, and curated with care  
 
 ## Gallery
@@ -9,7 +9,7 @@ The [online gallery](https://andreaabellera.github.io/Casually-CSS/) showcase is
 1. Install the Casually CSS node package into your Svelte app with  
 `npm install casually-css` 
 2. Inside the `<script>` tag of your Svelte file, import the Svelte component for the artwork of your choice  
-`import YourComponentName from "casually-css/{artwork}/{artwork}.svelte"`  
+`import YourComponentName from "casually-css/@svelte/{artwork}.svelte"`  
 **Sample usage:**  
 `import Bike from 'casually-css/@svelte/bike.svelte'`
 
