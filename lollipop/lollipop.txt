@@ -1,0 +1,32 @@
+<div id="lollipop" class="artboard">
+  <div class="lolli-bite">
+    <div class="bite bite21"></div>
+    <div class="bite bite22"></div>
+    <div class="bite bite23"></div>
+  </div>
+  <div class="lollipop-container">
+    <div class="lolli-head quadrants">
+      <div class="lolli full lolli-q2">
+        <span class="lolli lolli-q2 three-fourth"></span>
+        <span class="lolli lolli-q2 half"></span>
+        <span class="lolli lolli-q2 one-fourth"></span>
+      </div>
+      <div class="lolli full lolli-q1">
+        <span class="lolli lolli-q1 three-fourth"></span>
+        <span class="lolli lolli-q1 half"></span>
+        <span class="lolli lolli-q1 one-fourth"></span>
+      </div>
+      <div class="lolli full lolli-q3">
+        <span class="lolli lolli-q3-sharp three-fourth"></span>
+        <span class="lolli lolli-q3-sharp half"></span>
+        <span class="lolli end"></span>
+      </div>
+      <div class="lolli full lolli-q4">
+        <span class="lolli lolli-q4-sharp twist1"></span>
+        <span class="lolli lolli-q4-sharp twist2"></span>
+        <span class="lolli lolli-q4-sharp twist3"></span>
+      </div>
+    </div>
+    <div class="stick"></div>
+  </div>
+</div>

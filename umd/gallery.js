@@ -19,12 +19,6 @@ const hippo = {
     name: "Hichi the Hippo"
 };
 
-const sweets = {
-    id: "sweets",
-    comment: "For Emily and Ann who are my very sweet friends",
-    name: "Emily & Ann"
-};
-
 const bison = {
     id: "bison",
     comment: "From the plains of Manitoba",
@@ -79,6 +73,18 @@ const swiss = {
     name: "Swiss Army Knife"
 };
 
+const cookie = {
+    id: "cookie",
+    comment: "For Ann who is my very sweet friend",
+    name: "Ann"
+};
+
+const lollipop = {
+    id: "lollipop",
+    comment: "For Emily who is my very sweet friend",
+    name: "Emily"
+};
+
 const matcha = {
     id: "matcha",
     comment: "Help yourself with some matcha on a rainy day",
@@ -103,7 +109,6 @@ const button = {
 
 const artworks = [
     hippo,
-    sweets,
     bison,
     swiss, 
     orange, 
@@ -111,7 +116,9 @@ const artworks = [
     dugong, 
     boba, 
     octopus,
-    matcha, 
+    matcha,
+    cookie,
+    lollipop, 
     bike,
     beluga,
     button

@@ -1,0 +1,20 @@
+<div id="cookie" class="artboard">
+  <span class="chip"></span>
+  <span class="chip"></span>
+  <span class="chip"></span>
+  <span class="chip"></span>
+  <span class="chip"></span>
+  <span class="chip"></span>
+  <span class="chip"></span>
+  <div class="cookie-bite">
+    <div class="bite bite11"></div>
+    <div class="bite bite12"></div>
+    <div class="cookie cookie-q1-sharp bite13"></div>
+  </div>
+  <div class="cookie-container quadrants">
+    <div class="cookie full cookie-q2"></div>
+    <div class="cookie full cookie-q1"></div>
+    <div class="cookie full cookie-q3"></div>
+    <div class="cookie full cookie-q4"></div>
+  </div>
+</div>
