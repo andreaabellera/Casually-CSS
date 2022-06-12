@@ -14,9 +14,10 @@
 let repertoire = []
 
 function create(container,name,refresh=false){
+  let src = "https://raw.githubusercontent.com/andreaabellera/Casually-CSS/main/"
   ;(async () => {
-    let html = await load(name + "/" + name + ".txt", container)
-    let css = await load(name + "/" + name + ".css", container, true)
+    let html = await load(src + name + "/" + name + ".txt", container)
+    let css = await load(src + name + "/" + name + ".css", container, true)
 
     if(html && css){
       let targetHeight = container.clientHeight
