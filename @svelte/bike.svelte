@@ -1,45 +1,70 @@
+<script>
+  export let brandName = "CASUALLY CSS"
+  export let brandColor = "lightcoral"
+  export let bodyColor = "firebrick"
+  export let metalColor = "grey"
+  export let rubberColor = "#2e2e2e"
+  export let wheelColor = "#4e4e4e"
+  export let wheelSpokeColor = "lightgrey"
+  export let axleColor = "darkgoldenrod"
+  export let pedalColor = "darkgrey"
+  export let bikeSpin = {
+    iterationCount: "infinite",
+    delay: "0s",
+    duration: "0.8s"
+  }
+</script>
+
 <div id="bike" class="artboard">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
   <div class="bike">
       <span class="bikeWheel-box">
-        <div class="bikeWheel">
-          <span class="bikeSpoke"></span>
-          <span class="bikeSpoke thirty"></span>
-          <span class="bikeSpoke sixty"></span>
-          <span class="bikeSpoke ninety"></span>
-          <span class="bikeSpoke onetwenty"></span>
-          <span class="bikeSpoke onefifty"></span>
-          <span class="axle"></span>
+        <div class="bikeWheel" style="border-color:{wheelColor};
+          animation-iteration-count:{bikeSpin.iterationCount}; 
+          animation-delay:{bikeSpin.delay};
+          animation-duration:{bikeSpin.duration};
+        ">
+          <span class="bikeSpoke" style="background-color:{wheelSpokeColor};"></span>
+          <span class="bikeSpoke thirty" style="background-color:{wheelSpokeColor};"></span>
+          <span class="bikeSpoke sixty" style="background-color:{wheelSpokeColor};"></span>
+          <span class="bikeSpoke ninety" style="background-color:{wheelSpokeColor};"></span>
+          <span class="bikeSpoke onetwenty" style="background-color:{wheelSpokeColor};"></span>
+          <span class="bikeSpoke onefifty" style="background-color:{wheelSpokeColor};"></span>
+          <span class="axle" style="background-color:{axleColor};"></span>
         </div>
-        <div class="bikeWheel">
-          <span class="bikeSpoke"></span>
-          <span class="bikeSpoke thirty"></span>
-          <span class="bikeSpoke sixty"></span>
-          <span class="bikeSpoke ninety"></span>
-          <span class="bikeSpoke onetwenty"></span>
-          <span class="bikeSpoke onefifty"></span>
-          <span class="axle"></span>
+        <div class="bikeWheel" style="border-color:{wheelColor}; 
+          animation-iteration-count:{bikeSpin.iterationCount}; 
+          animation-delay:{bikeSpin.delay};
+          animation-duration:{bikeSpin.duration};
+        ">
+          <span class="bikeSpoke" style="background-color:{wheelSpokeColor};"></span>
+          <span class="bikeSpoke thirty" style="background-color:{wheelSpokeColor};"></span>
+          <span class="bikeSpoke sixty" style="background-color:{wheelSpokeColor};"></span>
+          <span class="bikeSpoke ninety" style="background-color:{wheelSpokeColor};"></span>
+          <span class="bikeSpoke onetwenty" style="background-color:{wheelSpokeColor};"></span>
+          <span class="bikeSpoke onefifty" style="background-color:{wheelSpokeColor};"></span>
+          <span class="axle" style="background-color:{axleColor};"></span>
         </div>
       </span>
       <span class="bikeHandle-box">
-        <div class="bar"></div>
-        <div class="bikeHandle"></div>
+        <div class="bar" style="background-color:{bodyColor};"></div>
+        <div class="bikeHandle" style="background-color:{rubberColor};"></div>
       </span>
       <span class="seat-box">
-        <div class="bar"></div>
-        <div class="seat"></div>
+        <div class="bar" style="background-color:{bodyColor};"></div>
+        <div class="seat" style="background-color:{rubberColor};"></div>
       </span>
-      <span class="lower-support"> <p> CASUALLY CSS </p> </span>
+      <span class="lower-support" style="background-color:{bodyColor};"> <p style="color:{brandColor};"> {brandName} </p> </span>
       <span class="pedal-box">
-        <div class="bar"></div>
-        <div class="pedal-axle"></div>
-        <div class="pedal"></div>
+        <div class="bar" style="background-color:{metalColor};"></div>
+        <div class="pedal-axle" style="background-color:{rubberColor};"></div>
+        <div class="pedal" style="background-color:{pedalColor};"></div>
       </span>
       <span class="pedal-support">
-        <div class="bar"></div>
-        <div class="curve"></div>
+        <div class="bar" style="background-color:{metalColor};"></div>
+        <div class="curve" style="border-color:{rubberColor};"></div>
       </span>
-      <span class="upper-support"></span>
+      <span class="upper-support" style="background-color:{bodyColor};"></span>
   </div>
 </div>
 
@@ -224,12 +249,13 @@
   display: grid;
   justify-items: center;
   align-items: center;
+  animation: bikeSpin 0.8s linear infinite;
 }
 
-.bikeWheel:hover{
+/* .bikeWheel:hover{
   animation: bikeSpin 0.5s linear;
   animation-iteration-count: infinite;
-}
+} */
 
 .axle{
   position: absolute;
