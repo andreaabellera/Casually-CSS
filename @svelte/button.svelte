@@ -1,3 +1,7 @@
+<script>
+  export let text = "Casually CSS"
+</script>
+
 <div class="artboard">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <div class="bleu button">
@@ -7,7 +11,7 @@
       <span class="shade"></span>
       <span class="ult-overlay"></span>
       <span class="glare2"></span>
-      <span class="btn-text">Casually CSS</span>
+      <span class="btn-text">{text}</span>
   </div>
 </div>
 

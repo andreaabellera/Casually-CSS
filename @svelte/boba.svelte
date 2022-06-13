@@ -1,35 +1,53 @@
+<script>
+  export let strawColor = "salmon"
+  export let lidColor = "mediumpurple"
+  export let drinkColor = "rgba(207, 123, 13, 0.4)"
+  export let cupColor = "lightgrey"
+  export let pearlColor = "#5E5550"
+  export let slurp = {
+    iterationCount: "infinite",
+    delay: "0s",
+    duration: "3s"
+  }
+</script>
+
 <div id="boba" class="artboard">
   <div class="boba">
       <div class="bobaAbove">
         <span class="bobaStraw">
-          <span class="bobaStraw-body"></span>
-          <span class="bobaStraw-end"></span>
+          <span class="bobaStraw-body" style="background-color: {strawColor};"></span>
+          <span class="bobaStraw-end" style="background-color: {strawColor};"></span>
         </span>
       </div>
-      <div class="bobaLid"></div>
+      <div class="bobaLid" style="background-color: {lidColor};"></div>
       <div class="bobaBody">
-        <span class="bobaCup">
-          <span class="bobaPearl"></span>
-          <span class="bobaPearl"></span>
-          <span class="bobaPearl"></span>
-          <span class="bobaPearl"></span>
-          <span class="bobaPearl"></span>
-          <span class="bobaPearl"></span>
-          <span class="bobaPearl"></span>
-          <span class="bobaPearl"></span>
-          <span class="bobaPearl"></span>
-          <span class="bobaPearl"></span>
-          <span class="bobaPearl"></span>
-          <span class="bobaDrink"></span>
-          <span class="bobaStraw">
+        <span class="bobaCup" style="background-color: {cupColor};">
+          <span class="bobaPearl" style="background-color: {pearlColor};"></span>
+          <span class="bobaPearl" style="background-color: {pearlColor};"></span>
+          <span class="bobaPearl" style="background-color: {pearlColor};"></span>
+          <span class="bobaPearl" style="background-color: {pearlColor};"></span>
+          <span class="bobaPearl" style="background-color: {pearlColor};"></span>
+          <span class="bobaPearl" style="background-color: {pearlColor};"></span>
+          <span class="bobaPearl" style="background-color: {pearlColor};"></span>
+          <span class="bobaPearl" style="background-color: {pearlColor};"></span>
+          <span class="bobaPearl" style="background-color: {pearlColor};"></span>
+          <span class="bobaPearl" style="background-color: {pearlColor};"></span>
+          <span class="bobaPearl" style="background-color: {pearlColor};"></span>
+          <span class="bobaDrink" style="
+            background-color: {drinkColor};
+            animation-iteration-count:{slurp.iterationCount}; 
+            animation-delay:{slurp.delay};
+            animation-duration:{slurp.duration};
+          "></span>
+          <span class="bobaStraw" style="background-color: {strawColor};">
             <span class="bobaStraw-body"></span>
             <span class="bobaStraw-end"></span>
           </span>
         </span>
       </div>
       <div class="bottom">
-        <span class="base">
-          <span class="base-bobaDrink"></span>
+        <span class="base" style="background-color: {cupColor};">
+          <span class="base-bobaDrink" style="background-color: {drinkColor};"></span>
         </span>
       </div>
   </div>
@@ -111,12 +129,13 @@
   height: 100%;
   width: 100%;
   bottom: 0;
+  animation: slurp 3s ease-in infinite;
 }
 
-.bobaDrink:hover{
+/* .bobaDrink:hover{
   animation: slurp 3s ease-in;
   animation-iteration-count: infinite;
-}
+} */
 
 .bobaBody .bobaStraw{
   z-index: 2;
