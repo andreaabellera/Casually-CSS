@@ -1,0 +1,8 @@
+<div id="blossom" class="artboard">
+    <div class="blossomMid"></div>
+    <div class="half-grid"><div class="blossomPetal"></div></div>
+    <div class="half-grid"><div class="blossomPetal"></div></div>
+    <div class="half-grid"><div class="blossomPetal"></div></div>
+    <div class="half-grid"><div class="blossomPetal"></div></div>
+    <div class="half-grid"><div class="blossomPetal"></div></div>
+</div>

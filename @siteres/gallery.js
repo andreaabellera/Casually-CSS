@@ -19,6 +19,12 @@ const hippo = {
     name: "Hichi the Hippo"
 };
 
+const blossom = {
+    id: "blossom",
+    comment: "J'adore les fleurs",
+    name: "Blossom"
+};
+
 const bison = {
     id: "bison",
     comment: "From the plains of Manitoba",
@@ -110,7 +116,8 @@ const button = {
 const artworks = [
     hippo,
     bison,
-    swiss, 
+    swiss,
+    blossom, 
     orange, 
     calendar,
     dugong, 
