@@ -15,58 +15,80 @@
   }
 </script>
 
-<div id="bike" class="artboard">
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-  <div class="bike">
-      <span class="bikeWheel-box">
-        <div class="bikeWheel" style="border-color:{wheelColor};
-          animation-iteration-count:{bikeSpin.iterationCount}; 
-          animation-delay:{bikeSpin.delay};
-          animation-duration:{bikeSpin.duration};
-        ">
-          <span class="bikeSpoke" style="background-color:{wheelSpokeColor};"></span>
-          <span class="bikeSpoke thirty" style="background-color:{wheelSpokeColor};"></span>
-          <span class="bikeSpoke sixty" style="background-color:{wheelSpokeColor};"></span>
-          <span class="bikeSpoke ninety" style="background-color:{wheelSpokeColor};"></span>
-          <span class="bikeSpoke onetwenty" style="background-color:{wheelSpokeColor};"></span>
-          <span class="bikeSpoke onefifty" style="background-color:{wheelSpokeColor};"></span>
-          <span class="axle" style="background-color:{axleColor};"></span>
-        </div>
-        <div class="bikeWheel" style="border-color:{wheelColor}; 
-          animation-iteration-count:{bikeSpin.iterationCount}; 
-          animation-delay:{bikeSpin.delay};
-          animation-duration:{bikeSpin.duration};
-        ">
-          <span class="bikeSpoke" style="background-color:{wheelSpokeColor};"></span>
-          <span class="bikeSpoke thirty" style="background-color:{wheelSpokeColor};"></span>
-          <span class="bikeSpoke sixty" style="background-color:{wheelSpokeColor};"></span>
-          <span class="bikeSpoke ninety" style="background-color:{wheelSpokeColor};"></span>
-          <span class="bikeSpoke onetwenty" style="background-color:{wheelSpokeColor};"></span>
-          <span class="bikeSpoke onefifty" style="background-color:{wheelSpokeColor};"></span>
-          <span class="axle" style="background-color:{axleColor};"></span>
-        </div>
-      </span>
-      <span class="bikeHandle-box">
-        <div class="bar" style="background-color:{bodyColor};"></div>
-        <div class="bikeHandle" style="background-color:{rubberColor};"></div>
-      </span>
-      <span class="seat-box">
-        <div class="bar" style="background-color:{bodyColor};"></div>
-        <div class="seat" style="background-color:{rubberColor};"></div>
-      </span>
-      <span class="lower-support" style="background-color:{bodyColor};"> <p style="color:{brandColor};"> {brandName} </p> </span>
-      <span class="pedal-box">
-        <div class="bar" style="background-color:{metalColor};"></div>
-        <div class="pedal-axle" style="background-color:{rubberColor};"></div>
-        <div class="pedal" style="background-color:{pedalColor};"></div>
-      </span>
-      <span class="pedal-support">
-        <div class="bar" style="background-color:{metalColor};"></div>
-        <div class="curve" style="border-color:{rubberColor};"></div>
-      </span>
-      <span class="upper-support" style="background-color:{bodyColor};"></span>
+<div class="artboard">
+  <div id="bike">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <div class="bike">
+        <span class="bikeWheel-box">
+          <div class="bikeWheel" style="border-color:{wheelColor};
+            animation-iteration-count:{bikeSpin.iterationCount}; 
+            animation-delay:{bikeSpin.delay};
+            animation-duration:{bikeSpin.duration};
+          ">
+            <span class="bikeSpoke" style="background-color:{wheelSpokeColor};"></span>
+            <span class="bikeSpoke thirty" style="background-color:{wheelSpokeColor};"></span>
+            <span class="bikeSpoke sixty" style="background-color:{wheelSpokeColor};"></span>
+            <span class="bikeSpoke ninety" style="background-color:{wheelSpokeColor};"></span>
+            <span class="bikeSpoke onetwenty" style="background-color:{wheelSpokeColor};"></span>
+            <span class="bikeSpoke onefifty" style="background-color:{wheelSpokeColor};"></span>
+            <span class="axle" style="background-color:{axleColor};"></span>
+          </div>
+          <div class="bikeWheel" style="border-color:{wheelColor}; 
+            animation-iteration-count:{bikeSpin.iterationCount}; 
+            animation-delay:{bikeSpin.delay};
+            animation-duration:{bikeSpin.duration};
+          ">
+            <span class="bikeSpoke" style="background-color:{wheelSpokeColor};"></span>
+            <span class="bikeSpoke thirty" style="background-color:{wheelSpokeColor};"></span>
+            <span class="bikeSpoke sixty" style="background-color:{wheelSpokeColor};"></span>
+            <span class="bikeSpoke ninety" style="background-color:{wheelSpokeColor};"></span>
+            <span class="bikeSpoke onetwenty" style="background-color:{wheelSpokeColor};"></span>
+            <span class="bikeSpoke onefifty" style="background-color:{wheelSpokeColor};"></span>
+            <span class="axle" style="background-color:{axleColor};"></span>
+          </div>
+        </span>
+        <span class="bikeHandle-box">
+          <div class="bar" style="background-color:{bodyColor};"></div>
+          <div class="bikeHandle" style="background-color:{rubberColor};"></div>
+        </span>
+        <span class="seat-box">
+          <div class="bar" style="background-color:{bodyColor};"></div>
+          <div class="seat" style="background-color:{rubberColor};"></div>
+        </span>
+        <span class="lower-support" style="background-color:{bodyColor};"> <p style="color:{brandColor};"> {brandName} </p> </span>
+        <span class="pedal-box">
+          <div class="bar" style="background-color:{metalColor};"></div>
+          <div class="pedal-axle" style="background-color:{rubberColor};"></div>
+          <div class="pedal" style="background-color:{pedalColor};"></div>
+        </span>
+        <span class="pedal-support">
+          <div class="bar" style="background-color:{metalColor};"></div>
+          <div class="curve" style="border-color:{rubberColor};"></div>
+        </span>
+        <span class="upper-support" style="background-color:{bodyColor};"></span>
+    </div>
   </div>
 </div>
+
+<span>
+  <script>
+    // Resize artboard to fit container
+    resize()
+    function resize(){
+      let artboard = document.getElementsByClassName("artboard")[0]
+      let targetHeight = artboard.parentElement.clientHeight
+      let targetWidth = artboard.parentElement.clientWidth
+      let artboardHeight = artboard.clientHeight
+      let artboardWidth = artboard.clientWidth
+      let scale = Math.min(targetHeight/artboardHeight, targetWidth/artboardWidth)
+      artboard.style.transform = "scale(" + scale + ")"
+      artboard.style.transformOrigin = "0 0"
+    }
+    window.onresize = function(){
+      resize()
+    }
+  </script>
+</span>
 
 <style>
 :root{ 
@@ -77,6 +99,11 @@
   --bikebikeSpokes: lightgrey;
   --axle: darkgoldenrod;
   --pedal: darkgrey;
+}
+
+.artboard{
+  height: max-content;
+  width: max-content;
 }
 
 #bike{

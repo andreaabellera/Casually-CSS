@@ -26,91 +26,113 @@
   }
 </script>
 
-<div id="hippo" class="artboard">
-  <div class="hippo">
-      <span class="hippo-bod" style="
-        border-color: {outlineColor};
-        background-color: {bodyColor};
-        animation-iteration-count:{bouncing.iterationCount}; 
-        animation-delay:{bouncing.delay};
-        animation-duration:{bouncing.duration};
-      ">
-        <span class="hippo-tail" style="
-          animation-iteration-count:{whip.iterationCount}; 
-          animation-delay:{whip.delay};
-          animation-duration:{whip.duration};
+<div class="artboard">
+  <div id="hippo">
+    <div class="hippo">
+        <span class="hippo-bod" style="
+          border-color: {outlineColor};
+          background-color: {bodyColor};
+          animation-iteration-count:{bouncing.iterationCount}; 
+          animation-delay:{bouncing.delay};
+          animation-duration:{bouncing.duration};
         ">
-          <div></div>
-          <div class="hippo-tail1 hippo-se-sharp" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
-          <div></div>
-          <div class="hippo-tail2" style="border-color:{outlineColor}; background-color:{bodyColor};"><div class="hippo-tail-line" style="background-color:{outlineColor};"></div></div>
-          <div class="hippo-tail3" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
-        </span>
-      </span>
-      <span class="hippo-leg hippo-front-near" style="border-color:{outlineColor}; background-color:{bodyColor};">
-        <div class="hippoNails"><div class="hippoNail hippo-se" style="background-color:{nailColor};"></div></div>
-        <div class="hippoNails"><div class="hippoNail hippo-sw" style="background-color:{nailColor};"></div></div>
-        <div class="hippoNails"><div class="hippoNail hippo-se" style="background-color:{nailColor};"></div></div>
-        <div class="hippoNails"><div class="hippoNail hippo-sw" style="background-color:{nailColor};"></div></div>
-        <div class="hippoNails"><div class="hippoNail hippo-se" style="background-color:{nailColor};"></div></div>
-      </span>
-      <span class="hippo-leg hippo-front-far" style="border-color:{outlineColor}; background-color:{bodyColor};"></span>
-      <span class="hippo-leg hippo-back-near" style="border-color:{outlineColor}; background-color:{bodyColor};">
-        <div class="hippoNails"><div class="hippoNail hippo-se" style="background-color:{nailColor};"></div></div>
-        <div class="hippoNails"><div class="hippoNail hippo-sw" style="background-color:{nailColor};"></div></div>
-        <div class="hippoNails"><div class="hippoNail hippo-se" style="background-color:{nailColor};"></div></div>
-        <div class="hippoNails"><div class="hippoNail hippo-sw" style="background-color:{nailColor};"></div></div>
-        <div class="hippoNails"><div class="hippoNail hippo-se" style="background-color:{nailColor};"></div></div>
-      </span>
-      <span class="hippo-leg hippo-back-far" style="border-color:{outlineColor}; background-color:{bodyColor};"></span>
-      <span class="hippo-head" style="
-        animation-iteration-count:{snap.iterationCount}; 
-        animation-delay:{snap.delay};
-        animation-duration:{snap.duration};
-      ">
-        <div class="hippo-head-junction1 hippo-se-sharp hippoSkin" style="border-color:{outlineColor}; background-color:{bodyColor};">
-          <span class="hippoEar" style="
-            background-color:{bodyColor};
-            border-color:{outlineColor};
-            animation-iteration-count:{wiggle.iterationCount}; 
-            animation-delay:{wiggle.delay};
-            animation-duration:{wiggle.duration};
+          <span class="hippo-tail" style="
+            animation-iteration-count:{whip.iterationCount}; 
+            animation-delay:{whip.delay};
+            animation-duration:{whip.duration};
           ">
-            <div class="hippoEar-in" style="background-color:{earColor};"></div>
+            <div></div>
+            <div class="hippo-tail1 hippo-se-sharp" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
+            <div></div>
+            <div class="hippo-tail2" style="border-color:{outlineColor}; background-color:{bodyColor};"><div class="hippo-tail-line" style="background-color:{outlineColor};"></div></div>
+            <div class="hippo-tail3" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
           </span>
-        </div>
-        <div class="hippoSkin hippo-sw-sharp" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
-        <div class="hippo-head-junction2 hippoSkin" style="background-color:{bodyColor};"></div>
-        <div class="hippoSkin" style="background-color:{bodyColor};"></div>
-        <div class="hippo-head-junction3 hippoSkin" style="background-color:{bodyColor};">
-          <span class="hippoEye1" style="background-color:{eyeColor};"></span>
-          <span class="hippoEye2" style="background-color:{eyeColor};"></span>
-        </div>
-        <div class="hippoSkin hippo-sw-sharp" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
-        <div></div>
-        <div class="hippo-head-junction4 hippo-ne hippoSkin" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
-        <div class="hippoSkin hippo-nw-sharp" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div class="hippo-south-cap">
-          <div class="hippoSkin hippo-ne-sharp" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
-          <div class="hippoSkin hippo-nw-sharp" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
-        </div>
-      </span>
-      <span class="hippo-jaw">
-        <div class="hippo-ne hippoSkin hippoMouth-area" style="border-color:{outlineColor}; background-color:{bodyColor};">
-          <div class="hippo-ne hippoMouth" style="border-color:{outlineColor};"></div>
-        </div>
-        <div class="hippo-nw hippoSkin hippoEnd hippoMouth-area" style="border-color:{outlineColor}; background-color:{bodyColor};">
-          <div class="hippo-nw hippoMouth" style="border-color:{outlineColor};">
-            <span class="hippoTooth"></span>
-            <span class="hippoTooth"></span>
+        </span>
+        <span class="hippo-leg hippo-front-near" style="border-color:{outlineColor}; background-color:{bodyColor};">
+          <div class="hippoNails"><div class="hippoNail hippo-se" style="background-color:{nailColor};"></div></div>
+          <div class="hippoNails"><div class="hippoNail hippo-sw" style="background-color:{nailColor};"></div></div>
+          <div class="hippoNails"><div class="hippoNail hippo-se" style="background-color:{nailColor};"></div></div>
+          <div class="hippoNails"><div class="hippoNail hippo-sw" style="background-color:{nailColor};"></div></div>
+          <div class="hippoNails"><div class="hippoNail hippo-se" style="background-color:{nailColor};"></div></div>
+        </span>
+        <span class="hippo-leg hippo-front-far" style="border-color:{outlineColor}; background-color:{bodyColor};"></span>
+        <span class="hippo-leg hippo-back-near" style="border-color:{outlineColor}; background-color:{bodyColor};">
+          <div class="hippoNails"><div class="hippoNail hippo-se" style="background-color:{nailColor};"></div></div>
+          <div class="hippoNails"><div class="hippoNail hippo-sw" style="background-color:{nailColor};"></div></div>
+          <div class="hippoNails"><div class="hippoNail hippo-se" style="background-color:{nailColor};"></div></div>
+          <div class="hippoNails"><div class="hippoNail hippo-sw" style="background-color:{nailColor};"></div></div>
+          <div class="hippoNails"><div class="hippoNail hippo-se" style="background-color:{nailColor};"></div></div>
+        </span>
+        <span class="hippo-leg hippo-back-far" style="border-color:{outlineColor}; background-color:{bodyColor};"></span>
+        <span class="hippo-head" style="
+          animation-iteration-count:{snap.iterationCount}; 
+          animation-delay:{snap.delay};
+          animation-duration:{snap.duration};
+        ">
+          <div class="hippo-head-junction1 hippo-se-sharp hippoSkin" style="border-color:{outlineColor}; background-color:{bodyColor};">
+            <span class="hippoEar" style="
+              background-color:{bodyColor};
+              border-color:{outlineColor};
+              animation-iteration-count:{wiggle.iterationCount}; 
+              animation-delay:{wiggle.delay};
+              animation-duration:{wiggle.duration};
+            ">
+              <div class="hippoEar-in" style="background-color:{earColor};"></div>
+            </span>
           </div>
-        </div>
-      </span>
+          <div class="hippoSkin hippo-sw-sharp" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
+          <div class="hippo-head-junction2 hippoSkin" style="background-color:{bodyColor};"></div>
+          <div class="hippoSkin" style="background-color:{bodyColor};"></div>
+          <div class="hippo-head-junction3 hippoSkin" style="background-color:{bodyColor};">
+            <span class="hippoEye1" style="background-color:{eyeColor};"></span>
+            <span class="hippoEye2" style="background-color:{eyeColor};"></span>
+          </div>
+          <div class="hippoSkin hippo-sw-sharp" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
+          <div></div>
+          <div class="hippo-head-junction4 hippo-ne hippoSkin" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
+          <div class="hippoSkin hippo-nw-sharp" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div class="hippo-south-cap">
+            <div class="hippoSkin hippo-ne-sharp" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
+            <div class="hippoSkin hippo-nw-sharp" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
+          </div>
+        </span>
+        <span class="hippo-jaw">
+          <div class="hippo-ne hippoSkin hippoMouth-area" style="border-color:{outlineColor}; background-color:{bodyColor};">
+            <div class="hippo-ne hippoMouth" style="border-color:{outlineColor};"></div>
+          </div>
+          <div class="hippo-nw hippoSkin hippoEnd hippoMouth-area" style="border-color:{outlineColor}; background-color:{bodyColor};">
+            <div class="hippo-nw hippoMouth" style="border-color:{outlineColor};">
+              <span class="hippoTooth"></span>
+              <span class="hippoTooth"></span>
+            </div>
+          </div>
+        </span>
+    </div>
   </div>
 </div>
+
+<span>
+  <script>
+    // Resize artboard to fit container
+    resize()
+    function resize(){
+      let artboard = document.getElementsByClassName("artboard")[0]
+      let targetHeight = artboard.parentElement.clientHeight
+      let targetWidth = artboard.parentElement.clientWidth
+      let artboardHeight = artboard.clientHeight
+      let artboardWidth = artboard.clientWidth
+      let scale = Math.min(targetHeight/artboardHeight, targetWidth/artboardWidth)
+      artboard.style.transform = "scale(" + scale + ")"
+      artboard.style.transformOrigin = "0 0"
+    }
+    window.onresize = function(){
+      resize()
+    }
+  </script>
+</span>
 
 <style>
 :root{
@@ -126,6 +148,11 @@
 #hippo{
   height: 18em;
   width: 30em;
+}
+
+.artboard{
+  height: max-content;
+  width: max-content;
 }
 
 .hippo{

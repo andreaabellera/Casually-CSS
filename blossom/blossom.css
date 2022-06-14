@@ -6,10 +6,18 @@
 #blossom{
   height: 20ex;
   width: 20ex;
-  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
 
-#blossom:hover{
+.blossom{
+  position: relative;
+  height: 83%;
+  width: 83%;
+}
+
+.blossom:hover{
   animation: blossomSpin 1.2s ease-in-out;
   cursor: pointer;
 }

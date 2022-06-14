@@ -46,142 +46,164 @@
   }
 </script>
 
-<div id="bison" class="artboard">
-  <div class="bison">
-      <div class="bison-upper" style="
-        animation-iteration-count:{dancing.iterationCount}; 
-        animation-delay:{dancing.delay};
-        animation-duration:{dancing.duration};
-      ">
-        <div class="bison-bisHorn bisHorn-left" style="
-          background-image: radial-gradient(ellipse at top right, 
-          rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, 
-          {outlineColor} 51%, {outlineColor} 54%, 
-          {hornColor} 55%) !important;
-          border-color: {outlineColor};
-        "></div>
-        <div class="bison-bisHorn bisHorn-right" style="
-          background-image: radial-gradient(ellipse at top right, 
-          rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, 
-          {outlineColor} 51%, {outlineColor} 54%, 
-          {hornColor} 55%) !important;
-          border-color: {outlineColor};
-        "></div>
-        <div class="bison-mustache bisFur" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
-        <div class="bison-bisEar bisEar-left bisFur" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
-        <div class="bison-bisEar bisEar-right bisFur" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
-        <div class="bison-bisHead">
-          <div class="bisHead-top">
-            <div class="bis-se-sharp bisFur" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
-            <div class="bis-sw-sharp bisFur" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
-          </div>
-          <div class="bisHead-bottom" style="border-color:{outlineColor};">
-            <div class="bis-ne-sharp bisFur bisStabilize" style="border-color:{outlineColor}; background-color:{bodyColor};">
-              <div class="bisEye bisEye-left" style="
-                border-color:{outlineColor};
-                animation-iteration-count:{gazing.iterationCount}; 
-                animation-delay:{gazing.delay};
-                animation-duration:{gazing.duration};
-              ">
-                <div class="bisEye-pupil-left" style="background-color:{outlineColor};"></div>
-              </div>
-            </div>
-            <div class="bisFur bisStabilize" style="background-color:{bodyColor};">
-              <div class="bison-bisNose">
-                <div class="bisNose-top" style="border-color:{outlineColor}; background-color:{noseColor};">
-                  <div class="bisNostril-left" style="background-color:{outlineColor};"></div>
-                  <div class="bisNostril-right" style="background-color:{outlineColor};"></div>
-                </div>
-                <div class="bisNose-bottom" style="
-                  border-color:{outlineColor};
-                  background-color:{noseColor};
-                  animation-iteration-count:{chewing.iterationCount}; 
-                  animation-delay:{chewing.delay};
-                  animation-duration:{chewing.duration};
-                "></div>
-              </div>
-            </div>
-            <div class="bis-nw-sharp bisFur bisStabilize" style="border-color:{outlineColor}; background-color:{bodyColor};">
-              <div class="bisEye bisEye-right" style="
-                border-color:{outlineColor};
-                animation-iteration-count:{gazing.iterationCount}; 
-                animation-delay:{gazing.delay};
-                animation-duration:{gazing.duration};
-              ">
-                <div class="bisEye-pupil-right" style="background-color:{outlineColor};"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="bison-bisHair">
-          <div class="bis-se-sharp bisHair bis-sect1" style="border-color:{outlineColor}; background-color:{hairColor};"></div>
-          <div class="bis-sw-sharp bisHair bis-sect2" style="border-color:{outlineColor}; background-color:{hairColor};"></div>
-          <div class="bis-seg1">
-            <div class="bis-ne-sharp bisHair" style="border-color:{outlineColor}; background-color:{hairColor};"></div>
-          </div>
-          <div class="bis-seg2">
-            <div class="bisHair" style="background-color:{hairColor};"></div>
-            <div class="bis-nw-sharp bisHair" style="border-color:{outlineColor}; background-color:{hairColor};"></div>
-          </div>
-          <div class="bis-seg3">
-            <div class="bisHair" style="background-color:{hairColor};"></div>
-            <div class="bis-ne-sharp bisHair" style="border-color:{outlineColor}; background-color:{hairColor};"></div>
-          </div>
-          <div class="bis-seg3">
-            <div class="bisHair" style="background-color:{hairColor};"></div>
-            <div class="bis-nw-sharp bisHair" style="border-color:{outlineColor}; background-color:{hairColor};"></div>
-          </div>
-          <div class="bis-seg4">
-            <div class="bis-nw-sharp bisHair" style="border-color:{outlineColor}; background-color:{hairColor};"></div>
-          </div>
-        </div>
-        <div class="bison-body bisFur" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
-        <div class="bison-tail" style="
-          animation-iteration-count:{swaying.iterationCount}; 
-          animation-delay:{swaying.delay};
-          animation-duration:{swaying.duration};
+<div class="artboard">
+  <div id="bison">
+    <div class="bison">
+        <div class="bison-upper" style="
+          animation-iteration-count:{dancing.iterationCount}; 
+          animation-delay:{dancing.delay};
+          animation-duration:{dancing.duration};
         ">
-          <div></div>
-          <div class="bis-tail1 bis-se-sharp bisFur" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
-          <div></div>
-          <div class="bis-tail2 bisFur" style="border-color:{outlineColor}; background-color:{bodyColor};"><div class="bis-tail-line" style="background-color:{outlineColor};"></div></div>
-          <div class="bis-tail3 bisHair" style="border-color:{outlineColor}; background-color:{hairColor};"></div>
+          <div class="bison-bisHorn bisHorn-left" style="
+            background-image: radial-gradient(ellipse at top right, 
+            rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, 
+            {outlineColor} 51%, {outlineColor} 54%, 
+            {hornColor} 55%) !important;
+            border-color: {outlineColor};
+          "></div>
+          <div class="bison-bisHorn bisHorn-right" style="
+            background-image: radial-gradient(ellipse at top right, 
+            rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, 
+            {outlineColor} 51%, {outlineColor} 54%, 
+            {hornColor} 55%) !important;
+            border-color: {outlineColor};
+          "></div>
+          <div class="bison-mustache bisFur" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
+          <div class="bison-bisEar bisEar-left bisFur" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
+          <div class="bison-bisEar bisEar-right bisFur" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
+          <div class="bison-bisHead">
+            <div class="bisHead-top">
+              <div class="bis-se-sharp bisFur" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
+              <div class="bis-sw-sharp bisFur" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
+            </div>
+            <div class="bisHead-bottom" style="border-color:{outlineColor};">
+              <div class="bis-ne-sharp bisFur bisStabilize" style="border-color:{outlineColor}; background-color:{bodyColor};">
+                <div class="bisEye bisEye-left" style="
+                  border-color:{outlineColor};
+                  animation-iteration-count:{gazing.iterationCount}; 
+                  animation-delay:{gazing.delay};
+                  animation-duration:{gazing.duration};
+                ">
+                  <div class="bisEye-pupil-left" style="background-color:{outlineColor};"></div>
+                </div>
+              </div>
+              <div class="bisFur bisStabilize" style="background-color:{bodyColor};">
+                <div class="bison-bisNose">
+                  <div class="bisNose-top" style="border-color:{outlineColor}; background-color:{noseColor};">
+                    <div class="bisNostril-left" style="background-color:{outlineColor};"></div>
+                    <div class="bisNostril-right" style="background-color:{outlineColor};"></div>
+                  </div>
+                  <div class="bisNose-bottom" style="
+                    border-color:{outlineColor};
+                    background-color:{noseColor};
+                    animation-iteration-count:{chewing.iterationCount}; 
+                    animation-delay:{chewing.delay};
+                    animation-duration:{chewing.duration};
+                  "></div>
+                </div>
+              </div>
+              <div class="bis-nw-sharp bisFur bisStabilize" style="border-color:{outlineColor}; background-color:{bodyColor};">
+                <div class="bisEye bisEye-right" style="
+                  border-color:{outlineColor};
+                  animation-iteration-count:{gazing.iterationCount}; 
+                  animation-delay:{gazing.delay};
+                  animation-duration:{gazing.duration};
+                ">
+                  <div class="bisEye-pupil-right" style="background-color:{outlineColor};"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bison-bisHair">
+            <div class="bis-se-sharp bisHair bis-sect1" style="border-color:{outlineColor}; background-color:{hairColor};"></div>
+            <div class="bis-sw-sharp bisHair bis-sect2" style="border-color:{outlineColor}; background-color:{hairColor};"></div>
+            <div class="bis-seg1">
+              <div class="bis-ne-sharp bisHair" style="border-color:{outlineColor}; background-color:{hairColor};"></div>
+            </div>
+            <div class="bis-seg2">
+              <div class="bisHair" style="background-color:{hairColor};"></div>
+              <div class="bis-nw-sharp bisHair" style="border-color:{outlineColor}; background-color:{hairColor};"></div>
+            </div>
+            <div class="bis-seg3">
+              <div class="bisHair" style="background-color:{hairColor};"></div>
+              <div class="bis-ne-sharp bisHair" style="border-color:{outlineColor}; background-color:{hairColor};"></div>
+            </div>
+            <div class="bis-seg3">
+              <div class="bisHair" style="background-color:{hairColor};"></div>
+              <div class="bis-nw-sharp bisHair" style="border-color:{outlineColor}; background-color:{hairColor};"></div>
+            </div>
+            <div class="bis-seg4">
+              <div class="bis-nw-sharp bisHair" style="border-color:{outlineColor}; background-color:{hairColor};"></div>
+            </div>
+          </div>
+          <div class="bison-body bisFur" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
+          <div class="bison-tail" style="
+            animation-iteration-count:{swaying.iterationCount}; 
+            animation-delay:{swaying.delay};
+            animation-duration:{swaying.duration};
+          ">
+            <div></div>
+            <div class="bis-tail1 bis-se-sharp bisFur" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
+            <div></div>
+            <div class="bis-tail2 bisFur" style="border-color:{outlineColor}; background-color:{bodyColor};"><div class="bis-tail-line" style="background-color:{outlineColor};"></div></div>
+            <div class="bis-tail3 bisHair" style="border-color:{outlineColor}; background-color:{hairColor};"></div>
+          </div>
         </div>
-      </div>
-      <div class="bison-leg bis-front-near" style="
-        animation-iteration-count:{footworkFR.iterationCount}; 
-        animation-delay:{footworkFR.delay};
-        animation-duration:{footworkFR.duration};
-      ">
-        <div class="bis-leg-top bisFur" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
-        <div class="bis-leg-bottom bisFur" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
-      </div>
-      <div class="bison-leg bis-front-far" style="
-        animation-iteration-count:{footworkFL.iterationCount}; 
-        animation-delay:{footworkFL.delay};
-        animation-duration:{footworkFL.duration};
-      ">
-        <div class="bis-leg-top bisFur" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
-        <div class="bis-leg-bottom bisFur" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
-      </div>
-      <div class="bison-leg bis-back-near" style="
-        animation-iteration-count:{footworkBR.iterationCount}; 
-        animation-delay:{footworkBR.delay};
-        animation-duration:{footworkBR.duration};
-      ">
-        <div class="bis-leg-top bisFur" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
-        <div class="bis-leg-bottom bisFur" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
-      </div>
-      <div class="bison-leg bis-back-far" style="
-        animation-iteration-count:{footworkBL.iterationCount}; 
-        animation-delay:{footworkBL.delay};
-        animation-duration:{footworkBL.duration};
-      ">
-        <div class="bis-leg-top bisFur" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
-        <div class="bis-leg-bottom bisFur" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
-      </div>
+        <div class="bison-leg bis-front-near" style="
+          animation-iteration-count:{footworkFR.iterationCount}; 
+          animation-delay:{footworkFR.delay};
+          animation-duration:{footworkFR.duration};
+        ">
+          <div class="bis-leg-top bisFur" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
+          <div class="bis-leg-bottom bisFur" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
+        </div>
+        <div class="bison-leg bis-front-far" style="
+          animation-iteration-count:{footworkFL.iterationCount}; 
+          animation-delay:{footworkFL.delay};
+          animation-duration:{footworkFL.duration};
+        ">
+          <div class="bis-leg-top bisFur" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
+          <div class="bis-leg-bottom bisFur" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
+        </div>
+        <div class="bison-leg bis-back-near" style="
+          animation-iteration-count:{footworkBR.iterationCount}; 
+          animation-delay:{footworkBR.delay};
+          animation-duration:{footworkBR.duration};
+        ">
+          <div class="bis-leg-top bisFur" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
+          <div class="bis-leg-bottom bisFur" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
+        </div>
+        <div class="bison-leg bis-back-far" style="
+          animation-iteration-count:{footworkBL.iterationCount}; 
+          animation-delay:{footworkBL.delay};
+          animation-duration:{footworkBL.duration};
+        ">
+          <div class="bis-leg-top bisFur" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
+          <div class="bis-leg-bottom bisFur" style="border-color:{outlineColor}; background-color:{bodyColor};"></div>
+        </div>
+    </div>
   </div>
 </div>
+
+<span>
+  <script>
+    // Resize artboard to fit container
+    resize()
+    function resize(){
+      let artboard = document.getElementsByClassName("artboard")[0]
+      let targetHeight = artboard.parentElement.clientHeight
+      let targetWidth = artboard.parentElement.clientWidth
+      let artboardHeight = artboard.clientHeight
+      let artboardWidth = artboard.clientWidth
+      let scale = Math.min(targetHeight/artboardHeight, targetWidth/artboardWidth)
+      artboard.style.transform = "scale(" + scale + ")"
+      artboard.style.transformOrigin = "0 0"
+    }
+    window.onresize = function(){
+      resize()
+    }
+  </script>
+</span>
 
 <style>
 :root{
@@ -196,6 +218,11 @@
   position: relative;
   height: 26em;
   width: 35em;
+}
+
+.artboard{
+  height: max-content;
+  width: max-content;
 }
 
 .bison, .bison-upper{

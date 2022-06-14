@@ -39,52 +39,74 @@
   }
 </script>
 
-<div id="swiss" class="artboard">
-  <div class="knife" style="
-    animation-iteration-count:{spinKnife.iterationCount}; 
-    animation-delay:{spinKnife.delay};
-    animation-duration:{spinKnife.duration};
-  ">
-    <div class="swissBase" style="background:{bodyColor};">
-      <div class="clip" style="background-color:{backColor};"></div>
-      <div class="insignia" style="background-color:{logoColor};">
-        <div class="crossv"></div>
-        <div class="crossh"></div>
+<div class="artboard">
+  <div id="swiss">
+    <div class="knife" style="
+      animation-iteration-count:{spinKnife.iterationCount}; 
+      animation-delay:{spinKnife.delay};
+      animation-duration:{spinKnife.duration};
+    ">
+      <div class="swissBase" style="background:{bodyColor};">
+        <div class="clip" style="background-color:{backColor};"></div>
+        <div class="insignia" style="background-color:{logoColor};">
+          <div class="crossv"></div>
+          <div class="crossh"></div>
+        </div>
       </div>
+      <div class="opener" style="
+        animation-iteration-count:{spinOpener.iterationCount}; 
+        animation-delay:{spinOpener.delay};
+        animation-duration:{spinOpener.duration};
+      "></div>
+      <div class="blade" style="
+        animation-iteration-count:{spinBlade.iterationCount}; 
+        animation-delay:{spinBlade.delay};
+        animation-duration:{spinBlade.duration};
+      "></div>
+      <div class="short" style="
+        animation-iteration-count:{spinShort.iterationCount}; 
+        animation-delay:{spinShort.delay};
+        animation-duration:{spinShort.duration};
+      "></div>
+      <div class="file" style="
+        animation-iteration-count:{spinFile.iterationCount}; 
+        animation-delay:{spinFile.delay};
+        animation-duration:{spinFile.duration};
+      "></div>
+      <div class="scissor1" style="
+        animation-iteration-count:{spinScissor1.iterationCount}; 
+        animation-delay:{spinScissor1.delay};
+        animation-duration:{spinScissor1.duration};
+      "></div>
+      <div class="scissor2" style="
+        animation-iteration-count:{spinScissor2.iterationCount}; 
+        animation-delay:{spinScissor2.delay};
+        animation-duration:{spinScissor2.duration};
+      "></div>
+      <div class="swissBack" style="background-color:{backColor};"></div>
     </div>
-    <div class="opener" style="
-      animation-iteration-count:{spinOpener.iterationCount}; 
-      animation-delay:{spinOpener.delay};
-      animation-duration:{spinOpener.duration};
-    "></div>
-    <div class="blade" style="
-      animation-iteration-count:{spinBlade.iterationCount}; 
-      animation-delay:{spinBlade.delay};
-      animation-duration:{spinBlade.duration};
-    "></div>
-    <div class="short" style="
-      animation-iteration-count:{spinShort.iterationCount}; 
-      animation-delay:{spinShort.delay};
-      animation-duration:{spinShort.duration};
-    "></div>
-    <div class="file" style="
-      animation-iteration-count:{spinFile.iterationCount}; 
-      animation-delay:{spinFile.delay};
-      animation-duration:{spinFile.duration};
-    "></div>
-    <div class="scissor1" style="
-      animation-iteration-count:{spinScissor1.iterationCount}; 
-      animation-delay:{spinScissor1.delay};
-      animation-duration:{spinScissor1.duration};
-    "></div>
-    <div class="scissor2" style="
-      animation-iteration-count:{spinScissor2.iterationCount}; 
-      animation-delay:{spinScissor2.delay};
-      animation-duration:{spinScissor2.duration};
-    "></div>
-    <div class="swissBack" style="background-color:{backColor};"></div>
   </div>
 </div>
+
+<span>
+  <script>
+    // Resize artboard to fit container
+    resize()
+    function resize(){
+      let artboard = document.getElementsByClassName("artboard")[0]
+      let targetHeight = artboard.parentElement.clientHeight
+      let targetWidth = artboard.parentElement.clientWidth
+      let artboardHeight = artboard.clientHeight
+      let artboardWidth = artboard.clientWidth
+      let scale = Math.min(targetHeight/artboardHeight, targetWidth/artboardWidth)
+      artboard.style.transform = "scale(" + scale + ")"
+      artboard.style.transformOrigin = "0 0"
+    }
+    window.onresize = function(){
+      resize()
+    }
+  </script>
+</span>
 
 <style>
 :root{
@@ -96,6 +118,11 @@
 #swiss{
   height: 22em;
   width: 22em;
+}
+
+.artboard{
+  height: max-content;
+  width: max-content;
 }
 
 .knife{

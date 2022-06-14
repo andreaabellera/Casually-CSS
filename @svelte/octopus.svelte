@@ -1,154 +1,175 @@
-<div id="octopus" class="artboard">
-  <div class="octopus">
-      <div class="octo-head">
-        <div class="octo-head-junction1">
-          <div class="octo-skin octo-se-sharp">
-            <div class="octo-spot octo-spot1"></div>
-            <div class="octo-spot octo-spot2"></div>
+<div class="artboard">
+  <div id="octopus">
+    <div class="octopus">
+        <div class="octo-head">
+          <div class="octo-head-junction1">
+            <div class="octo-skin octo-se-sharp">
+              <div class="octo-spot octo-spot1"></div>
+              <div class="octo-spot octo-spot2"></div>
+            </div>
           </div>
-        </div>
-        <div class="octo-head-junction2 octo-skin">   </div>
-        <div class="octo-head-junction3">
-          <div class="octo-skin octo-sw-sharp">
-            <div class="octo-spot octo-spot3"></div>
+          <div class="octo-head-junction2 octo-skin">   </div>
+          <div class="octo-head-junction3">
+            <div class="octo-skin octo-sw-sharp">
+              <div class="octo-spot octo-spot3"></div>
+            </div>
           </div>
-        </div>
-        <div class="octo-head-junction4 octo-skin">     </div>
-        <div class="octo-head-junction5">   <div class="octo-skin octo-ne-sharp"></div>   </div>
-        <div></div>
-        <div class="octo-skin">   <div class="emboss octo-se"></div>   </div>
-        <div class="emboss octo-half-height">   <div class="octo-skin octo-ne-sharp"></div>   </div>
-        <div class="emboss octo-half-height">   <div class="octo-skin octo-nw"></div>         </div>
-        <div class="octo-half-width">   <div class="emboss octo-sw"></div>   </div>
-        <div></div>
-        <div></div>
-        <div class="octo-eye octo-ne">  <div class="octo-eyeball octo-nw"></div>    </div>
-        <div class="emboss octo-half-height"><div></div>   <div class="octo-skin octo-se-sharp"></div>   </div>
-        <div class="emboss octo-half-height"><div></div>   <div class="octo-skin octo-sw"></div>         </div>
-        <div class="octo-half-width">
-          <div class="octo-eye octo-nw three-fourth-height">  
-            <div class="octo-eyeball octo-nw-sharp"></div>
+          <div class="octo-head-junction4 octo-skin">     </div>
+          <div class="octo-head-junction5">   <div class="octo-skin octo-ne-sharp"></div>   </div>
+          <div></div>
+          <div class="octo-skin">   <div class="emboss octo-se"></div>   </div>
+          <div class="emboss octo-half-height">   <div class="octo-skin octo-ne-sharp"></div>   </div>
+          <div class="emboss octo-half-height">   <div class="octo-skin octo-nw"></div>         </div>
+          <div class="octo-half-width">   <div class="emboss octo-sw"></div>   </div>
+          <div></div>
+          <div></div>
+          <div class="octo-eye octo-ne">  <div class="octo-eyeball octo-nw"></div>    </div>
+          <div class="emboss octo-half-height"><div></div>   <div class="octo-skin octo-se-sharp"></div>   </div>
+          <div class="emboss octo-half-height"><div></div>   <div class="octo-skin octo-sw"></div>         </div>
+          <div class="octo-half-width">
+            <div class="octo-eye octo-nw three-fourth-height">  
+              <div class="octo-eyeball octo-nw-sharp"></div>
+            </div>
           </div>
+          <div></div>
+          <div></div>
+          <div class="octo-head-junction4 octo-skin octo-se">   </div>
+          <div class="octo-half-width">    <div class="octo-skin octo-sw"></div>   </div>
         </div>
-        <div></div>
-        <div></div>
-        <div class="octo-head-junction4 octo-skin octo-se">   </div>
-        <div class="octo-half-width">    <div class="octo-skin octo-sw"></div>   </div>
       </div>
-    </div>
-    
-      <div class="octo-arms">
-        <div class="octo-arms-junction1"></div>
-        <div class="octo-arms-junction2 emboss">   <div class="octo-skin octo-cap"></div>    </div>
-      </div>
-      <div class="octo-arm octo-arm1">
-        <div></div>
-        <div class="octo-arm-junction1 octo-nw octo-inverted-n"></div>
-        <div class="octo-skin"></div>
-        <div></div>
-        <div class="octo-skin"></div>
-        <div class="octo-arm-junction2 octo-skin octo-se-sharp"></div>
-        <div class="octo-skin"></div>
-        <div class="octo-skin octo-nw-sharp"></div>
-        <div class="octo-arm-junction3 octo-se octo-inverted"></div>
-        <div class="octo-arm-junction4 octo-skin octo-ne-sharp"></div>
-        <div class="octo-arm-junction3 octo-ne octo-inverted-n"></div>
-        <div class="octo-arm-junction5 octo-skin octo-nw-sharp"></div>
-      </div>
-      <div class="octo-arm octo-arm2">
-        <div></div>
-        <div class="octo-arm-junction1 octo-nw octo-inverted-n"></div>
-        <div class="octo-skin"></div>
-        <div></div>
-        <div class="octo-skin"></div>
-        <div class="octo-arm-junction2 octo-skin octo-se-sharp"></div>
-        <div class="octo-skin"></div>
-        <div class="octo-skin octo-nw-sharp"></div>
-        <div class="octo-arm-junction3 octo-se octo-inverted"></div>
-        <div class="octo-arm-junction4 octo-skin octo-ne-sharp"></div>
-      </div>
-      <div class="octo-arm octo-arm3">
-        <div></div>
-        <div class="octo-arm-junction1 octo-nw octo-inverted-n"></div>
-        <div class="octo-skin"></div>
-        <div></div>
-        <div class="octo-skin"></div>
-        <div class="octo-arm-junction2 octo-skin octo-se-sharp"></div>
-        <div class="octo-skin"></div>
-        <div class="octo-skin octo-nw-sharp"></div>
-        <div class="octo-arm-junction3 octo-se octo-inverted"></div>
-        <div class="octo-arm-junction4 octo-skin octo-ne-sharp"></div>
-        <div class="octo-arm-junction3 octo-ne octo-inverted-n"></div>
-        <div class="octo-arm-junction5 octo-skin octo-nw-sharp"></div>
-      </div>
-      <div class="octo-arm octo-arm4">
-        <div></div>
-        <div class="octo-arm-junction1 octo-nw octo-inverted-n"></div>
-        <div class="octo-skin"></div>
-        <div></div>
-        <div class="octo-skin"></div>
-        <div class="octo-arm-junction2 octo-skin octo-se-sharp"></div>
-        <div class="octo-skin"></div>
-        <div class="octo-skin octo-nw-sharp"></div>
-        <div class="octo-arm-junction3 octo-se octo-inverted"></div>
-        <div class="octo-arm-junction4 octo-skin octo-ne-sharp"></div>
-        <div class="octo-arm-junction3 octo-ne octo-inverted-n"></div>
-        <div class="octo-arm-junction5 octo-skin octo-nw-sharp"></div>
-      </div>
-      <div class="octo-arm octo-arm5">
-        <div></div>
-        <div class="octo-arm-junction1 octo-nw octo-inverted-n"></div>
-        <div class="octo-skin"></div>
-        <div></div>
-        <div class="octo-skin"></div>
-        <div class="octo-arm-junction2 octo-skin octo-se-sharp"></div>
-        <div class="octo-skin"></div>
-        <div class="octo-skin octo-nw-sharp"></div>
-        <div class="octo-arm-junction3 octo-se octo-inverted"></div>
-        <div class="octo-arm-junction4 octo-skin octo-ne-sharp"></div>
-      </div>
-      <div class="octo-arm octo-arm6">
-        <div></div>
-        <div class="octo-arm-junction1 octo-nw octo-inverted-n"></div>
-        <div class="octo-skin"></div>
-        <div></div>
-        <div class="octo-skin"></div>
-        <div class="octo-arm-junction2 octo-skin octo-se-sharp"></div>
-        <div class="octo-skin"></div>
-        <div class="octo-skin octo-nw-sharp"></div>
-        <div class="octo-arm-junction3 octo-se octo-inverted"></div>
-        <div class="octo-arm-junction4 octo-skin octo-ne-sharp"></div>
-        <div class="octo-arm-junction3 octo-ne octo-inverted-n"></div>
-        <div class="octo-arm-junction5 octo-skin octo-nw-sharp"></div>
-      </div>
-      <div class="octo-arm octo-arm7">
-        <div></div>
-        <div class="octo-arm-junction1 octo-nw octo-inverted-n"></div>
-        <div class="octo-skin"></div>
-        <div></div>
-        <div class="octo-skin"></div>
-        <div class="octo-arm-junction2 octo-skin octo-se-sharp"></div>
-        <div class="octo-skin"></div>
-        <div class="octo-skin octo-nw-sharp"></div>
-        <div class="octo-arm-junction3 octo-se octo-inverted"></div>
-        <div class="octo-arm-junction4 octo-skin octo-ne-sharp"></div>
-      </div>
-      <div class="octo-arm octo-arm8">
-        <div></div>
-        <div class="octo-arm-junction1 octo-nw octo-inverted-n"></div>
-        <div class="octo-skin"></div>
-        <div></div>
-        <div class="octo-skin"></div>
-        <div class="octo-arm-junction2 octo-skin octo-se-sharp"></div>
-        <div class="octo-skin"></div>
-        <div class="octo-skin octo-nw-sharp"></div>
-        <div class="octo-arm-junction3 octo-se octo-inverted"></div>
-        <div class="octo-arm-junction4 octo-skin octo-ne-sharp"></div>
-        <div class="octo-arm-junction3 octo-ne octo-inverted-n"></div>
-        <div class="octo-arm-junction5 octo-skin octo-nw-sharp"></div>
-      </div>
+      
+        <div class="octo-arms">
+          <div class="octo-arms-junction1"></div>
+          <div class="octo-arms-junction2 emboss">   <div class="octo-skin octo-cap"></div>    </div>
+        </div>
+        <div class="octo-arm octo-arm1">
+          <div></div>
+          <div class="octo-arm-junction1 octo-nw octo-inverted-n"></div>
+          <div class="octo-skin"></div>
+          <div></div>
+          <div class="octo-skin"></div>
+          <div class="octo-arm-junction2 octo-skin octo-se-sharp"></div>
+          <div class="octo-skin"></div>
+          <div class="octo-skin octo-nw-sharp"></div>
+          <div class="octo-arm-junction3 octo-se octo-inverted"></div>
+          <div class="octo-arm-junction4 octo-skin octo-ne-sharp"></div>
+          <div class="octo-arm-junction3 octo-ne octo-inverted-n"></div>
+          <div class="octo-arm-junction5 octo-skin octo-nw-sharp"></div>
+        </div>
+        <div class="octo-arm octo-arm2">
+          <div></div>
+          <div class="octo-arm-junction1 octo-nw octo-inverted-n"></div>
+          <div class="octo-skin"></div>
+          <div></div>
+          <div class="octo-skin"></div>
+          <div class="octo-arm-junction2 octo-skin octo-se-sharp"></div>
+          <div class="octo-skin"></div>
+          <div class="octo-skin octo-nw-sharp"></div>
+          <div class="octo-arm-junction3 octo-se octo-inverted"></div>
+          <div class="octo-arm-junction4 octo-skin octo-ne-sharp"></div>
+        </div>
+        <div class="octo-arm octo-arm3">
+          <div></div>
+          <div class="octo-arm-junction1 octo-nw octo-inverted-n"></div>
+          <div class="octo-skin"></div>
+          <div></div>
+          <div class="octo-skin"></div>
+          <div class="octo-arm-junction2 octo-skin octo-se-sharp"></div>
+          <div class="octo-skin"></div>
+          <div class="octo-skin octo-nw-sharp"></div>
+          <div class="octo-arm-junction3 octo-se octo-inverted"></div>
+          <div class="octo-arm-junction4 octo-skin octo-ne-sharp"></div>
+          <div class="octo-arm-junction3 octo-ne octo-inverted-n"></div>
+          <div class="octo-arm-junction5 octo-skin octo-nw-sharp"></div>
+        </div>
+        <div class="octo-arm octo-arm4">
+          <div></div>
+          <div class="octo-arm-junction1 octo-nw octo-inverted-n"></div>
+          <div class="octo-skin"></div>
+          <div></div>
+          <div class="octo-skin"></div>
+          <div class="octo-arm-junction2 octo-skin octo-se-sharp"></div>
+          <div class="octo-skin"></div>
+          <div class="octo-skin octo-nw-sharp"></div>
+          <div class="octo-arm-junction3 octo-se octo-inverted"></div>
+          <div class="octo-arm-junction4 octo-skin octo-ne-sharp"></div>
+          <div class="octo-arm-junction3 octo-ne octo-inverted-n"></div>
+          <div class="octo-arm-junction5 octo-skin octo-nw-sharp"></div>
+        </div>
+        <div class="octo-arm octo-arm5">
+          <div></div>
+          <div class="octo-arm-junction1 octo-nw octo-inverted-n"></div>
+          <div class="octo-skin"></div>
+          <div></div>
+          <div class="octo-skin"></div>
+          <div class="octo-arm-junction2 octo-skin octo-se-sharp"></div>
+          <div class="octo-skin"></div>
+          <div class="octo-skin octo-nw-sharp"></div>
+          <div class="octo-arm-junction3 octo-se octo-inverted"></div>
+          <div class="octo-arm-junction4 octo-skin octo-ne-sharp"></div>
+        </div>
+        <div class="octo-arm octo-arm6">
+          <div></div>
+          <div class="octo-arm-junction1 octo-nw octo-inverted-n"></div>
+          <div class="octo-skin"></div>
+          <div></div>
+          <div class="octo-skin"></div>
+          <div class="octo-arm-junction2 octo-skin octo-se-sharp"></div>
+          <div class="octo-skin"></div>
+          <div class="octo-skin octo-nw-sharp"></div>
+          <div class="octo-arm-junction3 octo-se octo-inverted"></div>
+          <div class="octo-arm-junction4 octo-skin octo-ne-sharp"></div>
+          <div class="octo-arm-junction3 octo-ne octo-inverted-n"></div>
+          <div class="octo-arm-junction5 octo-skin octo-nw-sharp"></div>
+        </div>
+        <div class="octo-arm octo-arm7">
+          <div></div>
+          <div class="octo-arm-junction1 octo-nw octo-inverted-n"></div>
+          <div class="octo-skin"></div>
+          <div></div>
+          <div class="octo-skin"></div>
+          <div class="octo-arm-junction2 octo-skin octo-se-sharp"></div>
+          <div class="octo-skin"></div>
+          <div class="octo-skin octo-nw-sharp"></div>
+          <div class="octo-arm-junction3 octo-se octo-inverted"></div>
+          <div class="octo-arm-junction4 octo-skin octo-ne-sharp"></div>
+        </div>
+        <div class="octo-arm octo-arm8">
+          <div></div>
+          <div class="octo-arm-junction1 octo-nw octo-inverted-n"></div>
+          <div class="octo-skin"></div>
+          <div></div>
+          <div class="octo-skin"></div>
+          <div class="octo-arm-junction2 octo-skin octo-se-sharp"></div>
+          <div class="octo-skin"></div>
+          <div class="octo-skin octo-nw-sharp"></div>
+          <div class="octo-arm-junction3 octo-se octo-inverted"></div>
+          <div class="octo-arm-junction4 octo-skin octo-ne-sharp"></div>
+          <div class="octo-arm-junction3 octo-ne octo-inverted-n"></div>
+          <div class="octo-arm-junction5 octo-skin octo-nw-sharp"></div>
+        </div>
+  </div>
 </div>
 
+<span>
+  <script>
+    // Resize artboard to fit container
+    resize()
+    function resize(){
+      let artboard = document.getElementsByClassName("artboard")[0]
+      let targetHeight = artboard.parentElement.clientHeight
+      let targetWidth = artboard.parentElement.clientWidth
+      let artboardHeight = artboard.clientHeight
+      let artboardWidth = artboard.clientWidth
+      let scale = Math.min(targetHeight/artboardHeight, targetWidth/artboardWidth)
+      artboard.style.transform = "scale(" + scale + ")"
+      artboard.style.transformOrigin = "0 0"
+    }
+    window.onresize = function(){
+      resize()
+    }
+  </script>
+</span>
 
 <style>
 :root{
@@ -163,7 +184,11 @@
   display: grid;
   justify-items: center;
   align-items: center;
-  transform: scale(45%);
+}
+
+.artboard{
+  height: max-content;
+  width: max-content;
 }
 
 .octopus{

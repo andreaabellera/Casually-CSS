@@ -8,23 +8,50 @@
   }
 </script>
 
-<div id="blossom" class="artboard"  style="
-  animation-iteration-count:{spin.iterationCount}; 
-  animation-delay:{spin.delay};
-  animation-duration:{spin.duration};
-">
-  <div class="blossomMid" style="background-color:{midColor};"></div>
-  <div class="half-grid"><div class="blossomPetal" style="background-color:{bodyColor};"></div></div>
-  <div class="half-grid"><div class="blossomPetal" style="background-color:{bodyColor};"></div></div>
-  <div class="half-grid"><div class="blossomPetal" style="background-color:{bodyColor};"></div></div>
-  <div class="half-grid"><div class="blossomPetal" style="background-color:{bodyColor};"></div></div>
-  <div class="half-grid"><div class="blossomPetal" style="background-color:{bodyColor};"></div></div>
+<div class="artboard">
+  <div id="blossom" style="
+    animation-iteration-count:{spin.iterationCount}; 
+    animation-delay:{spin.delay};
+    animation-duration:{spin.duration};
+  ">
+    <div class="blossomMid" style="background-color:{midColor};"></div>
+    <div class="half-grid"><div class="blossomPetal" style="background-color:{bodyColor};"></div></div>
+    <div class="half-grid"><div class="blossomPetal" style="background-color:{bodyColor};"></div></div>
+    <div class="half-grid"><div class="blossomPetal" style="background-color:{bodyColor};"></div></div>
+    <div class="half-grid"><div class="blossomPetal" style="background-color:{bodyColor};"></div></div>
+    <div class="half-grid"><div class="blossomPetal" style="background-color:{bodyColor};"></div></div>
+  </div>
 </div>
+
+<span>
+  <script>
+    // Resize artboard to fit container
+    resize()
+    function resize(){
+      let artboard = document.getElementsByClassName("artboard")[0]
+      let targetHeight = artboard.parentElement.clientHeight
+      let targetWidth = artboard.parentElement.clientWidth
+      let artboardHeight = artboard.clientHeight
+      let artboardWidth = artboard.clientWidth
+      let scale = Math.min(targetHeight/artboardHeight, targetWidth/artboardWidth)
+      artboard.style.transform = "scale(" + scale + ")"
+      artboard.style.transformOrigin = "0 0"
+    }
+    window.onresize = function(){
+      resize()
+    }
+  </script>
+</span>
 
 <style>
 :root{ 
   --blossomPetal: lightblue;
   --blossomMid: lightsteelblue;
+}
+
+.artboard{
+  height: max-content;
+  width: max-content;
 }
 
 #blossom{

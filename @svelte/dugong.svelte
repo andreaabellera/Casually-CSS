@@ -3,117 +3,139 @@
   export let bodyTint = "#94B7D0"
   export let bodyShade = "#546790"
   export let outlineColor = "#2E2E2E"
-  export let dugongTalk = {
+  export let talk = {
     iterationCount: "infinite",
     delay: "0s",
     duration: "0.7s"
   }
-  export let dugongTailFlip = {
+  export let tailFlip = {
     iterationCount: "infinite",
     delay: "0s",
     duration: "4s"
   }
-  export let dugongSwim = {
+  export let swim = {
     iterationCount: "infinite",
     delay: "0s",
     duration: "4s"
   }
-  export let dugongFlip1 = {
+  export let finFlipL = {
     iterationCount: "infinite",
     delay: "0s",
     duration: "4s"
   }
-  export let dugongFlip2 = {
+  export let finFlipR = {
     iterationCount: "infinite",
     delay: "0s",
     duration: "4s"
   }
 </script>
 
-<div id="dugong" class="artboard">
-  <div class="dugong" style="
-    animation-iteration-count:{dugongSwim.iterationCount}; 
-    animation-delay:{dugongSwim.delay};
-    animation-duration:{dugongSwim.duration};
-  ">
-      <div class="dugongSnout" style="
-        animation-iteration-count:{dugongTalk.iterationCount}; 
-        animation-delay:{dugongTalk.delay};
-        animation-duration:{dugongTalk.duration};
-      ">
-        <div class="dugong-half-width dugSnout-top">
-          <span class="dugongSkinLight dugong-se dugSnout-part" style="background-color:{bodyTint}; border-color:{outlineColor};">
-            <span class="dugPt dugNose1" style="background-color:{outlineColor};"></span>
-          </span>
-          <span class="dugongSkinLight dugong-sw dugSnout-part" style="background-color:{bodyTint}; border-color:{outlineColor};">
-            <span class="dugPt dugNose2" style="background-color:{outlineColor};"></span>
-          </span>
-        </div>
-        <div class="dugSnout-grid">
-          <span class="dugongSkinLight dugong-ne" style="background-color:{bodyTint}; border-color:{outlineColor};"></span>
-          <span class="dugongSkinLight dugong-nw-sharp" style="background-color:{bodyTint}; border-color:{outlineColor};"></span>
-          <span class="dugongSkinLight dugong-ne-sharp" style="background-color:{bodyTint}; border-color:{outlineColor};"></span>
-          <span class="dugongSkinLight dugong-nw" style="background-color:{bodyTint}; border-color:{outlineColor};"></span>
-        </div>
-      </div> 
-      <div class="dugong-head">
-        <span class="dug-head-junction1">
-          <span class="dugongSkin dugong-se-sharp dug-head-part0" style="background-color:{bodyColor}; border-color:{outlineColor};"><span class="dugPt dugEye1" style="background-color:{outlineColor};"></span></span>
-          <span class="dugongSkin stroke-left" style="background-color:{bodyColor}; border-color:{outlineColor};"></span>
-          <span class="dugongSkin stroke-left" style="background-color:{bodyColor}; border-color:{outlineColor};"><div class="dugong-ne" style="border-color:{outlineColor};"></div></span>
-        </span>
-        <span class="dug-head-part1">
-          <span class="dugongSkin stroke-top" style="background-color:{bodyColor}; border-color:{outlineColor};"></span>
-          <span class="dugongSkin dug-head-part3" style="background-color:{bodyColor}; border-color:{outlineColor};"></span>
-        </span>
-        <span class="dugongSkin dug-head-part2 stroke-right" style="background-color:{bodyColor}; border-color:{outlineColor};"><span class="dugPt dugEye2" style="background-color:{outlineColor};"></span></span>
-        <span></span>
-        <span class="dugong-half-width">
-          <span class="dugongSkin dugong-ne-sharp dugong-half-height" style="background-color:{bodyColor}; border-color:{outlineColor};">
-            <span class="dugongMouth dugongMouth1"></span>
-          </span>
-          <span class="dugongSkin dugong-nw-sharp dugong-half-height" style="background-color:{bodyColor}; border-color:{outlineColor};">
-            <span class="dugongMouth dugongMouth2"></span>
-          </span>
-        </span>
-      </div>
-      <div class="dugong-body">
-        <span class="dugongSkin stroke-left" style="background-color:{bodyColor}; border-color:{outlineColor};"></span>
-        <span class="dugongSkin dugong-sw" style="background-color:{bodyColor}; border-color:{outlineColor};"></span>
-        <span></span>
-        <span class="dugongSkin stroke-left" style="background-color:{bodyColor}; border-color:{outlineColor};"></span>
-        <span class="dugongSkin dugongTummy-top" style="background-color:{bodyColor};">
-          <div class="dugongSkinDark dugArc" style="background-color:{bodyShade};">
-            <div class="dugongSkin dugArc" style="background-color:{bodyColor};"></div>
+<div class="artboard">
+  <div id="dugong">
+    <div class="dugong" style="
+      animation-iteration-count:{swim.iterationCount}; 
+      animation-delay:{swim.delay};
+      animation-duration:{swim.duration};
+    ">
+        <div class="dugongSnout" style="
+          animation-iteration-count:{talk.iterationCount}; 
+          animation-delay:{talk.delay};
+          animation-duration:{talk.duration};
+        ">
+          <div class="dugong-half-width dugSnout-top">
+            <span class="dugongSkinLight dugong-se dugSnout-part" style="background-color:{bodyTint}; border-color:{outlineColor};">
+              <span class="dugPt dugNose1" style="background-color:{outlineColor};"></span>
+            </span>
+            <span class="dugongSkinLight dugong-sw dugSnout-part" style="background-color:{bodyTint}; border-color:{outlineColor};">
+              <span class="dugPt dugNose2" style="background-color:{outlineColor};"></span>
+            </span>
           </div>
-        </span>
-        <span class="dugongSkin dugong-sw-sharp" style="background-color:{bodyColor}; border-color:{outlineColor};"></span>
-        <span class="dugongSkinDark body-junction1" style="background-color:{bodyShade}; border-color:{outlineColor};"><div class="dugongTummy dugongSkin" style="background-color:{bodyColor};"></div>   </span>
-      </div>
-      <div class="dugong-tail" style="
-        animation-iteration-count:{dugongTailFlip.iterationCount}; 
-        animation-delay:{dugongTailFlip.delay};
-        animation-duration:{dugongTailFlip.duration};
-      ">
-        <span class="dugong-tail-left dugongSkin" style="background-color:{bodyColor}; border-color:{outlineColor};"></span>
-        <span class="dugong-tail-right dugongSkin" style="background-color:{bodyColor}; border-color:{outlineColor};"></span>
-      </div>
-      <div class="dugong-fin1 dugongSkin" style="
-        background-color:{bodyColor};
-        border-color:{outlineColor};
-        animation-iteration-count:{dugongFlip1.iterationCount}; 
-        animation-delay:{dugongFlip1.delay};
-        animation-duration:{dugongFlip1.duration};
-      "></div>
-      <div class="dugong-fin2 dugongSkinDark" style="
-        background-color:{bodyShade};
-        border-color:{outlineColor};
-        animation-iteration-count:{dugongFlip2.iterationCount}; 
-        animation-delay:{dugongFlip2.delay};
-        animation-duration:{dugongFlip2.duration};
-      "></div>
+          <div class="dugSnout-grid">
+            <span class="dugongSkinLight dugong-ne" style="background-color:{bodyTint}; border-color:{outlineColor};"></span>
+            <span class="dugongSkinLight dugong-nw-sharp" style="background-color:{bodyTint}; border-color:{outlineColor};"></span>
+            <span class="dugongSkinLight dugong-ne-sharp" style="background-color:{bodyTint}; border-color:{outlineColor};"></span>
+            <span class="dugongSkinLight dugong-nw" style="background-color:{bodyTint}; border-color:{outlineColor};"></span>
+          </div>
+        </div> 
+        <div class="dugong-head">
+          <span class="dug-head-junction1">
+            <span class="dugongSkin dugong-se-sharp dug-head-part0" style="background-color:{bodyColor}; border-color:{outlineColor};"><span class="dugPt dugEye1" style="background-color:{outlineColor};"></span></span>
+            <span class="dugongSkin stroke-left" style="background-color:{bodyColor}; border-color:{outlineColor};"></span>
+            <span class="dugongSkin stroke-left" style="background-color:{bodyColor}; border-color:{outlineColor};"><div class="dugong-ne" style="border-color:{outlineColor};"></div></span>
+          </span>
+          <span class="dug-head-part1">
+            <span class="dugongSkin stroke-top" style="background-color:{bodyColor}; border-color:{outlineColor};"></span>
+            <span class="dugongSkin dug-head-part3" style="background-color:{bodyColor}; border-color:{outlineColor};"></span>
+          </span>
+          <span class="dugongSkin dug-head-part2 stroke-right" style="background-color:{bodyColor}; border-color:{outlineColor};"><span class="dugPt dugEye2" style="background-color:{outlineColor};"></span></span>
+          <span></span>
+          <span class="dugong-half-width">
+            <span class="dugongSkin dugong-ne-sharp dugong-half-height" style="background-color:{bodyColor}; border-color:{outlineColor};">
+              <span class="dugongMouth dugongMouth1"></span>
+            </span>
+            <span class="dugongSkin dugong-nw-sharp dugong-half-height" style="background-color:{bodyColor}; border-color:{outlineColor};">
+              <span class="dugongMouth dugongMouth2"></span>
+            </span>
+          </span>
+        </div>
+        <div class="dugong-body">
+          <span class="dugongSkin stroke-left" style="background-color:{bodyColor}; border-color:{outlineColor};"></span>
+          <span class="dugongSkin dugong-sw" style="background-color:{bodyColor}; border-color:{outlineColor};"></span>
+          <span></span>
+          <span class="dugongSkin stroke-left" style="background-color:{bodyColor}; border-color:{outlineColor};"></span>
+          <span class="dugongSkin dugongTummy-top" style="background-color:{bodyColor};">
+            <div class="dugongSkinDark dugArc" style="background-color:{bodyShade};">
+              <div class="dugongSkin dugArc" style="background-color:{bodyColor};"></div>
+            </div>
+          </span>
+          <span class="dugongSkin dugong-sw-sharp" style="background-color:{bodyColor}; border-color:{outlineColor};"></span>
+          <span class="dugongSkinDark body-junction1" style="background-color:{bodyShade}; border-color:{outlineColor};"><div class="dugongTummy dugongSkin" style="background-color:{bodyColor};"></div>   </span>
+        </div>
+        <div class="dugong-tail" style="
+          animation-iteration-count:{tailFlip.iterationCount}; 
+          animation-delay:{tailFlip.delay};
+          animation-duration:{tailFlip.duration};
+        ">
+          <span class="dugong-tail-left dugongSkin" style="background-color:{bodyColor}; border-color:{outlineColor};"></span>
+          <span class="dugong-tail-right dugongSkin" style="background-color:{bodyColor}; border-color:{outlineColor};"></span>
+        </div>
+        <div class="dugong-fin1 dugongSkin" style="
+          background-color:{bodyColor};
+          border-color:{outlineColor};
+          animation-iteration-count:{finFlipL.iterationCount}; 
+          animation-delay:{finFlipL.delay};
+          animation-duration:{finFlipL.duration};
+        "></div>
+        <div class="dugong-fin2 dugongSkinDark" style="
+          background-color:{bodyShade};
+          border-color:{outlineColor};
+          animation-iteration-count:{finFlipR.iterationCount}; 
+          animation-delay:{finFlipR.delay};
+          animation-duration:{finFlipR.duration};
+        "></div>
+    </div>
   </div>
 </div>
+
+<span>
+  <script>
+    // Resize artboard to fit container
+    resize()
+    function resize(){
+      let artboard = document.getElementsByClassName("artboard")[0]
+      let targetHeight = artboard.parentElement.clientHeight
+      let targetWidth = artboard.parentElement.clientWidth
+      let artboardHeight = artboard.clientHeight
+      let artboardWidth = artboard.clientWidth
+      let scale = Math.min(targetHeight/artboardHeight, targetWidth/artboardWidth)
+      artboard.style.transform = "scale(" + scale + ")"
+      artboard.style.transformOrigin = "0 0"
+    }
+    window.onresize = function(){
+      resize()
+    }
+  </script>
+</span>
 
 <style>
 :root{
@@ -127,6 +149,11 @@
 #dugong{
   height: 26em;
   width: 16em;
+}
+
+.artboard{
+  height: max-content;
+  width: max-content;
 }
 
 .dugong{
