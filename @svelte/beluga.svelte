@@ -34,66 +34,88 @@
   }
 </script>
 
-<div id="beluga" class="artboard">
-  <div class="belcontain" style="
-    animation-iteration-count:{belSwim.iterationCount}; 
-    animation-delay:{belSwim.delay};
-    animation-duration:{belSwim.duration};
-  ">
-  <div class="beluga">
-      <div class="bel1">
-          <div class="belSkin bel11" style="background-color:{bodyColor}; border-color: {bodyShade};">
-            <span class="belEyeball" style="background-color:{eyeColor}; border-color:{bodyShade};"></span>
-            <span class="belEyedot"></span>
-          </div>
-          <div class="belSkin bel-se-sharp bel12" style="background-color:{bodyColor}; border-color: {bodyShade};"></div>
-          <div class="belSkin bel-ne-sharp bel13" style="background-color:{bodyColor}; border-color: {bodyShade};"></div>
-      </div>
-      <div class="bel2" style="
-        animation-iteration-count:{hStretch2.iterationCount}; 
-        animation-delay:{hStretch2.delay};
-        animation-duration:{hStretch2.duration};
-      ">
-          <div class="belSkin bel21" style="background-color:{bodyColor}; border-color: {bodyShade};"></div>
-          <div class="belSkin-junction1 belSkin bel-se-sharp bel-inverted" style="box-shadow: 0em -1.5em 0em 0em {bodyColor};"></div>
-      </div>
-      <div class="bel3">
-          <div class="belSkin bel-sw-sharp" style="background-color:{bodyColor};"></div>
-          <div class="belSkin" style="background-color:{bodyColor};"></div>
-          <div class="bel-half-width">
-            <div class="belSkin bel-ne-sharp bel33" style="background-color:{bodyColor};"></div>
-            <div class="belSkin bel-nw-sharp" style="background-color:{bodyColor};"></div>
-          </div>
-      </div>
-      <div class="bel4 belEye" style="
-        animation-iteration-count:{hStretch.iterationCount}; 
-        animation-delay:{hStretch.delay};
-        animation-duration:{hStretch.duration};
-      ">
-          <div class="belTail" style="
-            animation-iteration-count:{flipbelTail.iterationCount}; 
-            animation-delay:{flipbelTail.delay};
-            animation-duration:{flipbelTail.duration};
-          ">
-            <div class="belTail-top belSkin" style="background-color:{bodyColor};"></div>
-            <div class="belTail-bot belSkin" style="background-color:{bodyColor}; border-color: {bodyShade};"></div>
+<div class="artboard">
+  <div id="beluga">
+    <div class="belcontain" style="
+      animation-iteration-count:{belSwim.iterationCount}; 
+      animation-delay:{belSwim.delay};
+      animation-duration:{belSwim.duration};
+    ">
+    <div class="beluga">
+        <div class="bel1">
+            <div class="belSkin bel11" style="background-color:{bodyColor}; border-color: {bodyShade};">
+              <span class="belEyeball" style="background-color:{eyeColor}; border-color:{bodyShade};"></span>
+              <span class="belEyedot"></span>
+            </div>
+            <div class="belSkin bel-se-sharp bel12" style="background-color:{bodyColor}; border-color: {bodyShade};"></div>
+            <div class="belSkin bel-ne-sharp bel13" style="background-color:{bodyColor}; border-color: {bodyShade};"></div>
+        </div>
+        <div class="bel2" style="
+          animation-iteration-count:{hStretch2.iterationCount}; 
+          animation-delay:{hStretch2.delay};
+          animation-duration:{hStretch2.duration};
+        ">
+            <div class="belSkin bel21" style="background-color:{bodyColor}; border-color: {bodyShade};"></div>
+            <div class="belSkin-junction1 belSkin bel-se-sharp bel-inverted" style="box-shadow: 0em -1.5em 0em 0em {bodyColor};"></div>
+        </div>
+        <div class="bel3">
+            <div class="belSkin bel-sw-sharp" style="background-color:{bodyColor};"></div>
+            <div class="belSkin" style="background-color:{bodyColor};"></div>
+            <div class="bel-half-width">
+              <div class="belSkin bel-ne-sharp bel33" style="background-color:{bodyColor};"></div>
+              <div class="belSkin bel-nw-sharp" style="background-color:{bodyColor};"></div>
+            </div>
+        </div>
+        <div class="bel4 belEye" style="
+          animation-iteration-count:{hStretch.iterationCount}; 
+          animation-delay:{hStretch.delay};
+          animation-duration:{hStretch.duration};
+        ">
+            <div class="belTail" style="
+              animation-iteration-count:{flipbelTail.iterationCount}; 
+              animation-delay:{flipbelTail.delay};
+              animation-duration:{flipbelTail.duration};
+            ">
+              <div class="belTail-top belSkin" style="background-color:{bodyColor};"></div>
+              <div class="belTail-bot belSkin" style="background-color:{bodyColor}; border-color: {bodyShade};"></div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="belbottom belEye" style="
-        animation-iteration-count:{vStretch.iterationCount}; 
-        animation-delay:{vStretch.delay};
-        animation-duration:{vStretch.duration};
-      "></div>
-      <div class="belFin1 belSkin" style="
-        background-color: {bodyColor};
-        border-color: {bodyShade};
-        animation-iteration-count:{flipFin.iterationCount}; 
-        animation-delay:{flipFin.delay};
-        animation-duration:{flipFin.duration};
-      "></div>
+        <div class="belbottom belEye" style="
+          animation-iteration-count:{vStretch.iterationCount}; 
+          animation-delay:{vStretch.delay};
+          animation-duration:{vStretch.duration};
+        "></div>
+        <div class="belFin1 belSkin" style="
+          background-color: {bodyColor};
+          border-color: {bodyShade};
+          animation-iteration-count:{flipFin.iterationCount}; 
+          animation-delay:{flipFin.delay};
+          animation-duration:{flipFin.duration};
+        "></div>
+    </div>
   </div>
 </div>
+
+<span>
+  <script>
+    // Resize artboard to fit container
+    resize()
+    function resize(){
+      let artboard = document.getElementsByClassName("artboard")[0]
+      let targetHeight = artboard.parentElement.clientHeight
+      let targetWidth = artboard.parentElement.clientWidth
+      let artboardHeight = artboard.clientHeight
+      let artboardWidth = artboard.clientWidth
+      let scale = Math.min(targetHeight/artboardHeight, targetWidth/artboardWidth)
+      artboard.style.transform = "scale(" + scale + ")"
+      artboard.style.transformOrigin = "0 0"
+    }
+    window.onresize = function(){
+      resize()
+    }
+  </script>
+</span>
 
 <style>
 :root{
@@ -101,6 +123,11 @@
   --belShade: #D4D0E6; 
   --belTongue: pink;
   --belEye: #4E5E4E; 
+}
+
+.artboard{
+  height: max-content;
+  width: max-content;
 }
 
 #beluga{

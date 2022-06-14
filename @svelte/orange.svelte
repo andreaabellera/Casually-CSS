@@ -18,35 +18,57 @@
   }
 </script>
 
-<div id="orange" class="artboard">
-  <div class="orangeLeaf" style="
-    animation-iteration-count:{jiggle.iterationCount}; 
-    animation-delay:{jiggle.delay};
-    animation-duration:{jiggle.duration};
-  ">
-    <div class="orangeLeaf-1" style="background-color:{leafColor};"></div>
-    <div class="orangeLeaf-2" style="background-color:{leafColor}; border-color:{leafTint};"></div>
-    <div class="orangeLeaf-3" style="background-color:{leafShade};"></div>
-    <div class="orangeLeaf-4" style="background-color:{leafShade}; border-color:{leafTint};">
-      <span class="deco" style="border-color:{leafColor};"></span>
+<div class="artboard">
+  <div id="orange">
+    <div class="orangeLeaf" style="
+      animation-iteration-count:{jiggle.iterationCount}; 
+      animation-delay:{jiggle.delay};
+      animation-duration:{jiggle.duration};
+    ">
+      <div class="orangeLeaf-1" style="background-color:{leafColor};"></div>
+      <div class="orangeLeaf-2" style="background-color:{leafColor}; border-color:{leafTint};"></div>
+      <div class="orangeLeaf-3" style="background-color:{leafShade};"></div>
+      <div class="orangeLeaf-4" style="background-color:{leafShade}; border-color:{leafTint};">
+        <span class="deco" style="border-color:{leafColor};"></span>
+      </div>
     </div>
-  </div>
-  <div class="orange" style="
-    background-color:{skinColor};
-    border-color:{skinTint};
-    animation-iteration-count:{spin.iterationCount}; 
-    animation-delay:{spin.delay};
-    animation-duration:{spin.duration};
-  ">
-    <div class="orangeInner" style="background-color:{bodyColor}; border-color:{veinColor};">
-      <div class="orangeLine" style="background-color:{veinColor};"></div>
-      <div class="orangeLine fourfive" style="background-color:{veinColor};"></div>
-      <div class="orangeLine ninety" style="background-color:{veinColor};"></div>
-      <div class="orangeLine onethreefive" style="background-color:{veinColor};"></div>
-      <div class="orangeCenter" style="background-color:{bodyColor};"></div>
+    <div class="orange" style="
+      background-color:{skinColor};
+      border-color:{skinTint};
+      animation-iteration-count:{spin.iterationCount}; 
+      animation-delay:{spin.delay};
+      animation-duration:{spin.duration};
+    ">
+      <div class="orangeInner" style="background-color:{bodyColor}; border-color:{veinColor};">
+        <div class="orangeLine" style="background-color:{veinColor};"></div>
+        <div class="orangeLine fourfive" style="background-color:{veinColor};"></div>
+        <div class="orangeLine ninety" style="background-color:{veinColor};"></div>
+        <div class="orangeLine onethreefive" style="background-color:{veinColor};"></div>
+        <div class="orangeCenter" style="background-color:{bodyColor};"></div>
+      </div>
     </div>
   </div>
 </div>
+
+<span>
+  <script>
+    // Resize artboard to fit container
+    resize()
+    function resize(){
+      let artboard = document.getElementsByClassName("artboard")[0]
+      let targetHeight = artboard.parentElement.clientHeight
+      let targetWidth = artboard.parentElement.clientWidth
+      let artboardHeight = artboard.clientHeight
+      let artboardWidth = artboard.clientWidth
+      let scale = Math.min(targetHeight/artboardHeight, targetWidth/artboardWidth)
+      artboard.style.transform = "scale(" + scale + ")"
+      artboard.style.transformOrigin = "0 0"
+    }
+    window.onresize = function(){
+      resize()
+    }
+  </script>
+</span>
 
 <style>
 :root{
@@ -62,6 +84,11 @@
   position: relative;
   height: 18em;
   width: 18em;
+}
+
+.artboard{
+  height: max-content;
+  width: max-content;
 }
 
 .orangeLeaf{

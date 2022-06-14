@@ -30,39 +30,60 @@
     daysArray[i] = `<div class="calSq" style="background-color:${celColor}; border-radius: 0.5ex; border-top-right-radius: 40%; border-bottom-left-radius: 40%;"></div>`
 </script>
 
-<div id="calendar" class="artboard">
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-  <div class="calendar-shape" style="background-color:{backColor};">
-      <div class="calendar" style="
-        background-color: {bodyColor};
-        animation-iteration-count:{flap.iterationCount}; 
-        animation-delay:{flap.delay};
-        animation-duration:{flap.duration};
-      ">
-        <div class="calHeader" style="color: {monthColor}">
-          <p> {month} </p>
-          <p id="year"> {year} </p>
+<div class="artboard">
+  <div id="calendar">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <div class="calendar-shape" style="background-color:{backColor};">
+        <div class="calendar" style="
+          background-color: {bodyColor};
+          animation-iteration-count:{flap.iterationCount}; 
+          animation-delay:{flap.delay};
+          animation-duration:{flap.duration};
+        ">
+          <div class="calHeader" style="color: {monthColor}">
+            <p> {month} </p>
+            <p id="year"> {year} </p>
+          </div>
+          <div class="calDivider" style="background-color:{dividerColor};"></div>
+          <div class="days" style="color:{weekColor};">
+            <p> Su </p>
+            <p> M </p>
+            <p> T </p>
+            <p> W </p>
+            <p> Th </p>
+            <p> F </p>
+            <p> Sa </p>
+          </div>
+          <div class="calSqs">
+            {#each daysArray as day}
+              {@html day}
+            {/each}
+          </div>
+          <div class="calDivider" style="background-color:{dividerColor};"></div>
         </div>
-        <div class="calDivider" style="background-color:{dividerColor};"></div>
-        <div class="days" style="color:{weekColor};">
-          <p> Su </p>
-          <p> M </p>
-          <p> T </p>
-          <p> W </p>
-          <p> Th </p>
-          <p> F </p>
-          <p> Sa </p>
-        </div>
-        <div class="calSqs">
-          {#each daysArray as day}
-            {@html day}
-          {/each}
-        </div>
-        <div class="calDivider" style="background-color:{dividerColor};"></div>
-      </div>
+    </div>
   </div>
 </div>
-<span class="calSq"></span>
+
+<span>
+  <script>
+    // Resize artboard to fit container
+    resize()
+    function resize(){
+      let artboard = document.getElementsByClassName("artboard")[0]
+      let targetHeight = artboard.parentElement.clientHeight
+      let targetWidth = artboard.parentElement.clientWidth
+      let artboardHeight = artboard.clientHeight
+      let artboardWidth = artboard.clientWidth
+      let scale = Math.min(targetHeight/artboardHeight, targetWidth/artboardWidth)
+      artboard.style.transform = "scale(" + scale + ")"
+      artboard.style.transformOrigin = "0 0"
+    }
+    window.onresize = function(){
+      resize()
+    }
+  </script>
+</span>
 
 <style>
 :root{
@@ -78,7 +99,11 @@
 #calendar{
   height: 28em;
   width: 36em;
-  transform: scale(50%);
+}
+
+.artboard{
+  height: max-content;
+  width: max-content;
 }
 
 ::selection{

@@ -3,6 +3,7 @@
 </script>
 
 <div class="artboard">
+  <div id="button">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <div class="bleu button">
       <span class="grad-overlay"></span>
@@ -12,13 +13,39 @@
       <span class="ult-overlay"></span>
       <span class="glare2"></span>
       <span class="btn-text">{text}</span>
+    </div>
   </div>
 </div>
 
+<span>
+  <script>
+    // Resize artboard to fit container
+    resize()
+    function resize(){
+      let artboard = document.getElementsByClassName("artboard")[0]
+      let targetHeight = artboard.parentElement.clientHeight
+      let targetWidth = artboard.parentElement.clientWidth
+      let artboardHeight = artboard.clientHeight
+      let artboardWidth = artboard.clientWidth
+      let scale = Math.min(targetHeight/artboardHeight, targetWidth/artboardWidth)
+      artboard.style.transform = "scale(" + scale + ")"
+      artboard.style.transformOrigin = "0 0"
+    }
+    window.onresize = function(){
+      resize()
+    }
+  </script>
+</span>
+
 <style>
-.artboard{
+#button{
   height: 5em;
   width: 17em;
+}
+
+.artboard{
+  height: max-content;
+  width: max-content;
 }
 
 .button{

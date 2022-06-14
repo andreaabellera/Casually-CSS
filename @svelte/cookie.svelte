@@ -9,32 +9,54 @@
   }
 </script>
 
-<div id="cookie" class="artboard">
-  <span class="chip" style="background-color:{chipColor};"></span>
-  <span class="chip" style="background-color:{chipColor};"></span>
-  <span class="chip" style="background-color:{chipColor};"></span>
-  <span class="chip" style="background-color:{chipColor};"></span>
-  <span class="chip" style="background-color:{chipColor};"></span>
-  <span class="chip" style="background-color:{chipColor};"></span>
-  <span class="chip" style="background-color:{chipColor};"></span>
-  <div class="cookie-bite">
-    <div class="bite bite11" style="background-image: radial-gradient(ellipse at top right, transparent 0%, transparent 30%, {bodyColor} 31%);"></div>
-    <div class="bite bite12" style="background-image: radial-gradient(circle at top right, transparent 0%, transparent 21%, {bodyColor} 22%);"></div>
-    <div class="cookie cookie-q1-sharp bite13" style="background-color:{bodyColor}; border-color:{outlineColor};"></div>
-  </div>
-  <div class="cookie-container quadrants">
-    <div class="cookie full cookie-q2" style="background-color:{bodyColor}; border-color:{outlineColor};"></div>
-    <div class="cookie full cookie-q1" style="
-      background-color:{bodyColor}; 
-      border-color:{outlineColor};
-      animation-iteration-count:{eat.iterationCount}; 
-      animation-delay:{eat.delay};
-      animation-duration:{eat.duration};
-    "></div>
-    <div class="cookie full cookie-q3" style="background-color:{bodyColor}; border-color:{outlineColor};"></div>
-    <div class="cookie full cookie-q4" style="background-color:{bodyColor}; border-color:{outlineColor};"></div>
+<div class="artboard">
+  <div id="cookie">
+    <span class="chip" style="background-color:{chipColor};"></span>
+    <span class="chip" style="background-color:{chipColor};"></span>
+    <span class="chip" style="background-color:{chipColor};"></span>
+    <span class="chip" style="background-color:{chipColor};"></span>
+    <span class="chip" style="background-color:{chipColor};"></span>
+    <span class="chip" style="background-color:{chipColor};"></span>
+    <span class="chip" style="background-color:{chipColor};"></span>
+    <div class="cookie-bite">
+      <div class="bite bite11" style="background-image: radial-gradient(ellipse at top right, transparent 0%, transparent 30%, {bodyColor} 31%);"></div>
+      <div class="bite bite12" style="background-image: radial-gradient(circle at top right, transparent 0%, transparent 21%, {bodyColor} 22%);"></div>
+      <div class="cookie cookie-q1-sharp bite13" style="background-color:{bodyColor}; border-color:{outlineColor};"></div>
+    </div>
+    <div class="cookie-container quadrants">
+      <div class="cookie full cookie-q2" style="background-color:{bodyColor}; border-color:{outlineColor};"></div>
+      <div class="cookie full cookie-q1" style="
+        background-color:{bodyColor}; 
+        border-color:{outlineColor};
+        animation-iteration-count:{eat.iterationCount}; 
+        animation-delay:{eat.delay};
+        animation-duration:{eat.duration};
+      "></div>
+      <div class="cookie full cookie-q3" style="background-color:{bodyColor}; border-color:{outlineColor};"></div>
+      <div class="cookie full cookie-q4" style="background-color:{bodyColor}; border-color:{outlineColor};"></div>
+    </div>
   </div>
 </div>
+
+<span>
+  <script>
+    // Resize artboard to fit container
+    resize()
+    function resize(){
+      let artboard = document.getElementsByClassName("artboard")[0]
+      let targetHeight = artboard.parentElement.clientHeight
+      let targetWidth = artboard.parentElement.clientWidth
+      let artboardHeight = artboard.clientHeight
+      let artboardWidth = artboard.clientWidth
+      let scale = Math.min(targetHeight/artboardHeight, targetWidth/artboardWidth)
+      artboard.style.transform = "scale(" + scale + ")"
+      artboard.style.transformOrigin = "0 0"
+    }
+    window.onresize = function(){
+      resize()
+    }
+  </script>
+</span>
 
 <style>
 :root{
@@ -49,8 +71,9 @@ width: 16em;
 position: relative;
 }
 
-::selection {
-background: rgba(0,0,0,0);
+.artboard{
+  height: max-content;
+  width: max-content;
 }
 
 .cookie{

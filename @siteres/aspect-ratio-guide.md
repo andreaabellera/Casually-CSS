@@ -1,6 +1,5 @@
 # Casually CSS Aspect Ratio Guide
 Defined as **Artwork** - [HEIGHT:WIDTH]  
-Aspect values yet to be tested, may be bound to change
 
 ## Artworks
 **Beluga** - [5:6]  
@@ -11,8 +10,7 @@ Aspect values yet to be tested, may be bound to change
 
 **Boba** - [5:2] 
 
-**Button** - [N/A]
-- Note: flexible component. Can be any aspect ratio 
+**Button** - [5:17]
 
 **Calendar** - [7:8] 
 
