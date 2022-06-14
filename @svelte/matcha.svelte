@@ -1,38 +1,58 @@
+<script>
+  export let bodyColor = "#3e4044"
+  export let cupInnerColor = "#aa3333"
+  export let drinkColor = "linear-gradient(120deg, #608850 0%, #78AE60, #88BB80 80%, #67A070 90%, #656840 100%)"
+  export let blossomColor = "#ffc0cb"
+  export let woodColor = "#565144"
+  export let woodTopColor = "linear-gradient(to top, tan, rgb(170, 146, 113))"
+  export let paperColor = "#dd9922"
+  export let ripple = {
+    iterationCount: "infinite",
+    delay: "0s",
+    duration: "3s"
+  }
+</script>
+
 <div id="matcha" class="artboard">
   <div class="matcha-blossom">
     <div class="stabilize">
-      <div class="matcha-half-height"><div class="matcha-petal"></div></div>
-      <div class="matcha-half-height"><div class="matcha-petal"></div></div>
-      <div class="matcha-half-height"><div class="matcha-petal"></div></div>
-      <div class="matcha-half-height"><div class="matcha-petal"></div></div>
-      <div class="matcha-half-height"><div class="matcha-petal"></div></div>
+      <div class="matcha-half-height"><div class="matcha-petal" style="background-color:{blossomColor};"></div></div>
+      <div class="matcha-half-height"><div class="matcha-petal" style="background-color:{blossomColor};"></div></div>
+      <div class="matcha-half-height"><div class="matcha-petal" style="background-color:{blossomColor};"></div></div>
+      <div class="matcha-half-height"><div class="matcha-petal" style="background-color:{blossomColor};"></div></div>
+      <div class="matcha-half-height"><div class="matcha-petal" style="background-color:{blossomColor};"></div></div>
     </div>
   </div>
   <div class="teamatcha-string">
     <div class="matcha-string"></div>
     <div class="tea-paper">
-      <div class="tea-paper-top"></div>
-      <div class="tea-paper-bottom"></div>
+      <div class="tea-paper-top" style="background-image: radial-gradient(circle, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 20%, {paperColor} 20%, {paperColor} 100%);"></div>
+      <div class="tea-paper-bottom" style="background-color:{paperColor};"></div>
     </div>
   </div>
   <div class="matcha-set">
     <div class="matcha-cup">
       <div class="matcha-cup-front">
-        <div class="matcha-cup-front-top"></div>
-        <div class="matcha-cup-front-bottom"></div>
+        <div class="matcha-cup-front-top" style="background-image:radial-gradient(ellipse at top, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 71%, {bodyColor} 71.5%);"></div>
+        <div class="matcha-cup-front-bottom" style="background-image:linear-gradient(to top, #1e1e1e 0%, {bodyColor} 100%);"></div>
       </div>
       <div class="matcha-drink">
         <div class="stabilize">
-          <div class="surface"></div>
+          <div class="surface" style="
+            background: {drinkColor};
+            animation-iteration-count:{ripple.iterationCount}; 
+            animation-delay:{ripple.delay};
+            animation-duration:{ripple.duration};
+          "></div>
         </div>
       </div>
-      <div class="matcha-cup-back"></div>
+      <div class="matcha-cup-back" style="background-image: radial-gradient(ellipse at bottom, #2e2e2e 0%, {cupInnerColor} 70%);"></div>
     </div>
-    <div class="matcha-wood">
-      <div class="matcha-wood-inner"></div>
+    <div class="matcha-wood" style="background-color:{woodColor};">
+      <div class="matcha-wood-inner" style="background:{woodTopColor};"></div>
     </div>
   </div>
-  <div class="matcha-handle"></div>
+  <div class="matcha-handle" style="border-color:{bodyColor};"></div>
 </div>
 
 <style>
@@ -110,11 +130,12 @@
   height: 100%;
   width: 100%;
   background-image: radial-gradient(ellipse, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 100%);
-}
-
-.surface:hover{
   animation: surface 3s ease-out infinite;
 }
+
+/* .surface:hover{
+  animation: surface 3s ease-out infinite;
+} */
 
 .matcha-cup-back{
   position: absolute;
