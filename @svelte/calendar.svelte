@@ -1,13 +1,50 @@
+<script>
+  export let month = "February"
+  export let year = "2017"
+  export let dayStart = 3
+  export let days = 28
+  export let bodyColor = "lightblue"
+  export let dividerColor = "lightskyblue"
+  export let celColor = "rgb(231, 240, 243)"
+  export let monthColor = "whitesmoke"
+  export let weekColor = "#3e3e8e"
+  export let dayColor = "lightskyblue"
+  export let backColor = "#3e3e8e"
+  export let flap = {
+    iterationCount: "infinite",
+    delay: "0s",
+    duration: "3s"
+  }
+
+  dayStart = Math.max(dayStart, 0)
+  dayStart = Math.min(dayStart, 4)
+  days = Math.max(days, 28)
+  days = Math.min(days, 31)
+  let numDays = days + dayStart
+  let daysArray = Array(35)
+  for (let i = 0; i < dayStart; i++)
+    daysArray[i] = `<div class="calSq" style="background-color:${celColor}; border-radius: 0.5ex; border-top-right-radius: 40%; border-bottom-left-radius: 40%;"></div>`
+  for (let i = dayStart; i < numDays; i++)
+    daysArray[i] = `<div class="calSq" style="background-color:${celColor}; color:${dayColor}; border-radius: 0.5ex; border-top-right-radius: 40%; border-bottom-left-radius: 40%;"><p style="margin-left:0.4em;">${i-dayStart+1}</p></div>`
+  for (let i = numDays; i < daysArray.length; i++)
+    daysArray[i] = `<div class="calSq" style="background-color:${celColor}; border-radius: 0.5ex; border-top-right-radius: 40%; border-bottom-left-radius: 40%;"></div>`
+</script>
+
 <div id="calendar" class="artboard">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-  <div class="calendar-shape">
-      <div class="calendar">
-        <div class="calHeader">
-          <p> February </p>
-          <p id="year"> 2017 </p>
+  <div class="calendar-shape" style="background-color:{backColor};">
+      <div class="calendar" style="
+        background-color: {bodyColor};
+        animation-iteration-count:{flap.iterationCount}; 
+        animation-delay:{flap.delay};
+        animation-duration:{flap.duration};
+      ">
+        <div class="calHeader" style="color: {monthColor}">
+          <p> {month} </p>
+          <p id="year"> {year} </p>
         </div>
-        <div class="calDivider"></div>
-        <div class="days">
+        <div class="calDivider" style="background-color:{dividerColor};"></div>
+        <div class="days" style="color:{weekColor};">
           <p> Su </p>
           <p> M </p>
           <p> T </p>
@@ -17,46 +54,15 @@
           <p> Sa </p>
         </div>
         <div class="calSqs">
-          <div class="calSq"> </div>
-          <div class="calSq"> </div>
-          <div class="calSq"> </div>
-          <div class="calSq"> <p> 1 </p> </div>
-          <div class="calSq"> <p> 2 </p> </div>
-          <div class="calSq"> <p> 3 </p> </div>
-          <div class="calSq"> <p> 4 </p> </div>
-          <div class="calSq"> <p> 5 </p> </div>
-          <div class="calSq"> <p> 6 </p> </div>
-          <div class="calSq"> <p> 7 </p> </div>
-          <div class="calSq"> <p> 8 </p> </div>
-          <div class="calSq"> <p> 9 </p> </div>
-          <div class="calSq"> <p> 10 </p> </div>
-          <div class="calSq"> <p> 11 </p> </div>
-          <div class="calSq"> <p> 12 </p> </div>
-          <div class="calSq"> <p> 13 </p> </div>
-          <div class="calSq"> <p> 14 </p> </div>
-          <div class="calSq"> <p> 15 </p> </div>
-          <div class="calSq"> <p> 16 </p> </div>
-          <div class="calSq"> <p> 17 </p> </div>
-          <div class="calSq"> <p> 18 </p> </div>
-          <div class="calSq"> <p> 19 </p> </div>
-          <div class="calSq"> <p> 20 </p> </div>
-          <div class="calSq"> <p> 21 </p> </div>
-          <div class="calSq"> <p> 22 </p> </div>
-          <div class="calSq"> <p> 23 </p> </div>
-          <div class="calSq"> <p> 24 </p> </div>
-          <div class="calSq"> <p> 25 </p> </div>
-          <div class="calSq"> <p> 26 </p> </div>
-          <div class="calSq"> <p> 27 </p> </div>
-          <div class="calSq"> <p> 28 </p> </div>
-          <div class="calSq"> </div>
-          <div class="calSq"> </div>
-          <div class="calSq"> </div>
-          <div class="calSq"> </div>
+          {#each daysArray as day}
+            {@html day}
+          {/each}
         </div>
-        <div class="calDivider"></div>
+        <div class="calDivider" style="background-color:{dividerColor};"></div>
       </div>
   </div>
 </div>
+<span class="calSq"></span>
 
 <style>
 :root{
@@ -94,13 +100,14 @@
   display: grid;
   grid-template-rows: auto 0.4ex auto auto 0.4ex 1fr;
   font-family: 'Fredoka One', cursive;
+  animation: flap 3s linear infinite;
 }
 
-.calendar:hover{
+/* .calendar:hover{
   cursor: pointer;
   animation: flap 3s linear;
   animation-iteration-count: infinite;
-}
+} */
 
 .calHeader{
   align-self: flex-start;
@@ -136,20 +143,6 @@
   grid-template-columns: 11% 11% 11% 11% 11% 11% 11%;
   grid-template-rows: 5ex 5ex 5ex 5ex 5ex;
   grid-gap: 1ex;
-}
-
-.calSq{
-  background-color: var(--calSq);
-  height: 100%;
-  width: 100%;
-  border-radius: 0.5ex;
-  border-top-right-radius: 40%;
-  border-bottom-left-radius: 40%;
-}
-
-.calSq p{
-  color: var(--numberColor);
-  margin: 0.4em;
 }
 
 @keyframes flap{
