@@ -35,6 +35,8 @@
         <div class="octo-head-junction4 octo-skin octo-se">   </div>
         <div class="octo-half-width">    <div class="octo-skin octo-sw"></div>   </div>
       </div>
+    </div>
+    
       <div class="octo-arms">
         <div class="octo-arms-junction1"></div>
         <div class="octo-arms-junction2 emboss">   <div class="octo-skin octo-cap"></div>    </div>

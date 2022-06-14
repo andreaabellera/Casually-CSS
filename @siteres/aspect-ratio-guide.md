@@ -7,6 +7,8 @@ Aspect values yet to be tested, may be bound to change
 
 **Bike** - [9:15]
 
+**Blossom** - [1:1]
+
 **Boba** - [5:2] 
 
 **Button** - [N/A]
