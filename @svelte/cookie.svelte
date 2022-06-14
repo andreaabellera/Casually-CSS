@@ -1,21 +1,38 @@
+<script>
+  export let bodyColor = "tan"
+  export let outlineColor = "#543f37"
+  export let chipColor = "#8e5e4e"
+  export let eat = {
+    iterationCount: "infinite",
+    delay: "0s",
+    duration: "1s"
+  }
+</script>
+
 <div id="cookie" class="artboard">
-  <span class="chip"></span>
-  <span class="chip"></span>
-  <span class="chip"></span>
-  <span class="chip"></span>
-  <span class="chip"></span>
-  <span class="chip"></span>
-  <span class="chip"></span>
+  <span class="chip" style="background-color:{chipColor};"></span>
+  <span class="chip" style="background-color:{chipColor};"></span>
+  <span class="chip" style="background-color:{chipColor};"></span>
+  <span class="chip" style="background-color:{chipColor};"></span>
+  <span class="chip" style="background-color:{chipColor};"></span>
+  <span class="chip" style="background-color:{chipColor};"></span>
+  <span class="chip" style="background-color:{chipColor};"></span>
   <div class="cookie-bite">
-    <div class="bite bite11"></div>
-    <div class="bite bite12"></div>
-    <div class="cookie cookie-q1-sharp bite13"></div>
+    <div class="bite bite11" style="background-image: radial-gradient(ellipse at top right, transparent 0%, transparent 30%, {bodyColor} 31%);"></div>
+    <div class="bite bite12" style="background-image: radial-gradient(circle at top right, transparent 0%, transparent 21%, {bodyColor} 22%);"></div>
+    <div class="cookie cookie-q1-sharp bite13" style="background-color:{bodyColor}; border-color:{outlineColor};"></div>
   </div>
   <div class="cookie-container quadrants">
-    <div class="cookie full cookie-q2"></div>
-    <div class="cookie full cookie-q1"></div>
-    <div class="cookie full cookie-q3"></div>
-    <div class="cookie full cookie-q4"></div>
+    <div class="cookie full cookie-q2" style="background-color:{bodyColor}; border-color:{outlineColor};"></div>
+    <div class="cookie full cookie-q1" style="
+      background-color:{bodyColor}; 
+      border-color:{outlineColor};
+      animation-iteration-count:{eat.iterationCount}; 
+      animation-delay:{eat.delay};
+      animation-duration:{eat.duration};
+    "></div>
+    <div class="cookie full cookie-q3" style="background-color:{bodyColor}; border-color:{outlineColor};"></div>
+    <div class="cookie full cookie-q4" style="background-color:{bodyColor}; border-color:{outlineColor};"></div>
   </div>
 </div>
 
@@ -74,6 +91,7 @@ border-width: 0.2em;
 border-color: var(--cookieOutline);
 border-right-style: solid;
 border-top-style: solid;
+animation: eat 1s linear infinite;
 }
 
 .cookie-q1-sharp{
@@ -86,10 +104,10 @@ border-right-style: solid;
 border-top-style: solid;
 }
 
-.cookie-q1:hover{
+/* .cookie-q1:hover{
 animation: eat 1s linear;
 animation-iteration-count: infinite;
-}
+} */
 
 .cookie-q3{
 top: 0;

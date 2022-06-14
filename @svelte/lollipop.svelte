@@ -1,33 +1,69 @@
+<script>
+  export let bodyColor = "linear-gradient(rgb(255, 182, 225) 10%, rgb(250, 208, 237) 30%, rgb(255, 192, 247), rgb(250, 208, 237), rgb(255, 182, 225) 90%)" 
+  export let outlineColor = "rgb(218, 125, 179)"
+  export let innerColor = "white"
+  export let stickColor = "whitesmoke"
+  export let eat = {
+    iterationCount: "infinite",
+    delay: "0s",
+    duration: "1s"
+  }
+</script>
+
 <div id="lollipop" class="artboard">
   <div class="lolli-bite">
-    <div class="bite bite21"></div>
-    <div class="bite bite22"></div>
-    <div class="bite bite23"></div>
+    <div class="bite bite21" style="background-image:radial-gradient(circle at top right, transparent 0%, transparent 25%, {innerColor} 26%);"></div>
+    <div class="bite bite22" style="background-image:radial-gradient(circle at top right, transparent 0%, transparent 55%, {innerColor} 56%);"></div>
+    <div class="bite bite23" style="background-image:radial-gradient(circle at top right, transparent 0%, transparent 67%, {innerColor} 68%);"></div>
   </div>
   <div class="lollipop-container">
     <div class="lolli-head quadrants">
-      <div class="lolli full lolli-q2">
-        <span class="lolli lolli-q2 three-fourth"></span>
-        <span class="lolli lolli-q2 half"></span>
-        <span class="lolli lolli-q2 one-fourth"></span>
+      <div class="lolli full lolli-q2" style="border-color:{outlineColor}; background:{bodyColor};">
+        <span class="lolli lolli-q2 three-fourth" style="border-color:{outlineColor}; background:{bodyColor};"></span>
+        <span class="lolli lolli-q2 half" style="border-color:{outlineColor}; background:{bodyColor};"></span>
+        <span class="lolli lolli-q2 one-fourth" style="border-color:{outlineColor}; background:{bodyColor};"></span>
       </div>
-      <div class="lolli full lolli-q1">
-        <span class="lolli lolli-q1 three-fourth"></span>
-        <span class="lolli lolli-q1 half"></span>
-        <span class="lolli lolli-q1 one-fourth"></span>
+      <div class="lolli full lolli-q1" style="
+        background: {bodyColor};
+        border-color:{outlineColor};
+        animation-iteration-count:{eat.iterationCount}; 
+        animation-delay:{eat.delay};
+        animation-duration:{eat.duration};
+      ">
+        <span class="lolli lolli-q1 three-fourth" style="
+          background: {bodyColor};
+          border-color:{outlineColor};
+          animation-iteration-count:{eat.iterationCount}; 
+          animation-delay:{eat.delay};
+          animation-duration:{eat.duration};
+        "></span>
+        <span class="lolli lolli-q1 half" style="
+          background: {bodyColor};
+          border-color:{outlineColor};
+          animation-iteration-count:{eat.iterationCount}; 
+          animation-delay:{eat.delay};
+          animation-duration:{eat.duration};
+        "></span>
+        <span class="lolli lolli-q1 one-fourth" style="
+          background: {bodyColor};
+          border-color:{outlineColor};
+          animation-iteration-count:{eat.iterationCount}; 
+          animation-delay:{eat.delay};
+          animation-duration:{eat.duration};
+        "></span>
       </div>
-      <div class="lolli full lolli-q3">
-        <span class="lolli lolli-q3-sharp three-fourth"></span>
-        <span class="lolli lolli-q3-sharp half"></span>
-        <span class="lolli end"></span>
+      <div class="lolli full lolli-q3" style="border-color:{outlineColor}; background:{bodyColor};">
+        <span class="lolli lolli-q3-sharp three-fourth" style="border-color:{outlineColor}; background:{bodyColor};"></span>
+        <span class="lolli lolli-q3-sharp half" style="border-color:{outlineColor}; background:{bodyColor};"></span>
+        <span class="lolli end" style="border-color:{outlineColor}; background:{bodyColor};"></span>
       </div>
-      <div class="lolli full lolli-q4">
-        <span class="lolli lolli-q4-sharp twist1"></span>
-        <span class="lolli lolli-q4-sharp twist2"></span>
-        <span class="lolli lolli-q4-sharp twist3"></span>
+      <div class="lolli full lolli-q4" style="border-color:{outlineColor}; background:{bodyColor};">
+        <span class="lolli lolli-q4-sharp twist1" style="border-color:{outlineColor}; background:{bodyColor};"></span>
+        <span class="lolli lolli-q4-sharp twist2" style="border-color:{outlineColor}; background:{bodyColor};"></span>
+        <span class="lolli lolli-q4-sharp twist3" style="border-color:{outlineColor}; background:{bodyColor};"></span>
       </div>
     </div>
-    <div class="stick"></div>
+    <div class="stick" style="border-color:{outlineColor};background-color:{stickColor};"></div>
   </div>
 </div>
 
@@ -105,12 +141,13 @@ border-width: 0.2em;
 border-color: var(--lolliOutline);
 border-right-style: double;
 border-top-style: double;
+animation: eat 1s linear infinite;
 }
 
-.lolli-q1:hover{
+/* .lolli-q1:hover{
 animation: eat 1s linear;
 animation-iteration-count: infinite;
-}
+} */
 
 .lolli-q3{
 top: 0;
