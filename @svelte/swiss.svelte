@@ -1,19 +1,88 @@
+<script>
+  export let bodyColor = "linear-gradient(204deg, rgb(199, 66, 66), crimson)"
+  export let logoColor = "crimson"
+  export let backColor = "grey"
+  export let spinKnife = {
+    iterationCount: "infinite",
+    delay: "0s",
+    duration: "15s"
+  }
+  export let spinOpener = {
+    iterationCount: "infinite",
+    delay: "0s",
+    duration: "15s"
+  }
+  export let spinBlade = {
+    iterationCount: "infinite",
+    delay: "0s",
+    duration: "15s"
+  }
+  export let spinShort = {
+    iterationCount: "infinite",
+    delay: "0s",
+    duration: "15s"
+  }
+  export let spinFile = {
+    iterationCount: "infinite",
+    delay: "0s",
+    duration: "15s"
+  }
+  export let spinScissor1 = {
+    iterationCount: "infinite",
+    delay: "0s",
+    duration: "15s"
+  }
+  export let spinScissor2 = {
+    iterationCount: "infinite",
+    delay: "0s",
+    duration: "15s"
+  }
+</script>
+
 <div id="swiss" class="artboard">
-  <div class="knife">
-    <div class="swissBase">
-      <div class="clip"></div>
-      <div class="insignia">
+  <div class="knife" style="
+    animation-iteration-count:{spinKnife.iterationCount}; 
+    animation-delay:{spinKnife.delay};
+    animation-duration:{spinKnife.duration};
+  ">
+    <div class="swissBase" style="background:{bodyColor};">
+      <div class="clip" style="background-color:{backColor};"></div>
+      <div class="insignia" style="background-color:{logoColor};">
         <div class="crossv"></div>
         <div class="crossh"></div>
       </div>
     </div>
-    <div class="opener"></div>
-    <div class="blade"></div>
-    <div class="short"></div>
-    <div class="file"></div>
-    <div class="scissor1"></div>
-    <div class="scissor2"></div>
-    <div class="swissBack"></div>
+    <div class="opener" style="
+      animation-iteration-count:{spinOpener.iterationCount}; 
+      animation-delay:{spinOpener.delay};
+      animation-duration:{spinOpener.duration};
+    "></div>
+    <div class="blade" style="
+      animation-iteration-count:{spinBlade.iterationCount}; 
+      animation-delay:{spinBlade.delay};
+      animation-duration:{spinBlade.duration};
+    "></div>
+    <div class="short" style="
+      animation-iteration-count:{spinShort.iterationCount}; 
+      animation-delay:{spinShort.delay};
+      animation-duration:{spinShort.duration};
+    "></div>
+    <div class="file" style="
+      animation-iteration-count:{spinFile.iterationCount}; 
+      animation-delay:{spinFile.delay};
+      animation-duration:{spinFile.duration};
+    "></div>
+    <div class="scissor1" style="
+      animation-iteration-count:{spinScissor1.iterationCount}; 
+      animation-delay:{spinScissor1.delay};
+      animation-duration:{spinScissor1.duration};
+    "></div>
+    <div class="scissor2" style="
+      animation-iteration-count:{spinScissor2.iterationCount}; 
+      animation-delay:{spinScissor2.delay};
+      animation-duration:{spinScissor2.duration};
+    "></div>
+    <div class="swissBack" style="background-color:{backColor};"></div>
   </div>
 </div>
 
@@ -33,7 +102,7 @@
   position: relative;
   height: 100%;
   width: 100%;
-  animation: spinknife 15s cubic-bezier(.75,.22,.27,.73) infinite;
+  animation: spinKnife 15s cubic-bezier(.75,.22,.27,.73) infinite;
 }
 
 .swissBase{
@@ -188,7 +257,7 @@
   animation: spinScissor2 15s ease-out infinite;
 }
 
-@keyframes spinknife{
+@keyframes spinKnife{
   0%{
     transform: rotate(0deg);
   }

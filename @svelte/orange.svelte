@@ -1,19 +1,49 @@
+<script>
+  export let skinTint = "darkorange"
+  export let skinColor = "darkorange"
+  export let bodyColor = "orange"
+  export let veinColor = "rgb(255, 186, 59)"
+  export let leafColor = "forestgreen"
+  export let leafShade = "green"
+  export let leafTint = "mediumseagreen"
+  export let spin = {
+    iterationCount: "2",
+    delay: "0s",
+    duration: "1.5s"
+  }
+  export let jiggle = {
+    iterationCount: "infinite",
+    delay: "0s",
+    duration: "3s"
+  }
+</script>
+
 <div id="orange" class="artboard">
-  <div class="orangeLeaf">
-    <div class="orangeLeaf-1">   </div>
-    <div class="orangeLeaf-2">   </div>
-    <div class="orangeLeaf-3">   </div>
-    <div class="orangeLeaf-4">   
-      <span class="deco">  </span>
+  <div class="orangeLeaf" style="
+    animation-iteration-count:{jiggle.iterationCount}; 
+    animation-delay:{jiggle.delay};
+    animation-duration:{jiggle.duration};
+  ">
+    <div class="orangeLeaf-1" style="background-color:{leafColor};"></div>
+    <div class="orangeLeaf-2" style="background-color:{leafColor}; border-color:{leafTint};"></div>
+    <div class="orangeLeaf-3" style="background-color:{leafShade};"></div>
+    <div class="orangeLeaf-4" style="background-color:{leafShade}; border-color:{leafTint};">
+      <span class="deco" style="border-color:{leafColor};"></span>
     </div>
   </div>
-  <div class="orange">
-    <div class="orangeInner">
-      <div class="orangeLine">                  </div>
-      <div class="orangeLine fourfive">         </div>
-      <div class="orangeLine ninety">           </div>
-      <div class="orangeLine onethreefive">     </div>
-      <div class="orangeCenter">                </div>
+  <div class="orange" style="
+    background-color:{skinColor};
+    border-color:{skinTint};
+    animation-iteration-count:{spin.iterationCount}; 
+    animation-delay:{spin.delay};
+    animation-duration:{spin.duration};
+  ">
+    <div class="orangeInner" style="background-color:{bodyColor}; border-color:{veinColor};">
+      <div class="orangeLine" style="background-color:{veinColor};"></div>
+      <div class="orangeLine fourfive" style="background-color:{veinColor};"></div>
+      <div class="orangeLine ninety" style="background-color:{veinColor};"></div>
+      <div class="orangeLine onethreefive" style="background-color:{veinColor};"></div>
+      <div class="orangeCenter" style="background-color:{bodyColor};"></div>
     </div>
   </div>
 </div>
@@ -43,13 +73,14 @@
   display: grid;
   grid-template-rows: 30% 70%;
   grid-template-columns: 70% 30%;
+  animation: jiggle 3s linear infinite;
 }
 
-.orangeLeaf:hover{
+/* .orangeLeaf:hover{
   cursor: pointer;
   animation: jiggle 3s linear;
   animation-iteration-count: infinite;
-}
+} */
 
 .orangeLeaf-1{
   border-top-left-radius: 100%;
@@ -104,12 +135,14 @@
   display: grid;
   justify-items: center;
   align-items: center;
+  animation: spin 1.5s ease-in-out;
+  animation-iteration-count: 2;
 }
 
-.orange:hover{
+/* .orange:hover{
   cursor: pointer;
   animation: spin 1.5s ease-in-out;
-}
+} */
 
 .orangeInner{
   position: relative;

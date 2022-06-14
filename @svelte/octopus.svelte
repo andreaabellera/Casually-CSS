@@ -119,7 +119,6 @@
         <div class="octo-arm-junction3 octo-ne octo-inverted-n"></div>
         <div class="octo-arm-junction5 octo-skin octo-nw-sharp"></div>
       </div>
-    </div>
       <div class="octo-arm octo-arm7">
         <div></div>
         <div class="octo-arm-junction1 octo-nw octo-inverted-n"></div>

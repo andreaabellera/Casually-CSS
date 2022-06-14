@@ -147,4 +147,3 @@
           <div class="octo-arm-junction5 octo-skin octo-nw-sharp"></div>
         </div>
     </div>
-</div>
