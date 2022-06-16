@@ -6,6 +6,8 @@ Defined as **Artwork** - [HEIGHT:WIDTH]
 
 **Bike** - [9:15]
 
+**Bison** - [26:35]
+
 **Blossom** - [1:1]
 
 **Boba** - [5:2] 
