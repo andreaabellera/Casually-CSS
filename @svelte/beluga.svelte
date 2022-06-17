@@ -7,12 +7,12 @@
     delay: "0s",
     duration: "3s"
   }
-  export let belSwim = {
+  export let swim = {
     iterationCount: "infinite",
     delay: "0s",
     duration: "3s"
   }
-  export let flipbelTail = {
+  export let flipTail = {
     iterationCount: "infinite",
     delay: "0s",
     duration: "3s"
@@ -32,14 +32,15 @@
     delay: "0s",
     duration: "3s"
   }
+  window.genId = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
 </script>
 
-<div class="artboard">
+<div class="artboard" id={window.genId}>
   <div id="beluga">
     <div class="belcontain" style="
-      animation-iteration-count:{belSwim.iterationCount}; 
-      animation-delay:{belSwim.delay};
-      animation-duration:{belSwim.duration};
+      animation-iteration-count:{swim.iterationCount}; 
+      animation-delay:{swim.delay};
+      animation-duration:{swim.duration};
     ">
     <div class="beluga">
         <div class="bel1">
@@ -72,9 +73,9 @@
           animation-duration:{hStretch.duration};
         ">
             <div class="belTail" style="
-              animation-iteration-count:{flipbelTail.iterationCount}; 
-              animation-delay:{flipbelTail.delay};
-              animation-duration:{flipbelTail.duration};
+              animation-iteration-count:{flipTail.iterationCount}; 
+              animation-delay:{flipTail.delay};
+              animation-duration:{flipTail.duration};
             ">
               <div class="belTail-top belSkin" style="background-color:{bodyColor};"></div>
               <div class="belTail-bot belSkin" style="background-color:{bodyColor}; border-color: {bodyShade};"></div>
@@ -102,7 +103,7 @@
     // Resize artboard to fit container
     resize()
     function resize(){
-      let artboard = document.getElementsByClassName("artboard")[0]
+      let artboard = document.getElementById(window.genId)
       let targetHeight = artboard.parentElement.clientHeight
       let targetWidth = artboard.parentElement.clientWidth
       let artboardHeight = artboard.clientHeight
@@ -146,7 +147,7 @@
   width: 100%;
   display: grid;
   grid-template-rows: 1fr auto;
-  animation: belSwim 3s ease-in-out;
+  animation: swim 3s ease-in-out;
   animation-iteration-count: infinite;
   transform: rotate(0deg) translateY(5em);
 }
@@ -289,7 +290,7 @@
   width: 3em;
   display: grid;
   grid-template-rows: 40% 60%;
-  animation: flipbelTail 3s ease-in-out;
+  animation: flipTail 3s ease-in-out;
   animation-iteration-count: infinite;
 }
 
@@ -345,7 +346,7 @@
 }
 
 
-@keyframes belSwim{
+@keyframes swim{
   45%{
     transform: rotate(20deg) translateY(2em);
   }
@@ -371,7 +372,7 @@
   }
 }
 
-@keyframes flipbelTail{
+@keyframes flipTail{
   45%{
     height: 2.5em;
   }

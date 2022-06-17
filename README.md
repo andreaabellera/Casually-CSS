@@ -17,7 +17,7 @@ The [online gallery](https://andreaabellera.github.io/Casually-CSS/) showcase is
 
 ### Browser
 1. Include this link in your HTML head  
-`<script src="https://unpkg.com/casually-css@0.6.0/create.js"></script>`  
+`<script src="https://unpkg.com/casually-css@0.6.1/create.js"></script>`  
 2. You can import artworks with the JS function 'create'. It takes two parameters: **an HTML element** and the **artwork name (as string)**. The artwork will resize to fit inside its HTML element container.  
 `create(yourElement, 'orange')`  
 
