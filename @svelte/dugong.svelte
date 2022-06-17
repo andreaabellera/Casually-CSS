@@ -28,9 +28,11 @@
     delay: "0s",
     duration: "4s"
   }
+
+  window.genId = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
 </script>
 
-<div class="artboard">
+<div class="artboard" id={window.genId}>
   <div id="dugong">
     <div class="dugong" style="
       animation-iteration-count:{swim.iterationCount}; 
@@ -122,7 +124,7 @@
     // Resize artboard to fit container
     resize()
     function resize(){
-      let artboard = document.getElementsByClassName("artboard")[0]
+      let artboard = document.getElementById(window.genId)
       let targetHeight = artboard.parentElement.clientHeight
       let targetWidth = artboard.parentElement.clientWidth
       let artboardHeight = artboard.clientHeight

@@ -37,9 +37,10 @@
     delay: "0s",
     duration: "15s"
   }
+  window.genId = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
 </script>
 
-<div class="artboard">
+<div class="artboard" id={window.genId}>
   <div id="swiss">
     <div class="knife" style="
       animation-iteration-count:{spinKnife.iterationCount}; 
@@ -93,12 +94,14 @@
     // Resize artboard to fit container
     resize()
     function resize(){
-      let artboard = document.getElementsByClassName("artboard")[0]
+      let artboard = document.getElementById(window.genId)
+      console.log(artboard)
       let targetHeight = artboard.parentElement.clientHeight
       let targetWidth = artboard.parentElement.clientWidth
       let artboardHeight = artboard.clientHeight
       let artboardWidth = artboard.clientWidth
       let scale = Math.min(targetHeight/artboardHeight, targetWidth/artboardWidth)
+      console.log(scale)
       artboard.style.transform = "scale(" + scale + ")"
       artboard.style.transformOrigin = "0 0"
     }

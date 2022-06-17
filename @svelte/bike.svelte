@@ -8,22 +8,23 @@
   export let wheelSpokeColor = "lightgrey"
   export let axleColor = "darkgoldenrod"
   export let pedalColor = "darkgrey"
-  export let bikeSpin = {
+  export let spin = {
     iterationCount: "infinite",
     delay: "0s",
     duration: "0.8s"
   }
+  window.genId = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
 </script>
 
-<div class="artboard">
+<div class="artboard" id={window.genId}>
   <div id="bike">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <div class="bike">
         <span class="bikeWheel-box">
           <div class="bikeWheel" style="border-color:{wheelColor};
-            animation-iteration-count:{bikeSpin.iterationCount}; 
-            animation-delay:{bikeSpin.delay};
-            animation-duration:{bikeSpin.duration};
+            animation-iteration-count:{spin.iterationCount}; 
+            animation-delay:{spin.delay};
+            animation-duration:{spin.duration};
           ">
             <span class="bikeSpoke" style="background-color:{wheelSpokeColor};"></span>
             <span class="bikeSpoke thirty" style="background-color:{wheelSpokeColor};"></span>
@@ -34,9 +35,9 @@
             <span class="axle" style="background-color:{axleColor};"></span>
           </div>
           <div class="bikeWheel" style="border-color:{wheelColor}; 
-            animation-iteration-count:{bikeSpin.iterationCount}; 
-            animation-delay:{bikeSpin.delay};
-            animation-duration:{bikeSpin.duration};
+            animation-iteration-count:{spin.iterationCount}; 
+            animation-delay:{spin.delay};
+            animation-duration:{spin.duration};
           ">
             <span class="bikeSpoke" style="background-color:{wheelSpokeColor};"></span>
             <span class="bikeSpoke thirty" style="background-color:{wheelSpokeColor};"></span>
@@ -75,7 +76,7 @@
     // Resize artboard to fit container
     resize()
     function resize(){
-      let artboard = document.getElementsByClassName("artboard")[0]
+      let artboard = document.getElementById(window.genId)
       let targetHeight = artboard.parentElement.clientHeight
       let targetWidth = artboard.parentElement.clientWidth
       let artboardHeight = artboard.clientHeight

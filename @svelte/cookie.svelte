@@ -7,9 +7,10 @@
     delay: "0s",
     duration: "1s"
   }
+  window.genId = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
 </script>
 
-<div class="artboard">
+<div class="artboard" id={window.genId}>
   <div id="cookie">
     <span class="chip" style="background-color:{chipColor};"></span>
     <span class="chip" style="background-color:{chipColor};"></span>
@@ -43,7 +44,7 @@
     // Resize artboard to fit container
     resize()
     function resize(){
-      let artboard = document.getElementsByClassName("artboard")[0]
+      let artboard = document.getElementById(window.genId)
       let targetHeight = artboard.parentElement.clientHeight
       let targetWidth = artboard.parentElement.clientWidth
       let artboardHeight = artboard.clientHeight

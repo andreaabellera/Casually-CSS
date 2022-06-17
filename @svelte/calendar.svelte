@@ -16,21 +16,34 @@
     duration: "3s"
   }
 
-  dayStart = Math.max(dayStart, 0)
-  dayStart = Math.min(dayStart, 4)
-  days = Math.max(days, 28)
-  days = Math.min(days, 31)
-  let numDays = days + dayStart
   let daysArray = Array(35)
-  for (let i = 0; i < dayStart; i++)
-    daysArray[i] = `<div class="calSq" style="background-color:${celColor}; border-radius: 0.5ex; border-top-right-radius: 40%; border-bottom-left-radius: 40%;"></div>`
-  for (let i = dayStart; i < numDays; i++)
-    daysArray[i] = `<div class="calSq" style="background-color:${celColor}; color:${dayColor}; border-radius: 0.5ex; border-top-right-radius: 40%; border-bottom-left-radius: 40%;"><p style="margin-left:0.4em;">${i-dayStart+1}</p></div>`
-  for (let i = numDays; i < daysArray.length; i++)
-    daysArray[i] = `<div class="calSq" style="background-color:${celColor}; border-radius: 0.5ex; border-top-right-radius: 40%; border-bottom-left-radius: 40%;"></div>`
+
+  let currDayStart = dayStart
+  let currDays = days
+  $: if (currDayStart != dayStart || currDays != days) {
+    newDays()
+	}
+
+  newDays()
+  function newDays() {
+    dayStart = Math.max(dayStart, 0)
+    dayStart = Math.min(dayStart, 4)
+    days = Math.max(days, 28)
+    days = Math.min(days, 31)
+    let numDays = days + dayStart
+    daysArray = Array(35)
+    for (let i = 0; i < dayStart; i++)
+      daysArray[i] = `<div class="calSq" style="background-color:${celColor}; border-radius: 0.5ex; border-top-right-radius: 40%; border-bottom-left-radius: 40%;"></div>`
+    for (let i = dayStart; i < numDays; i++)
+      daysArray[i] = `<div class="calSq" style="background-color:${celColor}; color:${dayColor}; border-radius: 0.5ex; border-top-right-radius: 40%; border-bottom-left-radius: 40%;"><p style="margin-left:0.4em;">${i-dayStart+1}</p></div>`
+    for (let i = numDays; i < daysArray.length; i++)
+      daysArray[i] = `<div class="calSq" style="background-color:${celColor}; border-radius: 0.5ex; border-top-right-radius: 40%; border-bottom-left-radius: 40%;"></div>`
+  }
+
+  window.genId = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
 </script>
 
-<div class="artboard">
+<div class="artboard" id={window.genId}>
   <div id="calendar">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <div class="calendar-shape" style="background-color:{backColor};">
@@ -70,7 +83,7 @@
     // Resize artboard to fit container
     resize()
     function resize(){
-      let artboard = document.getElementsByClassName("artboard")[0]
+      let artboard = document.getElementById(window.genId)
       let targetHeight = artboard.parentElement.clientHeight
       let targetWidth = artboard.parentElement.clientWidth
       let artboardHeight = artboard.clientHeight

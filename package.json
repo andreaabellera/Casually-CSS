@@ -1,6 +1,6 @@
 {
   "name": "casually-css",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Import an artwork from Casually CSS!",
   "main": "create.js",
   "scripts": {

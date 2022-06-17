@@ -8,9 +8,10 @@
     delay: "0s",
     duration: "1s"
   }
+  window.genId = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
 </script>
 
-<div class="artboard">
+<div class="artboard" id={window.genId}>
   <div id="lollipop">
     <div class="lolli-bite">
       <div class="bite bite21" style="background-image:radial-gradient(circle at top right, transparent 0%, transparent 25%, {innerColor} 26%);"></div>
@@ -74,7 +75,7 @@
     // Resize artboard to fit container
     resize()
     function resize(){
-      let artboard = document.getElementsByClassName("artboard")[0]
+      let artboard = document.getElementById(window.genId)
       let targetHeight = artboard.parentElement.clientHeight
       let targetWidth = artboard.parentElement.clientWidth
       let artboardHeight = artboard.clientHeight
