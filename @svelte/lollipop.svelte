@@ -1,4 +1,5 @@
 <script>
+  import { onMount } from "svelte";
   export let bodyColor = "linear-gradient(rgb(255, 182, 225) 10%, rgb(250, 208, 237) 30%, rgb(255, 192, 247), rgb(250, 208, 237), rgb(255, 182, 225) 90%)" 
   export let outlineColor = "rgb(218, 125, 179)"
   export let innerColor = "white"
@@ -8,10 +9,33 @@
     delay: "0s",
     duration: "1s"
   }
-  window.genId = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
+  
+  // Generate unique id for artboard
+  let genId = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
+  
+  onMount(async () => {
+		resize()
+	});
+  
+  function resize(){
+    let artboard = document.getElementById(genId)
+    if (artboard) {
+      let targetHeight = artboard.parentElement.clientHeight
+      let targetWidth = artboard.parentElement.clientWidth
+      let artboardHeight = artboard.clientHeight
+      let artboardWidth = artboard.clientWidth
+      let scale = Math.min(targetHeight/artboardHeight, targetWidth/artboardWidth)
+      artboard.style.transform = "scale(" + scale + ")"
+      artboard.style.transformOrigin = "0 0"
+    }
+  }
+  
+  window.onresize = function(){
+    resize()
+  }
 </script>
 
-<div class="artboard" id={window.genId}>
+<div class="artboard" id={genId}>
   <div id="lollipop">
     <div class="lolli-bite">
       <div class="bite bite21" style="background-image:radial-gradient(circle at top right, transparent 0%, transparent 25%, {innerColor} 26%);"></div>
@@ -69,26 +93,6 @@
     </div>
   </div>
 </div>
-
-<span>
-  <script>
-    // Resize artboard to fit container
-    resize()
-    function resize(){
-      let artboard = document.getElementById(window.genId)
-      let targetHeight = artboard.parentElement.clientHeight
-      let targetWidth = artboard.parentElement.clientWidth
-      let artboardHeight = artboard.clientHeight
-      let artboardWidth = artboard.clientWidth
-      let scale = Math.min(targetHeight/artboardHeight, targetWidth/artboardWidth)
-      artboard.style.transform = "scale(" + scale + ")"
-      artboard.style.transformOrigin = "0 0"
-    }
-    window.onresize = function(){
-      resize()
-    }
-  </script>
-</span>
 
 <style>
 :root{

@@ -1,4 +1,5 @@
 <script>
+  import { onMount } from "svelte";
   export let month = "February"
   export let year = "2017"
   export let dayStart = 3
@@ -40,10 +41,32 @@
       daysArray[i] = `<div class="calSq" style="background-color:${celColor}; border-radius: 0.5ex; border-top-right-radius: 40%; border-bottom-left-radius: 40%;"></div>`
   }
 
-  window.genId = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
+  // Generate unique id for artboard
+  let genId = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
+  
+  onMount(async () => {
+		resize()
+	});
+  
+  function resize(){
+    let artboard = document.getElementById(genId)
+    if(artboard){
+      let targetHeight = artboard.parentElement.clientHeight
+      let targetWidth = artboard.parentElement.clientWidth
+      let artboardHeight = artboard.clientHeight
+      let artboardWidth = artboard.clientWidth
+      let scale = Math.min(targetHeight/artboardHeight, targetWidth/artboardWidth)
+      artboard.style.transform = "scale(" + scale + ")"
+      artboard.style.transformOrigin = "0 0"
+    }
+  }
+  
+  window.onresize = function(){
+    resize()
+  }
 </script>
 
-<div class="artboard" id={window.genId}>
+<div class="artboard" id={genId}>
   <div id="calendar">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <div class="calendar-shape" style="background-color:{backColor};">
@@ -77,26 +100,6 @@
     </div>
   </div>
 </div>
-
-<span>
-  <script>
-    // Resize artboard to fit container
-    resize()
-    function resize(){
-      let artboard = document.getElementById(window.genId)
-      let targetHeight = artboard.parentElement.clientHeight
-      let targetWidth = artboard.parentElement.clientWidth
-      let artboardHeight = artboard.clientHeight
-      let artboardWidth = artboard.clientWidth
-      let scale = Math.min(targetHeight/artboardHeight, targetWidth/artboardWidth)
-      artboard.style.transform = "scale(" + scale + ")"
-      artboard.style.transformOrigin = "0 0"
-    }
-    window.onresize = function(){
-      resize()
-    }
-  </script>
-</span>
 
 <style>
 :root{

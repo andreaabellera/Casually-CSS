@@ -1,8 +1,33 @@
 <script>
+  import { onMount } from "svelte";
   export let text = "Casually CSS"
+
+  // Generate unique id for artboard
+  let genId = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
+  
+  onMount(async () => {
+		resize()
+	});
+  
+  function resize(){
+    let artboard = document.getElementById(genId)
+    if(artboard){
+      let targetHeight = artboard.parentElement.clientHeight
+      let targetWidth = artboard.parentElement.clientWidth
+      let artboardHeight = artboard.clientHeight
+      let artboardWidth = artboard.clientWidth
+      let scale = Math.min(targetHeight/artboardHeight, targetWidth/artboardWidth)
+      artboard.style.transform = "scale(" + scale + ")"
+      artboard.style.transformOrigin = "0 0"
+    }
+  }
+  
+  window.onresize = function(){
+    resize()
+  }
 </script>
 
-<div class="artboard">
+<div class="artboard" id={genId}>
   <div id="button">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <div class="bleu button">
@@ -16,26 +41,6 @@
     </div>
   </div>
 </div>
-
-<span>
-  <script>
-    // Resize artboard to fit container
-    resize()
-    function resize(){
-      let artboard = document.getElementsByClassName("artboard")[0]
-      let targetHeight = artboard.parentElement.clientHeight
-      let targetWidth = artboard.parentElement.clientWidth
-      let artboardHeight = artboard.clientHeight
-      let artboardWidth = artboard.clientWidth
-      let scale = Math.min(targetHeight/artboardHeight, targetWidth/artboardWidth)
-      artboard.style.transform = "scale(" + scale + ")"
-      artboard.style.transformOrigin = "0 0"
-    }
-    window.onresize = function(){
-      resize()
-    }
-  </script>
-</span>
 
 <style>
 #button{

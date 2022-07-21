@@ -1,4 +1,5 @@
 <script>
+  import { onMount } from "svelte";
   export let bodyColor = "tan"
   export let outlineColor = "#543f37"
   export let chipColor = "#8e5e4e"
@@ -7,10 +8,33 @@
     delay: "0s",
     duration: "1s"
   }
-  window.genId = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
+  
+  // Generate unique id for artboard
+  let genId = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
+  
+  onMount(async () => {
+		resize()
+	});
+  
+  function resize(){
+    let artboard = document.getElementById(genId)
+    if(artboard){
+      let targetHeight = artboard.parentElement.clientHeight
+      let targetWidth = artboard.parentElement.clientWidth
+      let artboardHeight = artboard.clientHeight
+      let artboardWidth = artboard.clientWidth
+      let scale = Math.min(targetHeight/artboardHeight, targetWidth/artboardWidth)
+      artboard.style.transform = "scale(" + scale + ")"
+      artboard.style.transformOrigin = "0 0"
+    }
+  }
+  
+  window.onresize = function(){
+    resize()
+  }
 </script>
 
-<div class="artboard" id={window.genId}>
+<div class="artboard" id={genId}>
   <div id="cookie">
     <span class="chip" style="background-color:{chipColor};"></span>
     <span class="chip" style="background-color:{chipColor};"></span>
@@ -38,26 +62,6 @@
     </div>
   </div>
 </div>
-
-<span>
-  <script>
-    // Resize artboard to fit container
-    resize()
-    function resize(){
-      let artboard = document.getElementById(window.genId)
-      let targetHeight = artboard.parentElement.clientHeight
-      let targetWidth = artboard.parentElement.clientWidth
-      let artboardHeight = artboard.clientHeight
-      let artboardWidth = artboard.clientWidth
-      let scale = Math.min(targetHeight/artboardHeight, targetWidth/artboardWidth)
-      artboard.style.transform = "scale(" + scale + ")"
-      artboard.style.transformOrigin = "0 0"
-    }
-    window.onresize = function(){
-      resize()
-    }
-  </script>
-</span>
 
 <style>
 :root{

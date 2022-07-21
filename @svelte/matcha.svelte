@@ -1,4 +1,5 @@
 <script>
+  import { onMount } from "svelte";
   export let bodyColor = "#3e4044"
   export let cupInnerColor = "#aa3333"
   export let drinkColor = "linear-gradient(120deg, #608850 0%, #78AE60, #88BB80 80%, #67A070 90%, #656840 100%)"
@@ -11,10 +12,33 @@
     delay: "0s",
     duration: "3s"
   }
-  window.genId = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
+  
+  // Generate unique id for artboard
+  let genId = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
+  
+  onMount(async () => {
+		resize()
+	});
+  
+  function resize(){
+    let artboard = document.getElementById(genId)
+    if (artboard) {
+      let targetHeight = artboard.parentElement.clientHeight
+      let targetWidth = artboard.parentElement.clientWidth
+      let artboardHeight = artboard.clientHeight
+      let artboardWidth = artboard.clientWidth
+      let scale = Math.min(targetHeight/artboardHeight, targetWidth/artboardWidth)
+      artboard.style.transform = "scale(" + scale + ")"
+      artboard.style.transformOrigin = "0 0"
+    }
+  }
+  
+  window.onresize = function(){
+    resize()
+  }
 </script>
 
-<div class="artboard" id={window.genId}>
+<div class="artboard" id={genId}>
   <div id="matcha">
     <div class="matcha-blossom">
       <div class="stabilize">
@@ -57,26 +81,6 @@
     <div class="matcha-handle" style="border-color:{bodyColor};"></div>
   </div>
 </div>
-
-<span>
-  <script>
-    // Resize artboard to fit container
-    resize()
-    function resize(){
-      let artboard = document.getElementById(window.genId)
-      let targetHeight = artboard.parentElement.clientHeight
-      let targetWidth = artboard.parentElement.clientWidth
-      let artboardHeight = artboard.clientHeight
-      let artboardWidth = artboard.clientWidth
-      let scale = Math.min(targetHeight/artboardHeight, targetWidth/artboardWidth)
-      artboard.style.transform = "scale(" + scale + ")"
-      artboard.style.transformOrigin = "0 0"
-    }
-    window.onresize = function(){
-      resize()
-    }
-  </script>
-</span>
 
 <style>
 :root{

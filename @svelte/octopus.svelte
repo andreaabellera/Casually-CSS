@@ -1,8 +1,32 @@
 <script>
-  window.genId = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
+  import { onMount } from "svelte";
+
+  // Generate unique id for artboard
+  let genId = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
+  
+  onMount(async () => {
+		resize()
+	});
+  
+  function resize(){
+    let artboard = document.getElementById(genId)
+    if (artboard) {
+      let targetHeight = artboard.parentElement.clientHeight
+      let targetWidth = artboard.parentElement.clientWidth
+      let artboardHeight = artboard.clientHeight
+      let artboardWidth = artboard.clientWidth
+      let scale = Math.min(targetHeight/artboardHeight, targetWidth/artboardWidth)
+      artboard.style.transform = "scale(" + scale + ")"
+      artboard.style.transformOrigin = "0 0"
+    }
+  }
+  
+  window.onresize = function(){
+    resize()
+  }
 </script>
 
-<div class="artboard" id={window.genId}>
+<div class="artboard" id={genId}>
   <div id="octopus">
     <div class="octopus">
         <div class="octo-head">
@@ -154,26 +178,6 @@
         </div>
   </div>
 </div>
-
-<span>
-  <script>
-    // Resize artboard to fit container
-    resize()
-    function resize(){
-      let artboard = document.getElementById(window.genId)
-      let targetHeight = artboard.parentElement.clientHeight
-      let targetWidth = artboard.parentElement.clientWidth
-      let artboardHeight = artboard.clientHeight
-      let artboardWidth = artboard.clientWidth
-      let scale = Math.min(targetHeight/artboardHeight, targetWidth/artboardWidth)
-      artboard.style.transform = "scale(" + scale + ")"
-      artboard.style.transformOrigin = "0 0"
-    }
-    window.onresize = function(){
-      resize()
-    }
-  </script>
-</span>
 
 <style>
 :root{
@@ -343,43 +347,43 @@
 }
 
 .octo-arm1{
-  transform: translate(-6.2em, 11em) rotateZ(90deg);
+  transform: translate(-9.5em, 8em) rotateZ(90deg);
   height: 16em;
 }
 
 .octo-arm2{
-  transform: translate(-6em, 17em) rotateZ(60deg);
+  transform: translate(-9em, 14em) rotateZ(60deg);
   height: 18em;
 }
 
 .octo-arm3{
-  transform: translate(-4em, 20em) rotateZ(35deg);
+  transform: translate(-6em, 17em) rotateZ(35deg);
   height: 17em;
 }
 
 .octo-arm4{
-  transform: translate(3em, 21em) rotateZ(35deg) rotateY(180deg);
+  transform: translate(1em, 18em) rotateZ(35deg) rotateY(180deg);
   height: 16em;
 }
 
 .octo-arm5{
-  transform: translate(6.5em, 24em) rotateZ(20deg) rotateY(180deg);
+  transform: translate(4.5em, 19em) rotateZ(20deg) rotateY(180deg);
   height: 18em;
 }
 
 .octo-arm6{
-  transform: translate(11em, 24em) rotateZ(-40deg);
+  transform: translate(8em, 18em) rotateZ(-40deg);
   height: 16em;
 }
 
 .octo-arm7{
-  transform: translate(13em, 13em) rotateZ(-70deg);
+  transform: translate(12em, 13em) rotateZ(-70deg);
   height: 16em;
   z-index: 0;
 }
 
 .octo-arm8{
-  transform: translate(10em, 9em) rotateZ(-95deg);
+  transform: translate(13em, 11em) rotateZ(-95deg);
   height: 16em;
   z-index: 0;
 }
