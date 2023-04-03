@@ -267,9 +267,6 @@ function loadArtboard(art) {
     ;(async () => {
         html = await getHTML(art);
         css = await getCSS(art);
-
-        html = clean(html);
-        css = clean(css);
         document.getElementById("codespace").innerText = html;
     })();
 
@@ -288,14 +285,6 @@ async function getCSS(art){
     let response = await fetch(art.id + "/" + art.id + ".css");
     let css = await response.text();
     return css;
-}
-
-function clean(text){
-    let toks = text.split("\r\n");
-    let textFormatted = "";
-    for (let tok of toks)
-        textFormatted += tok.trim() + "\r\n";
-    return textFormatted;
 }
 
 function detectMobile(){
