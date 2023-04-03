@@ -13,9 +13,10 @@
 
 let repertoire = []
 
-function create(container,name,refresh=false){
+function create(container, name){
   let src = "https://raw.githubusercontent.com/andreaabellera/Casually-CSS/main/"
   ;(async () => {
+    container.innerHTML = ""
     let html = await load(src + name + "/" + name + ".txt", container)
     let css = await load(src + name + "/" + name + ".css", container, true)
 
@@ -32,8 +33,7 @@ function create(container,name,refresh=false){
       artboard.style.transformOrigin = "0 0"
 
       // Add to repertoire
-      if(!refresh)
-        repertoire.push({ container: container, content: container.innerHTML, name: name })
+      repertoire.push({ container: container, content: container.innerHTML, name: name })
     }
     else
       console.error(`Casually CSS: Artwork load failed. Please check that your '${name}' parameter is of string type and exists in Casually CSS. If it exists, folder for '${name}' may be missing. Please redownload the '${name}' folder from 'https://github.com/andreaabellera/Casually-CSS' or reinstall the package.`)
@@ -41,15 +41,15 @@ function create(container,name,refresh=false){
 }
 
 async function load(url, container, css=false){
-  const response = await fetch(url);
-  const text = await response.text();
+    const response = await fetch(url)
+    const text = await response.text()
+    
+    if (css)
+      container.innerHTML += `<style> ${text} </style>`
+    else
+      container.innerHTML += text
   
-  if (css)
-    container.innerHTML += `<style> ${text} </style>`
-  else
-    container.innerHTML += text
-
-  return response.ok;
+    return response.ok
 }
 
 window.onresize = function(){
