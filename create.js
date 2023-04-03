@@ -72,5 +72,3 @@ function replaster(container, content){
   artboard.style.transform = "scale(" + scale + ")"
   artboard.style.transformOrigin = "0 0"
 }
-
-module.exports = create
