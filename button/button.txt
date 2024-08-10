@@ -1,6 +1,6 @@
 <div class="artboard">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-      <div class="bleu button">
+      <a class="bleu button" href="https://casuallyroadshow.on.fleek.co/">
         <span class="grad-overlay"></span>
         <span class="box-overlay"></span>
         <span class="glare"></span>
@@ -8,5 +8,5 @@
         <span class="ult-overlay"></span>
         <span class="glare2"></span>
         <span class="btn-text">Casually CSS</span>
-    </div>
+    </a>
 </div>

@@ -45,6 +45,7 @@ html, body{
   font-family: "Fredoka One", cursive;
   color: whitesmoke;
   text-shadow: -0.06em 0.06em 0 rgba(75, 207, 255, 0.6);
+  text-decoration: none;
 }
 
 .extend{
@@ -143,8 +144,8 @@ span{
 
 #container{
   position: absolute;
-  height: 32em;
-  width: 38em;
+  height: 36em;
+  width: 70vw;
   margin-top: 10vh;
   display: grid;
   justify-items: center;
