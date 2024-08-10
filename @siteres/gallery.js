@@ -210,9 +210,7 @@ function setupHandlers(){
     });
 
     copyBtn.addEventListener("click", function () {
-        let copyText = codespace;
-        copyText.select();
-        document.execCommand("copy");
+        navigator.clipboard.writeText(codespace.innerText)
     });
 }
 
