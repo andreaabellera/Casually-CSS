@@ -1,6 +1,6 @@
 <div class="artboard">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-      <a class="bleu button" href="https://casuallyroadshow.on.fleek.co/">
+      <a class="bleu button" href="https://casuallyroadshow.vercel.app/">
         <span class="grad-overlay"></span>
         <span class="box-overlay"></span>
         <span class="glare"></span>

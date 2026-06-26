@@ -1,4 +1,4 @@
-![Casually CSS Banner](/@siteres/casually-banner.png)
+![Casually CSS Banner](/@siteres/casually-banner.png)  
 A collection of CSS artworks, casually created, and curated with care  
 
 ## Gallery
